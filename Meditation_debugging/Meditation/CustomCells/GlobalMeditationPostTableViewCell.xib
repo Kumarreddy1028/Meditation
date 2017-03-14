@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Santana.ttf">
+            <string>Santana</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GlobalMeditationPostTableViewCell" rowHeight="60" id="9g2-tE-Lxb" customClass="GlobalMeditationPostTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9g2-tE-Lxb" id="q5R-rZ-vbB">
+                <frame key="frameInset" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="172.6k mediators" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-DA-cx6">
+                        <frame key="frameInset" minX="25" minY="30" width="129" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15-OCT-15 at 11:30am PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg3-UY-eOA">
+                        <frame key="frameInset" minX="25" minY="8" width="253" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63w-gn-agL">
+                        <color key="backgroundColor" red="0.38039215686274508" green="0.28235294117647058" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="cuH-7G-nZw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                        <state key="normal" title="Play"/>
+                        <connections>
+                            <action selector="onTapPlay:" destination="9g2-tE-Lxb" eventType="touchUpInside" id="hEH-Gl-z0G"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="63w-gn-agL" secondAttribute="bottom" constant="15" id="BOY-oh-5qE"/>
+                    <constraint firstAttribute="trailing" secondItem="63w-gn-agL" secondAttribute="trailing" constant="22" id="Fc6-HM-FEK"/>
+                    <constraint firstItem="63w-gn-agL" firstAttribute="top" secondItem="q5R-rZ-vbB" secondAttribute="top" constant="14" id="eD9-HX-fUg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelNumberOfMeditators" destination="K1M-DA-cx6" id="Qhf-YA-Bkj"/>
+                <outlet property="labelTimingAndDate" destination="Kg3-UY-eOA" id="Q8h-Re-OJQ"/>
+                <outlet property="playButton" destination="63w-gn-agL" id="zv5-ni-u0E"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="80"/>
+        </tableViewCell>
+    </objects>
+</document>

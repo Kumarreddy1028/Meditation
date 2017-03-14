@@ -1,0 +1,33 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "books_rating_star_small_halffill_1x.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "books_rating_star_halffill_2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "books_rating_star_halffill_3x.png",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "ipad_star_halffill_small_1x.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "ipad_star_halffill_small_3x.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

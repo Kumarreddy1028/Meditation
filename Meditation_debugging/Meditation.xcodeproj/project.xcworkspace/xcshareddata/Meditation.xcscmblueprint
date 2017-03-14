@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a3a5820e-b042-4872-b92c-5100049159fc++4318",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a3a5820e-b042-4872-b92c-5100049159fc++4318" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "a3a5820e-b042-4872-b92c-5100049159fc++4318" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E8F74529-4F24-4E80-9619-193185182B24",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "a3a5820e-b042-4872-b92c-5100049159fc++4318" : "Ipadmeditation_svn\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Meditation",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Meditation\/Meditation.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.204:9999\/svn\/Meditation",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a3a5820e-b042-4872-b92c-5100049159fc++4318"
+    }
+  ]
+}
