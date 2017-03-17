@@ -713,7 +713,7 @@
                               [dataArray addObject:obj];
                               if ([obj.startDt timeIntervalSinceDate:[NSDate date]] >= 0) {
                                   [upcomingMeditations addObject:obj];
-//                                  [NSTimer scheduledTimerWithTimeInterval:<#(NSTimeInterval)#> repeats:<#(BOOL)#> block:<#^(NSTimer * _Nonnull timer)block#>]
+
                               } else {
                                   NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
                                   [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];

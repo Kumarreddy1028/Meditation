@@ -173,12 +173,20 @@
                                   break;
                               }
                           }
-                          if (isFound == FALSE) { // if not 
+                          if (isFound == FALSE) { // if not found in the list and past meditation is before 72 hours.
                               NSMutableDictionary *dic = [servicesArr lastObject];
-                              GlobalMeditationModelClass *obj1=[[GlobalMeditationModelClass alloc]initWithDictionary:dic];
-                              [[Utility sharedInstance] setOnlineUsers:obj1.meditators];
-                              [[Utility sharedInstance] setIsFinished:TRUE];
-                              [scene timeUpdate];
+                              
+                              NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+                              [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                              dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+                              NSDate *startDate = [dateFormatter dateFromString:[dic objectForKey:@"start_date"]];
+
+                              if (false == [Utility isPastDateLimitExceeds:[NSDate date] endDate:startDate]) {
+                                  GlobalMeditationModelClass *obj1=[[GlobalMeditationModelClass alloc]initWithDictionary:dic];
+                                  [[Utility sharedInstance] setOnlineUsers:obj1.meditators];
+                                  [[Utility sharedInstance] setIsFinished:TRUE];
+                                  [scene timeUpdate];
+                              }
                           }
 //                          [[Utility sharedInstance] setOnlineUsers:[servicesArr[0] objectForKey:@"meditator_count"]];
                           [[NSNotificationCenter defaultCenter] postNotificationName:@"changeOnlineUsersCount" object:nil];
