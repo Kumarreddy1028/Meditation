@@ -187,13 +187,13 @@ static Utility *__utility;
     NSInteger hour;
     NSInteger minutes;
     
-    components = [[NSCalendar currentCalendar] components: NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute
+    components = [[NSCalendar currentCalendar] components: NSCalendarUnitHour
                                                  fromDate: startDate toDate: endDate options: 0];
-    days = [components day];
+//    days = [components day];
+//    minutes = [components minute];
     hour = [components hour];
-    minutes = [components minute];
-    
-    if (labs(days) >= 3) {// Meditation past date checking(more than 3 days)
+    NSLog(@"hours %ld, days %ld, minutes %ld", hour, days, minutes);
+    if (labs(hour) >= 72) {// Meditation past date checking(more than 3 days)
         return true;
     }
     return false;
