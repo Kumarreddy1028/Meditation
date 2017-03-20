@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SideMenuTableViewController.h"
-
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 @interface AppDelegate ()
 {
     NSTimer *myTimer;
@@ -48,6 +49,9 @@
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     }
     [[Utility sharedInstance] getCurrentLocationAndRegisterDeviceToken];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[Utility sharedInstance] profileImage];
+
 
     return YES;
     

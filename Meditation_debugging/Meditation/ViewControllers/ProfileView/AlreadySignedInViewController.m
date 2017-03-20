@@ -79,6 +79,17 @@
 //    self.txtLocation.textColor = [UIColor lightTextColor];
 //    self.txtGender.textColor = [UIColor lightTextColor];
 //    self.txtEmail.textColor = [UIColor lightTextColor];
+//    NSString *imageUrl = [[NSUserDefaults standardUserDefaults] valueForKey:@"profileImageUrl"];
+//    
+//    NSData *imageData = [NSData dataWithContentsOfFile:imageUrl];
+//    if (imageData) {
+//        [self.btnSetImage setBackgroundImage:[UIImage imageWithData:imageData] forState:UIControlStateNormal];
+//    }
+    
+    if ([[Utility sharedInstance] profileImage]) {
+        [self.btnSetImage setBackgroundImage:[[Utility sharedInstance] profileImage] forState:UIControlStateNormal];
+    }
+    
     [self setEditable:FALSE];
     UIToolbar *toolbar = [[UIToolbar alloc]init];
     [toolbar setBarStyle:UIBarStyleDefault];
@@ -198,7 +209,7 @@
 {
     UIImage *currentImage = [sender imageForState:UIControlStateNormal];
     UIImage *editImage = [UIImage imageNamed:@"edit"];
-    UIImage *correctImage = [self updateImageNamed:@"check" withColor:[UIColor blackColor]];
+    UIImage *correctImage = [self updateImageNamed:@"check" withColor:[UIColor whiteColor]];
     [self setEditable:TRUE];
    
     if ([self image:currentImage isEqualTo:editImage])
@@ -382,7 +393,7 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             {
                 titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200,10,400,40)];
                 
-                [titleLbl setFont:[UIFont systemFontOfSize:24]];
+                [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:24.0]];
                  doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -80,10,75,40)];
                 [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:24]];
 
@@ -391,7 +402,7 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             {
                 titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,20,200,20)];
 
-                [titleLbl setFont:[UIFont systemFontOfSize:15]];
+                [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:15.0]];
                  doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -50,20,45,20)];
                 [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:15]];
 
@@ -607,7 +618,7 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -80,20,75,20)];
             [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:24]];
             titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200,10,400,40)];
-            [titleLbl setFont:[UIFont systemFontOfSize:24]];
+            [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:24.0]];
 
         }
         else
@@ -616,7 +627,7 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -50,20,45,20)];
             [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:15]];
             titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,10,200,40)];
-            [titleLbl setFont:[UIFont systemFontOfSize:15]];
+            [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:15.0]];
 
         }
         contentPickerView.delegate = self;
@@ -849,19 +860,36 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
                           }
                           if ([Utility sharedInstance].isDeviceIpad )
                           {
-                              [self.selfDescriptionTextView setFont:[UIFont systemFontOfSize:21.0]];
+                              [self.selfDescriptionTextView setFont:[UIFont fontWithName:@"santana-Bold" size:21.0]];
                           }
                           else
                           {
-                              [self.selfDescriptionTextView setFont:[UIFont systemFontOfSize:17.0]];
+                              [self.selfDescriptionTextView setFont:[UIFont fontWithName:@"santana-Bold" size:17.0]];
                           }
                           self.lblDescriptionTextCount.text = [NSString stringWithFormat:@"%ld/%d",textCount ,MAX_TEXT_LIMIT_FOR_DESCRIPTION];
                       }
                           NSString *imageUrl = [userInfo objectForKey:@"image_name"];
-                      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-
-                      [defaults setObject:imageUrl forKey:@"profileImageUrl"];
-                      [defaults synchronize];
+                      UIImage *profileImage = [UIImage imageWithData:imageToUpload];
+                      // Get image data. Here you can use UIImagePNGRepresentation if you need transparency
+                      NSData *imageData = UIImageJPEGRepresentation(profileImage, 1);
+                      
+                      // Get image path in user's folder and store file with name image_CurrentTimestamp.jpg (see documentsPathForFileName below)
+                      NSString *imagePath = [Utility documentsPathForFileName:[NSString stringWithFormat:@"profile.jpg"]];
+                      
+                      // Write image data to user's folder
+                      [imageData writeToFile:imagePath atomically:YES];
+                      
+                      // Store path in NSUserDefaults
+                      [[NSUserDefaults standardUserDefaults] setObject:imagePath forKey:@"profileImageUrl"];
+                      
+                      // Sync user defaults
+                      [[NSUserDefaults standardUserDefaults] synchronize];
+                      [[Utility sharedInstance] setProfImage:nil];
+//                      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//                      [[NSUserDefaults standardUserDefaults] setObject:UIImagePNGRepresentation(profileImage) forKey:@"profileImageUrl"];
+//
+//                     // [defaults setObject:imageUrl forKey:@"profileImageUrl"];
+//                      [defaults synchronize];
                       if (![imageUrl isKindOfClass:[NSNull class]])
                       {
                           SDWebImageManager *manager = [SDWebImageManager sharedManager];
@@ -1024,15 +1052,43 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             NSDictionary* json = [NSJSONSerialization JSONObjectWithData:result options:NSJSONReadingAllowFragments error:&error];
             if (json)
             {
-                [self.view makeToast:[json objectForKey:@"upload_status"]];
-            }
-            [self.btnSetImage setBackgroundImage:[UIImage imageWithData:imageToUpload] forState:UIControlStateNormal];
+                NSString *status = [json objectForKey:@"upload_status"];
+                if (![status length]) {
+                    status = @"Success";
+                }
+                if (status) {
+                    [self.view makeToast:[json objectForKey:@"upload_status"]];
+                }
+                }
+            UIImage *profileImage = [UIImage imageWithData:imageToUpload];
+            // Get image data. Here you can use UIImagePNGRepresentation if you need transparency
+            NSData *imageData = UIImageJPEGRepresentation(profileImage, 1);
+            
+            // Get image path in user's folder and store file with name image_CurrentTimestamp.jpg (see documentsPathForFileName below)
+            NSString *imagePath = [Utility documentsPathForFileName:[NSString stringWithFormat:@"profile.jpg"]];
+            
+            // Write image data to user's folder
+            [imageData writeToFile:imagePath atomically:YES];
+            
+            // Store path in NSUserDefaults
+            [[NSUserDefaults standardUserDefaults] setObject:imagePath forKey:@"profileImageUrl"];
+            
+            // Sync user defaults
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            
+            
+            [self.btnSetImage setBackgroundImage:profileImage forState:UIControlStateNormal];
+            
+            [[Utility sharedInstance] setProfImage:nil];
+
             
             //saving the imageUrl in defaults...//
             
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            [defaults setObject:[json objectForKey:@"image_url"] forKey:@"profileImageUrl"];
-            [defaults synchronize];
+//            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//            [[NSUserDefaults standardUserDefaults] setObject:UIImagePNGRepresentation(profileImage) forKey:@"profileImageUrl"];
+//
+//            //[defaults setObject:profileImage forKey:@"profileImageUrl"];
+//            [defaults synchronize];
             [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateUserNameNotification" object:nil userInfo:nil];
             NSString *outstring = [[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding];
             NSLog(@"***** outstring =%@", outstring);

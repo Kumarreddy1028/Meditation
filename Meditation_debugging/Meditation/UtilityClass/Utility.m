@@ -12,6 +12,15 @@
 static Utility *__utility;
 @implementation Utility
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.profImage = nil;
+    }
+    return self;
+}
+
 +(Utility*)sharedInstance
 {
     if(!__utility) {
@@ -202,6 +211,38 @@ static Utility *__utility;
 //+(void) isMeditationFinished {
 //    return isFinished;
 //}
+
+- (UIImage *) profileImage {
+    if (self.profImage == nil) {
+        NSString *imageUrl = [[NSUserDefaults standardUserDefaults] valueForKey:@"profileImageUrl"];
+        
+        NSData *imageData = [NSData dataWithContentsOfFile:imageUrl];
+        if (imageData) {
+            self.profImage = [UIImage imageWithData:imageData];
+        }
+    }
+    
+    
+    return self.profImage;
+}
+
++(NSString *)getUTCFormateDate:(NSDate *)localDate
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    [dateFormatter setTimeZone:timeZone];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:localDate];
+    return dateString;
+}
+
++ (NSString *)documentsPathForFileName:(NSString *)name {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    
+    return [documentsPath stringByAppendingPathComponent:name];
+}
+
 
 + (int) totalDurationFromString:(NSString *)duration
 {
@@ -464,11 +505,11 @@ static Utility *__utility;
     NSAttributedString *attributedPlaceholder;
     if ([Utility sharedInstance].isDeviceIpad)
     {
-     attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont systemFontOfSize:21.0] }];
+     attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont fontWithName:@"santana" size:21.0] }];
     }
     else
     {
-       attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont systemFontOfSize:17.0] }];
+       attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont fontWithName:@"santana" size:17.0] }];
         
     }
     return attributedPlaceholder;
@@ -669,7 +710,7 @@ static Utility *__utility;
         CGFloat fontSize = 21;
         NSString *string = str;
         NSDictionary *ats = @{
-                              NSFontAttributeName : [UIFont systemFontOfSize:fontSize],
+                              NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
                               NSParagraphStyleAttributeName : paragraphStyle,
                               };
         
@@ -686,7 +727,7 @@ static Utility *__utility;
         CGFloat fontSize = 17;
         NSString *string = str;
         NSDictionary *ats = @{
-                              NSFontAttributeName : [UIFont systemFontOfSize:fontSize],
+                              NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
                               NSParagraphStyleAttributeName : paragraphStyle,
                               };
         

@@ -73,15 +73,16 @@
         frameX = (self.view.frame.size.width - width)/2;
     }
     labelFirst =[[UILabel alloc]initWithFrame:CGRectMake(frameX, self.view.frame.size.height - 85, 80, 20)];
-
+    [labelFirst setFont:[UIFont fontWithName:@"santana-Bold" size:18]];
     labelSecond =[[UILabel alloc]initWithFrame:CGRectMake(frameX + width - 90, self.view.frame.size.height - 85, 90, 20)];
     NSString *slt=self.duration;
+    [labelSecond setFont:[UIFont fontWithName:@"santana-Bold" size:18]];
 
     labelFirst.textColor =  [self colorWithHexString:self.color];
     labelSecond.textColor =  [self colorWithHexString:self.color];
     self.titleLabel.textColor = [self colorWithHexString:self.color];
 
-    labelFirst.text = @"0m 0s";
+    labelFirst.text = @"loading..";
     labelFirst.textAlignment = NSTextAlignmentLeft;
     labelSecond.text = [self changeTimeformat:slt];
     labelSecond.textAlignment = NSTextAlignmentRight;
@@ -123,6 +124,10 @@
                                                  selector:@selector(playerItemDidReachEnd:)
                                                      name:AVPlayerItemDidPlayToEndTimeNotification
                                                    object:[_songPlayer currentItem]];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(playerStalled:)
+                                                     name:AVPlayerItemPlaybackStalledNotification
+                                                   object:[_songPlayer currentItem]];
         [playerItem addObserver:self forKeyPath:@"playbackBufferEmpty" options:NSKeyValueObservingOptionNew context:nil];
         [playerItem addObserver:self forKeyPath:@"playbackLikelyToKeepUp" options:NSKeyValueObservingOptionNew context:nil];
         [playerItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
@@ -139,7 +144,7 @@
         [self.songPlayer play];
     }
     [UIApplication sharedApplication].idleTimerDisabled = YES;
-    audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
+//    audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
     playButton.selected = !playButton.selected;
     
 }
@@ -238,11 +243,17 @@
             currSeconds = 0;
             totalDurationInSeconds = [self setTotalDuration];
         }
+//        [self.songPlayer setAutomaticallyWaitsToMinimizeStalling:YES];
         [self.songPlayer play];
         [playButton setSelected:YES];
         audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
     }
 }
+
+- (void)playerStalled:(NSNotification *)notification {
+    NSLog(@"playerStalled");
+}
+
 
 - (void)playerItemDidReachEnd:(NSNotification *)notification
 {
@@ -299,6 +310,7 @@
             [self.songPlayer play];
             if (!audioTimer)
             {
+                labelFirst.text = @"started..";
                 audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
                 network = NO;
             }

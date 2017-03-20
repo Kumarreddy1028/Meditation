@@ -197,12 +197,12 @@
    // self.backgroundImage.alpha = 0.5;
 //    self.lblMedtationTopic.text = selectedObj.topicName;
     
-    [self addShadows:self.labelDuration.layer];
-    [self addShadows:self.infoLabel.layer];
-    [self addShadows:self.startBtn.layer];
-    [self addShadows:self.previewBtn.layer];
-    [self addShadows:self.guidedbtn.layer];
-    [self addShadows:self.musicBtn.layer];
+//    [self addShadows:self.labelDuration.layer];
+//    [self addShadows:self.infoLabel.layer];
+//    [self addShadows:self.startBtn.layer];
+//    [self addShadows:self.previewBtn.layer];
+//    [self addShadows:self.guidedbtn.layer];
+//    [self addShadows:self.musicBtn.layer];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -212,8 +212,8 @@
 }
 
 - (void) addShadows:(CALayer *) layer {
-    layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
-    layer.shadowOpacity = 40.0f;
+//    layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
+//    layer.shadowOpacity = 40.0f;
     layer.shadowRadius = 20.0f;
 }
 

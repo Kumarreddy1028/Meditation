@@ -148,6 +148,9 @@ static const NSString * CSToastActivityViewKey  = @"CSToastActivityViewKey";
 }
 
 - (void)showToast:(UIView *)toast duration:(NSTimeInterval)duration position:(id)point {
+    if (!toast) {
+        return;
+    }
     toast.center = [self centerPointForPosition:point withToast:toast];
     toast.alpha = 0.0;
     
@@ -161,7 +164,7 @@ static const NSString * CSToastActivityViewKey  = @"CSToastActivityViewKey";
     [self addSubview:toast];
     
     [UIView animateWithDuration:CSToastFadeDuration
-                          delay:0.0
+                          delay:2.0
                         options:(UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionAllowUserInteraction)
                      animations:^{
                          toast.alpha = 1.0;
@@ -451,7 +454,7 @@ static const NSString * CSToastActivityViewKey  = @"CSToastActivityViewKey";
     if (message != nil) {
         messageLabel = [[UILabel alloc] init];
         messageLabel.numberOfLines = CSToastMaxMessageLines;
-        messageLabel.font = [UIFont systemFontOfSize:CSToastFontSize];
+        messageLabel.font = [UIFont fontWithName:@"santana" size:CSToastFontSize];
         messageLabel.lineBreakMode = NSLineBreakByWordWrapping;
         messageLabel.textColor = [UIColor whiteColor];
         messageLabel.backgroundColor = [UIColor clearColor];

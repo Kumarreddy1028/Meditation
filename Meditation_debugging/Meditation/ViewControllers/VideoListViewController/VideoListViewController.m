@@ -135,7 +135,7 @@
     cell.playerView.delegate = self;
     if ([[Utility sharedInstance]isDeviceIpad])
     {
-        CGSize size=[self getsizeOfString:obj.videoTitle andMaxWidth:self.view.frame.size.width-150 andFont:[UIFont systemFontOfSize:20]];
+        CGSize size=[self getsizeOfString:obj.videoTitle andMaxWidth:self.view.frame.size.width-150 andFont:[UIFont fontWithName:@"santana" size:20.0f]];
         if (size.height >= 25)
         {
             cell.lblVideoDescription.numberOfLines = 2;
@@ -148,7 +148,7 @@
     }
     else
     {
-        CGSize size=[self getsizeOfString:obj.videoTitle andMaxWidth:self.view.frame.size.width-150 andFont:[UIFont systemFontOfSize:15]];
+        CGSize size=[self getsizeOfString:obj.videoTitle andMaxWidth:self.view.frame.size.width-150 andFont:[UIFont fontWithName:@"santana" size:15.0f]];
         if (size.height >= 20)
         {
             cell.lblVideoDescription.numberOfLines = 2;

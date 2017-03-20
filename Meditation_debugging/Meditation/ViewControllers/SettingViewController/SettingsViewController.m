@@ -248,12 +248,12 @@
     
     setTimeFormatSwitch = [[SevenSwitch alloc] initWithFrame:CGRectMake(self.view.frame.size.width-55, 13, 45, 24)];
     setTimeFormatSwitch.onLabel.text=@"12";
-    [setTimeFormatSwitch.onLabel setFont:[UIFont systemFontOfSize:13]];
+    [setTimeFormatSwitch.onLabel setFont:[UIFont fontWithName:@"santana" size:13.0]];
     [setTimeFormatSwitch.onLabel setTextAlignment:NSTextAlignmentRight];
     setTimeFormatSwitch.onLabel.textColor=[UIColor blackColor];
     setTimeFormatSwitch.onTintColor=[UIColor colorWithRed:246.0/255 green:225.0/255 blue:136.0/255 alpha:1.0];;
     setTimeFormatSwitch.offLabel.text=@"24";
-    [setTimeFormatSwitch.offLabel setFont:[UIFont systemFontOfSize:13]];
+    [setTimeFormatSwitch.offLabel setFont:[UIFont fontWithName:@"santana" size:13.0]];
 
     [setTimeFormatSwitch.offLabel setTextAlignment:NSTextAlignmentCenter];
     
@@ -1440,7 +1440,7 @@
     
     UILabel *titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,20,200,20)];
     [titleLbl setTextAlignment:NSTextAlignmentCenter];
-    [titleLbl setFont:[UIFont systemFontOfSize:15]];
+    [titleLbl setFont:[UIFont fontWithName:@"santana" size:15.0]];
     [titleLbl setText:@"reminder to meditate at"];
     [titleLbl setTextColor:[UIColor colorWithRed:0 green:0 blue:00 alpha:0.69]];
     
@@ -1571,7 +1571,7 @@
         
         UILabel *titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,20,200,20)];
         [titleLbl setTextAlignment:NSTextAlignmentCenter];
-        [titleLbl setFont:[UIFont systemFontOfSize:15]];
+        [titleLbl setFont:[UIFont fontWithName:@"santana" size:15.0]];
         [titleLbl setText:@"before meditation"];
         [titleLbl setTextColor:[UIColor colorWithRed:0 green:0 blue:00 alpha:0.69]];
 //        [titleLbl setTitleColor:[UIColor redColor] forState:UIControlStateNormal];

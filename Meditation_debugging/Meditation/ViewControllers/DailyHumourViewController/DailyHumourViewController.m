@@ -620,11 +620,11 @@
               }
               }
               if ([Utility sharedInstance].isDeviceIpad) {
-                  [humourTextView setFont:[UIFont systemFontOfSize:24.0]];
+                  [humourTextView setFont:[UIFont fontWithName:@"santana" size:24.0]];
               }
               else
               {
-                  [humourTextView setFont:[UIFont systemFontOfSize:17.0]];
+                  [humourTextView setFont:[UIFont fontWithName:@"santana" size:17.0]];
               }
           }
           else

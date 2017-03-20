@@ -22,6 +22,7 @@
 @property(nonatomic, assign)BOOL removeShareScene;
 @property(nonatomic, assign)BOOL enterBackground;
 @property(nonatomic, assign)BOOL isJoiningMeditation;
+@property(nonatomic, strong) UIImage *profImage;
 
 @property(nonatomic, assign)BOOL isDownloading, isFinished;
 
@@ -58,5 +59,7 @@
 +(NSTimeInterval) getTimeDifference:(NSString *)dateString;
 +(BOOL) isMeditationFinished;
 +(BOOL)isPastDateLimitExceeds:(NSDate*)startDate endDate:(NSDate*)endDate;
-
++(NSString *)getUTCFormateDate:(NSDate *)localDate;
++ (NSString *)documentsPathForFileName:(NSString *)name;
+- (UIImage *) profileImage;
 @end

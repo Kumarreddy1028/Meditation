@@ -27,6 +27,7 @@
     
     [self setUserNameAndImage];
     [self registerForNotifications];
+
 }
 
 - (void)setUserNameAndImage
@@ -34,18 +35,25 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *name = [defaults valueForKey:@"userName"];
     NSString *imageUrl = [defaults valueForKey:@"profileImageUrl"];
-    
+    UIImage *profileImage = [[Utility sharedInstance] profileImage];
     if ([name isEqualToString:@""] || name == nil)
         self.lblProfileName.text = @"profile";
     else
         self.lblProfileName.text = name;
-    if (imageUrl == nil || [imageUrl isEqualToString:@""])
+    if (profileImage == nil)
         self.profileImage.image = [UIImage imageNamed:@"profile"];
-    else
-        [self.profileImage sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"profile"]];
+    else {
+//        NSData *imageData = [NSData dataWithContentsOfFile:imageUrl];
+//        if (imageData) {
+        self.profileImage.image = profileImage;
+//        }
+        
+        //[self.profileImage sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"profile"]];
+    }
     
     self.profileImage.layer.cornerRadius = (self.profileImage.frame.size.width/2);
     self.profileImage.layer.masksToBounds = YES;
+    [self.tableView performSelector:@selector(reloadData) withObject:nil afterDelay:5.0];
 }
 
 - (void)registerForNotifications

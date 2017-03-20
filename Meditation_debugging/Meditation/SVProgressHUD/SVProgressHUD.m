@@ -308,11 +308,11 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
         self.accessibilityLabel = @"SVProgressHUD";
         self.isAccessibilityElement = YES;
         
-        if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
-            _font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-        } else {
-            _font = [UIFont systemFontOfSize:14.0f];
-        }
+//        if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
+//            _font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+//        } else {
+            _font = [UIFont fontWithName:@"santana" size:15.0f];
+//        }
         
         NSBundle *bundle = [NSBundle bundleForClass:[self class]];
         NSURL *url = [bundle URLForResource:@"SVProgressHUD" withExtension:@"bundle"];
@@ -365,7 +365,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
         } else{
             CGSize stringSize;
             if([string respondsToSelector:@selector(sizeWithAttributes:)]){
-                stringSize = [string sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:self.stringLabel.font.fontName size:self.stringLabel.font.pointSize]}];
+                stringSize = [string sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"santana" size:self.stringLabel.font.pointSize]}];
             } else{
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated"

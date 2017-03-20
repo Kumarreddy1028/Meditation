@@ -53,13 +53,13 @@
     {
         self.btnJoin.layer.cornerRadius=10.0;
         [self.infoTextView setTextContainerInset:UIEdgeInsetsMake(50, 50, 60, 60)];
-        [self.infoTextView setFont:[UIFont systemFontOfSize:20]];
+        [self.infoTextView setFont:[UIFont fontWithName:@"santana" size:20.0]];
     }
     else
     {
         self.btnJoin.layer.cornerRadius=5.0;
         [self.infoTextView setTextContainerInset:UIEdgeInsetsMake(25, 30, 25, 30)];
-        [self.infoTextView setFont:[UIFont systemFontOfSize:16]];
+        [self.infoTextView setFont:[UIFont fontWithName:@"santana" size:16.0]];
     }
    
     self.btnJoin.clipsToBounds=YES;
@@ -148,10 +148,17 @@
         NSLog(@"finishedDate1 is later than CurrentDate");
         self.timeLeft.text=@"started";
         [self.btnJoin setTitle:@"Begin" forState:UIControlStateNormal];
-        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+        NSString *currentDateString = [Utility getUTCFormateDate:[NSDate date]];
+        NSDate *currentDate = [dateFormatter dateFromString:currentDateString];
+        NSDate *startDt = [obj.startDt dateByAddingTimeInterval:[Utility totalDurationFromString:obj.duration]];
+        NSTimeInterval duration = 0 - [currentDate timeIntervalSinceDate:obj.startDt];
+        NSLog(@"duration %fl, Cduration %@", duration, obj.duration);
         int timeToleave = [Utility totalDurationFromString:obj.duration];
         NSLog(@"Timetoleave1 %d", timeToleave);
-        [self performSelector:@selector(removeUpdatedMediation:) withObject:obj afterDelay:timeToleave];
+        [self performSelector:@selector(removeUpdatedMediation:) withObject:obj afterDelay:duration];
 
 
     }
@@ -291,9 +298,16 @@
 - (void)didSelectedHeader:(GlobalMeditationHeaderView *)view type:(GlobalMeditationHeaderViewType)type {
     if (type == GlobalMeditationHeaderViewTypeUpcomming) {
         isUpcomingSelected = !isUpcomingSelected;
+        if ([upcomingMeditations count] < 2) {
+            return;
+        }
     } else {
+        if ([pastMeditatiions count] == 0) {
+            return;
+        }
         isPastSelected = !isPastSelected;
     }
+
     [self.tableViewOutlet reloadSections:[NSIndexSet indexSetWithIndex:type] withRowAnimation:UITableViewRowAnimationFade];
     
     
@@ -705,12 +719,14 @@
 
                           dataArray=[NSMutableArray new];
                           upcomingMeditations = [NSMutableArray new];
+                          
                           pastMeditatiions = [NSMutableArray new];
                           for(NSDictionary *dic in servicesArr)
                           {
                               GlobalMeditationModelClass *obj=[[GlobalMeditationModelClass alloc]initWithDictionary:dic];
                               
                               [dataArray addObject:obj];
+                              obj.startDt = [obj.startDt dateByAddingTimeInterval:(NSTimeInterval)[Utility totalDurationFromString:obj.duration]];
                               if ([obj.startDt timeIntervalSinceDate:[NSDate date]] >= 0) {
                                   [upcomingMeditations addObject:obj];
 
