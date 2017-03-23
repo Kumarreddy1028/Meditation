@@ -17,5 +17,8 @@ static const uint8_t wallCategory = 1;
 @end
 @interface GameScene : SKScene<SKPhysicsContactDelegate>
 @property (weak, nonatomic) id <DashBoardActionDelegate>delegate;
+@property ( nonatomic, strong)     NSString *str;
+@property ( nonatomic, strong)  NSString *serverDate;
+
 -(void)timeUpdate;
 @end

@@ -53,7 +53,7 @@
     
     self.profileImage.layer.cornerRadius = (self.profileImage.frame.size.width/2);
     self.profileImage.layer.masksToBounds = YES;
-    [self.tableView performSelector:@selector(reloadData) withObject:nil afterDelay:5.0];
+//    [self.tableView performSelector:@selector(reloadData) withObject:nil afterDelay:5.0];
 }
 
 - (void)registerForNotifications

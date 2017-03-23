@@ -151,7 +151,7 @@
         <scene sceneID="4zo-vK-ett">
             <objects>
                 <navigationController id="pUV-GZ-0QX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AM6-NU-kAA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AM6-NU-kAA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -4699,8 +4699,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="23" id="FSs-KT-7tE"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qmw-TS-ty9">
@@ -4839,8 +4839,8 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6t-NK-14y">
-                                                    <rect key="frame" x="20" y="35" width="698" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6t-NK-14y">
+                                                    <rect key="frame" x="20" y="40" width="698" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="DnL-tq-Fhc"/>
                                                     </constraints>
@@ -4892,8 +4892,8 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btr-Oy-SbQ">
-                                                    <rect key="frame" x="20" y="35" width="698" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btr-Oy-SbQ">
+                                                    <rect key="frame" x="20" y="40" width="698" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="VAN-HP-kys"/>
                                                     </constraints>
@@ -5002,7 +5002,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="a1V-ts-SW5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -5394,7 +5394,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="bAI-GM-gpd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>

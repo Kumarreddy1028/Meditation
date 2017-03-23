@@ -116,6 +116,12 @@
 }
 
 
+-(void) changeServerDate:(NSString *) date {
+    scene.str = [Utility timeDifference:[NSDate date] ToDate:date];
+    scene.serverDate = date;
+    [scene timeUpdate];
+}
+
 -(void)serviceCallForGlobalMeditation
 {
     if (![Utility isNetworkAvailable])
@@ -169,6 +175,13 @@
                               GlobalMeditationModelClass *obj=[[GlobalMeditationModelClass alloc]initWithDictionary:dic];
                               if ([obj.startDt timeIntervalSinceDate:[NSDate date]] >= 0) {
                                   isFound = TRUE;
+                                  
+                                  NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+                                  [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                                  dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+                                  NSString *currentDatestring = [dateFormatter stringFromDate:[NSDate date]];
+
+                                  [self performSelector:@selector(changeServerDate:) withObject:obj.startDate afterDelay:3.0];
                                   [[Utility sharedInstance] setOnlineUsers:obj.meditators];
                                   break;
                               }
@@ -180,6 +193,15 @@
                               [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
                               dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
                               NSDate *startDate = [dateFormatter dateFromString:[dic objectForKey:@"start_date"]];
+                              startDate =  [startDate dateByAddingTimeInterval:(NSTimeInterval)[Utility totalDurationFromString:[dic objectForKey:@"duration"]]];
+                              
+                              NSDateFormatter *dateFormatter1 = [[NSDateFormatter alloc] init];
+                              [dateFormatter1 setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                              dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+                              NSString *currentDatestring = [dateFormatter1 stringFromDate:[dic objectForKey:@"start_date"]];
+
+                              
+                              scene.str = [Utility timeDifference:[NSDate date] ToDate:[dic objectForKey:@"start_date"]];
 
                               if (false == [Utility isPastDateLimitExceeds:[NSDate date] endDate:startDate]) {
                                   GlobalMeditationModelClass *obj1=[[GlobalMeditationModelClass alloc]initWithDictionary:dic];

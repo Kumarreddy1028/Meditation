@@ -884,7 +884,8 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
                       
                       // Sync user defaults
                       [[NSUserDefaults standardUserDefaults] synchronize];
-                      [[Utility sharedInstance] setProfImage:nil];
+                      [[Utility sharedInstance] setProfImage:profileImage];
+                      
 //                      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 //                      [[NSUserDefaults standardUserDefaults] setObject:UIImagePNGRepresentation(profileImage) forKey:@"profileImageUrl"];
 //
@@ -1079,7 +1080,7 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             
             [self.btnSetImage setBackgroundImage:profileImage forState:UIControlStateNormal];
             
-            [[Utility sharedInstance] setProfImage:nil];
+            [[Utility sharedInstance] setProfImage:profileImage];
 
             
             //saving the imageUrl in defaults...//

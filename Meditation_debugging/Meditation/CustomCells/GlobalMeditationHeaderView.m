@@ -26,7 +26,7 @@
 
 - (void)setType:(GlobalMeditationHeaderViewType)type {
     _type = type;
-    NSString *titleString = type == GlobalMeditationHeaderViewTypeUpcomming ? @"       upcoming Meditations" : @"       past Meditations";
+    NSString *titleString = type == GlobalMeditationHeaderViewTypeUpcomming ? @"       upcoming meditations" : @"       past meditations";
     _titleLabel.text = titleString;
 }
 

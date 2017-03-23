@@ -13,8 +13,6 @@
 @interface GameScene()
 {
     NSTimer *myTimer;
-    NSString *serverDate;
-    NSString *str;
     SKLabelNode *time_logo;
 }
 @property (nonatomic) SKSpriteNode *node;
@@ -246,9 +244,9 @@ NSMutableArray *spriteNodeNameArray;
                  }
                 else if ([responseObject isKindOfClass:[NSDictionary class]])
                   {
-                      serverDate=[responseObject objectForKey:@"start_date"];
+                      _serverDate=[responseObject objectForKey:@"start_date"];
                       
-                      if ([serverDate isEqualToString:@"0"])
+                      if ([_serverDate isEqualToString:@"0"])
                       {
                           [myTimer invalidate];
                           time_logo.text = @"";
@@ -276,7 +274,7 @@ NSMutableArray *spriteNodeNameArray;
                 
                       else
                       {
-                      str = [Utility timeDifference:[NSDate date] ToDate:serverDate];
+                      self.str = [Utility timeDifference:[NSDate date] ToDate:_serverDate];
                       myTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timeUpdate) userInfo:nil repeats:YES];
                           [myTimer fire];
                       }
@@ -284,7 +282,7 @@ NSMutableArray *spriteNodeNameArray;
                 if ([[NSUserDefaults standardUserDefaults] objectForKey:@"start_Date"])
                 {
                     NSString *value=[[NSUserDefaults standardUserDefaults] objectForKey:@"start_Date"];
-                    if (![serverDate isEqualToString:value])
+                    if (![_serverDate isEqualToString:value])
                     {
                         NSArray *arrayOfLocalNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications] ;
                         
@@ -306,7 +304,7 @@ NSMutableArray *spriteNodeNameArray;
                         }
                     }
                 }
-                  if ([serverDate isKindOfClass:[NSNull class]] || serverDate == nil)
+                  if ([_serverDate isKindOfClass:[NSNull class]] || _serverDate == nil)
                   {
                       
                   }
@@ -314,7 +312,7 @@ NSMutableArray *spriteNodeNameArray;
                   {
                       NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                       
-                      [defaults setObject:serverDate forKey:@"start_Date"];
+                      [defaults setObject:_serverDate forKey:@"start_Date"];
                       
                       [defaults synchronize];
                   }
@@ -330,9 +328,9 @@ NSMutableArray *spriteNodeNameArray;
 
 -(void)timeUpdate
 {
-    if (![serverDate isEqualToString:@"0"])
+    if (![_serverDate isEqualToString:@"0"])
     {
-        if ([str isEqualToString:@"00:00:00:00"] || [str isEqualToString:@"00:00:00"])
+        if ([self.str isEqualToString:@"00:00:00:00"] || [self.str isEqualToString:@"00:00:00"])
         {
             time_logo.text = @"started";
             
@@ -341,8 +339,8 @@ NSMutableArray *spriteNodeNameArray;
         }
         else
         {
-            str=[Utility timeDifference:[NSDate date] ToDate:serverDate];
-            time_logo.text = [NSString stringWithFormat:@"in %@",[Utility changeTimeformat:str]];
+            self.str=[Utility timeDifference:[NSDate date] ToDate:_serverDate];
+            time_logo.text = [NSString stringWithFormat:@"in %@",[Utility changeTimeformat:self.str]];
         }
         
         if ([[Utility sharedInstance] isFinished]) {

@@ -97,7 +97,8 @@
                       NewsModelClass *obj = [[NewsModelClass alloc]initWithDictionary:dictNewsInfo];
                       [arrNewsModelObjects addObject:obj];
                   }
-                  [self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+                  //[self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+                      [self.newsTableView reloadData];
                       moreNewsAvailable = YES;
                   }
                   else
@@ -115,6 +116,46 @@
               [self presentViewController:myAlert animated:YES completion:nil];
           }
       }] resume];
+}
+
+-(void) loadNewsWithIndex:(NSIndexPath *) indexPath {
+    NewsModelClass *obj = [arrNewsModelObjects objectAtIndex:indexPath.row];
+    NewsViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"News"];
+    cont.newsTextViewString = obj.newsContent;
+    cont.newsTitleString = obj.newsTitle;
+    if ([Utility sharedInstance].isDeviceIpad)
+    {
+        UINavigationController *navCont = [[UINavigationController alloc] initWithRootViewController:cont];
+        self.splitViewController.viewControllers = @[self, navCont];
+    }
+    else
+    {
+        [self.navigationController pushViewController:cont animated:YES];
+    }
+    //[self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+    [self.newsTableView reloadData];
+}
+
+
+-(void) loadEventsWithIndex:(NSIndexPath *) indexPath {
+    EventsModelClass *obj = [arrEventsModelObjects objectAtIndex:indexPath.row];
+    EventsViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"Events"];
+    cont.eventTitleString = obj.eventName;
+    cont.eventTextViewString = obj.eventDescription;
+    cont.bookBtnUrlString = obj.eventJoinUrl;
+    cont.startDateString = obj.eventStartsOn;
+    cont.endDateString = obj.eventEndsOn;
+    if ([Utility sharedInstance].isDeviceIpad)
+    {
+        UINavigationController *navCont = [[UINavigationController alloc] initWithRootViewController:cont];
+        self.splitViewController.viewControllers = @[self, navCont];
+    }
+    else
+    {
+        [self.navigationController pushViewController:cont animated:YES];
+    }
+    //[self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+    [self.newsTableView reloadData];
 }
 
 -(void)serviceGetEvents:(NSString *)timeStamp
@@ -164,7 +205,8 @@
                           EventsModelClass *obj = [[EventsModelClass alloc]initWithDictionary:dictEventsInfo];
                           [arrEventsModelObjects addObject:obj];
                       }
-                      [self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+//                      [self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+                      [self.newsTableView reloadData];
                       moreEventsAvailable = YES;
                   }
                   else
@@ -185,46 +227,91 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    NSInteger sections = 0;
+    if (arrNewsModelObjects.count && arrEventsModelObjects.count) {
+        sections = 2;
+    }
+    else if(arrNewsModelObjects.count || arrEventsModelObjects.count) {
+        sections = 1;
+    }
+    return sections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if(section == 0) {
-        return arrNewsModelObjects.count;
-    } else {
-        return arrEventsModelObjects.count;
+    NSInteger rows = 0;
+    if (tableView.numberOfSections == 2) {
+        if(section == 0) {
+            rows =  arrNewsModelObjects.count;
+        } else {
+            rows = arrEventsModelObjects.count;
+        }
+    } else if (tableView.numberOfSections == 1){
+        if(section == 0) {
+            rows = arrNewsModelObjects.count?arrNewsModelObjects.count:arrEventsModelObjects.count;
+        }
     }
+    return rows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   if (indexPath.section == 0) {
-       
-       NewsTableViewCell *newsCell=[tableView dequeueReusableCellWithIdentifier:@"NewsCell"];
-       NewsModelClass *obj = [arrNewsModelObjects objectAtIndex:indexPath.row];
-       newsCell.newsTitle.text = obj.newsTitle;
-       newsCell.newsSubTitle.text = obj.newsContent;
-//       [newsCell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    if (tableView.numberOfSections == 2) {
+           if (indexPath.section == 0) {
+               
+               NewsTableViewCell *newsCell=[tableView dequeueReusableCellWithIdentifier:@"NewsCell"];
+               NewsModelClass *obj = [arrNewsModelObjects objectAtIndex:indexPath.row];
+               newsCell.newsTitle.text = obj.newsTitle;
+               newsCell.newsSubTitle.text = obj.newsContent;
+        //       [newsCell setSelectionStyle:UITableViewCellSelectionStyleNone];
 
-       return newsCell;
-   } else {
-        EvemtsTableViewCell *EventsCell=[tableView dequeueReusableCellWithIdentifier:@"EventsCell"];
-        EventsModelClass *obj = [arrEventsModelObjects objectAtIndex:indexPath.row];
-        EventsCell.eventTitle.text = obj.eventName;
-        
-        NSDateFormatter *df = [[NSDateFormatter alloc]init];
-        [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-        NSDate *date=[df dateFromString:obj.eventStartsOn];
-        [df setDateFormat:@"dd/MMM/yyyy"];
-        NSString *dateString = [df stringFromDate:date];
-        NSString *venueAndDate = [NSString stringWithFormat:@"%@, %@", obj.eventVenue, dateString];
-        
-        EventsCell.eventSubTitle.text = venueAndDate;
-//        [EventsCell setSelectionStyle:UITableViewCellSelectionStyleNone];
+               return newsCell;
+           } else {
+                EvemtsTableViewCell *EventsCell=[tableView dequeueReusableCellWithIdentifier:@"EventsCell"];
+                EventsModelClass *obj = [arrEventsModelObjects objectAtIndex:indexPath.row];
+                EventsCell.eventTitle.text = obj.eventName;
+                
+                NSDateFormatter *df = [[NSDateFormatter alloc]init];
+                [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                NSDate *date=[df dateFromString:obj.eventStartsOn];
+                [df setDateFormat:@"dd/MMM/yyyy"];
+                NSString *dateString = [df stringFromDate:date];
+                NSString *venueAndDate = [NSString stringWithFormat:@"%@, %@", obj.eventVenue, dateString];
+                
+                EventsCell.eventSubTitle.text = venueAndDate;
+        //        [EventsCell setSelectionStyle:UITableViewCellSelectionStyleNone];
 
-        return EventsCell;
+                return EventsCell;
+            }
+    } else {
+        if (arrNewsModelObjects.count) {
+            NewsTableViewCell *newsCell=[tableView dequeueReusableCellWithIdentifier:@"NewsCell"];
+            NewsModelClass *obj = [arrNewsModelObjects objectAtIndex:indexPath.row];
+            newsCell.newsTitle.text = obj.newsTitle;
+            newsCell.newsSubTitle.text = obj.newsContent;
+            //       [newsCell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            
+            return newsCell;
+        } else if (arrEventsModelObjects.count){
+            EvemtsTableViewCell *EventsCell=[tableView dequeueReusableCellWithIdentifier:@"EventsCell"];
+            EventsModelClass *obj = [arrEventsModelObjects objectAtIndex:indexPath.row];
+            EventsCell.eventTitle.text = obj.eventName;
+            
+            
+            NSDateFormatter *df = [[NSDateFormatter alloc]init];
+            [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+            NSDate *date=[df dateFromString:obj.eventStartsOn];
+            [df setDateFormat:@"dd/MMM/yyyy"];
+            NSString *dateString = [df stringFromDate:date];
+            NSString *venueAndDate = [NSString stringWithFormat:@"%@, %@", obj.eventVenue, dateString];
+            
+            EventsCell.eventSubTitle.text = venueAndDate;
+            //        [EventsCell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            
+            return EventsCell;
+        }
     }
+    return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -234,42 +321,34 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(indexPath.section == 0)
-    {
-        NewsModelClass *obj = [arrNewsModelObjects objectAtIndex:indexPath.row];
-        NewsViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"News"];
-        cont.newsTextViewString = obj.newsContent;
-        cont.newsTitleString = obj.newsTitle;
-        if ([Utility sharedInstance].isDeviceIpad)
+//    if (tableView.numberOfSections == 2) {
+//    if(indexPath.section == 0)
+//    {
+//        [self loadNewsWithIndex:indexPath];
+//    } else {
+//        [self loadEventsWithIndex:indexPath];
+//    }
+//    } else {
+//        if (arrNewsModelObjects.count) {
+//            [self loadNewsWithIndex:indexPath];
+//        } else {
+//            [self loadEventsWithIndex:indexPath];
+//
+//        }
+//    }
+    
+        if(indexPath.section == 0)
         {
-            UINavigationController *navCont = [[UINavigationController alloc] initWithRootViewController:cont];
-            self.splitViewController.viewControllers = @[self, navCont];
+            if (arrNewsModelObjects.count) {
+            [self loadNewsWithIndex:indexPath];
+            }
+            else {
+                [self loadEventsWithIndex:indexPath];
+            }
+        } else {
+            [self loadEventsWithIndex:indexPath];
         }
-        else
-        {
-            [self.navigationController pushViewController:cont animated:YES];
-        }
-        [self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
-    } else {
-        EventsModelClass *obj = [arrEventsModelObjects objectAtIndex:indexPath.row];
-        EventsViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"Events"];
-        cont.eventTitleString = obj.eventName;
-        cont.eventTextViewString = obj.eventDescription;
-        cont.bookBtnUrlString = obj.eventJoinUrl;
-        cont.startDateString = obj.eventStartsOn;
-        cont.endDateString = obj.eventEndsOn;
-        if ([Utility sharedInstance].isDeviceIpad)
-        {
-            UINavigationController *navCont = [[UINavigationController alloc] initWithRootViewController:cont];
-            self.splitViewController.viewControllers = @[self, navCont];
-        }
-        else
-        {
-            [self.navigationController pushViewController:cont animated:YES];
-        }
-        [self.newsTableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
     }
-}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return ([Utility sharedInstance].isDeviceIpad) ? 60 : 44;
@@ -284,10 +363,19 @@
     label.leftPading = 17;
     [label setTextColor:[UIColor whiteColor]];
     [label setFont:[UIFont fontWithName:@"Santana" size:(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) ? 30.0 : 20.0]];
-    if (section == 0) {
-        [label setText:@"news"];
+    
+    if (tableView.numberOfSections == 2) {
+        if (section == 0) {
+            [label setText:@"news"];
+        } else {
+            [label setText:@"events"];
+        }
     } else {
-        [label setText:@"events"];
+        if (arrNewsModelObjects.count) {
+            [label setText:@"news"];
+        } else {
+            [label setText:@"events"];
+        }
     }
     
     [bgView addSubview:label];
