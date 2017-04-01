@@ -104,7 +104,7 @@
             gifView=[[UIView alloc]initWithFrame:CGRectMake(0, dailyHumourView.frame.size.height-135, dailyHumourView.frame.size.width, 135)];
             gifView.backgroundColor=[UIColor whiteColor];
             gifImageView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, gifView.frame.size.width, 135)];
-            shareButton=[[UIButton alloc]initWithFrame:CGRectMake(dailyHumourView.frame.size.width-50,5, 50,50)];
+            shareButton=[[UIButton alloc]initWithFrame:CGRectMake(dailyHumourView.frame.size.width-60,5, 50,50)];
             [humourTextView setTextContainerInset:UIEdgeInsetsMake(25, 25, 30, 30)];
             [titleLabel setFont:[UIFont fontWithName:@"santana" size:30]];
             

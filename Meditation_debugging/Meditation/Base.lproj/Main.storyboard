@@ -2215,7 +2215,7 @@
                                                             <constraint firstAttribute="height" constant="35" id="LbV-pk-Tyd"/>
                                                         </constraints>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="9Ti-4a-xRN" id="aR8-fx-OZa"/>
@@ -2228,7 +2228,7 @@
                                                             <constraint firstAttribute="height" constant="35" id="rie-WT-CMX"/>
                                                         </constraints>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="9Ti-4a-xRN" id="DVg-9b-yPq"/>
@@ -2247,7 +2247,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="fcA-o7-lCK"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2312,7 +2312,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="pdA-om-3YM"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -4859,7 +4859,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="VYV-wR-HLw"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="Kij-mH-7TL"/>
@@ -4888,7 +4888,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="2yQ-7d-bFe"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="8ME-Lp-bni"/>
@@ -4917,7 +4917,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="lVO-1V-u4l"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="_placeholdertext." value="YES"/>
@@ -4950,7 +4950,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="wtD-Zo-UJH"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="bbY-w3-SZr"/>
@@ -5021,7 +5021,7 @@
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDb-0w-bXx" userLabel="LabelSeparator3">
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDb-0w-bXx" userLabel="LabelSeparator3">
                                                 <rect key="frame" x="30" y="491" width="260" height="1"/>
                                                 <color key="backgroundColor" red="0.25098039220000001" green="0.21176470589999999" blue="0.23921568630000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -5037,7 +5037,7 @@
                                                     <constraint firstAttribute="height" constant="120" id="CqO-YQ-fw8"/>
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="RkH-5j-mCj"/>
@@ -5054,8 +5054,8 @@
                                                 <rect key="frame" x="94" y="445" width="152" height="35"/>
                                                 <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="0Aq-fX-k0w"/>
-                                                    <constraint firstAttribute="width" constant="152" id="erL-qt-P8e"/>
+                                                    <constraint firstAttribute="height" constant="35" id="5fe-Qq-fbd"/>
+                                                    <constraint firstAttribute="width" constant="152" id="AEQ-cM-4m8"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
                                                 <state key="normal" title="change password">
@@ -5099,6 +5099,7 @@
                                             <constraint firstItem="q6M-Cz-Kku" firstAttribute="top" secondItem="Vw5-wO-Zn5" secondAttribute="bottom" constant="4" id="Rqp-ep-FsG"/>
                                             <constraint firstItem="Vdn-Cl-e1T" firstAttribute="top" secondItem="O8F-TK-dg6" secondAttribute="bottom" constant="4" id="TFO-VA-Efd"/>
                                             <constraint firstAttribute="trailing" secondItem="raM-Ld-nJe" secondAttribute="trailing" constant="33" id="VBx-7S-CTJ"/>
+                                            <constraint firstItem="04r-1v-fKQ" firstAttribute="centerX" secondItem="G3n-7r-fg9" secondAttribute="centerX" id="Vqv-l5-jIk"/>
                                             <constraint firstItem="AQk-EA-adc" firstAttribute="top" secondItem="G3n-7r-fg9" secondAttribute="top" constant="5" id="Wm1-EW-2dN"/>
                                             <constraint firstItem="uS8-8f-6j1" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="Yg9-zg-hEw"/>
                                             <constraint firstItem="9Ow-re-jvQ" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="30" id="Yuh-Ox-LV6"/>
@@ -5116,14 +5117,12 @@
                                             <constraint firstItem="twW-ki-g6A" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="iid-Zc-oRH"/>
                                             <constraint firstItem="J8h-dH-OSo" firstAttribute="top" secondItem="9Ow-re-jvQ" secondAttribute="bottom" constant="14" id="j8f-OR-ghb"/>
                                             <constraint firstItem="zsW-cr-SGZ" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="ng5-5C-X9H"/>
-                                            <constraint firstItem="NDb-0w-bXx" firstAttribute="top" secondItem="04r-1v-fKQ" secondAttribute="bottom" constant="11" id="qBu-M0-Ss4"/>
-                                            <constraint firstItem="04r-1v-fKQ" firstAttribute="top" secondItem="d4U-XD-Yfa" secondAttribute="bottom" constant="11" id="rZi-oG-ldz"/>
                                             <constraint firstItem="d4U-XD-Yfa" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="30" id="sBf-cc-Iap"/>
                                             <constraint firstItem="O8F-TK-dg6" firstAttribute="leading" secondItem="PHD-Bz-8PC" secondAttribute="trailing" constant="6" id="u6h-XT-fg1"/>
                                             <constraint firstAttribute="height" constant="527" id="uKQ-b2-Uas"/>
                                             <constraint firstItem="q6M-Cz-Kku" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="30" id="uVb-PS-U1u"/>
                                             <constraint firstItem="2XP-bX-MZB" firstAttribute="leading" secondItem="zsW-cr-SGZ" secondAttribute="trailing" constant="4" id="utN-Mp-SmD"/>
-                                            <constraint firstItem="04r-1v-fKQ" firstAttribute="leading" secondItem="cLf-dY-YkJ" secondAttribute="trailing" constant="8" id="v4J-Q3-7o8"/>
+                                            <constraint firstItem="04r-1v-fKQ" firstAttribute="top" secondItem="d4U-XD-Yfa" secondAttribute="bottom" constant="11" id="woI-KC-49y"/>
                                             <constraint firstItem="twW-ki-g6A" firstAttribute="top" secondItem="Vdn-Cl-e1T" secondAttribute="bottom" constant="14" id="wsj-KA-lfq"/>
                                             <constraint firstItem="9Ow-re-jvQ" firstAttribute="top" secondItem="raM-Ld-nJe" secondAttribute="bottom" constant="4" id="yNs-il-hni"/>
                                         </constraints>
@@ -5957,7 +5956,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="CnL-P3-8hh">
                                         <rect key="frame" x="0.0" y="40" width="375" height="444"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
