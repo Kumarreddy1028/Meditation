@@ -1244,11 +1244,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Meditation/ViewControllers/DashboardViewController/DashboardViewController.m"
-            timestampString = "511938250.418714"
+            timestampString = "511939879.423875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "-serviceCallForGlobalMeditation"
             landmarkType = "7">
          </BreakpointContent>
@@ -1410,6 +1410,22 @@
             startingLineNumber = "206"
             endingLineNumber = "206"
             landmarkName = "-serviceCallForGlobalMeditation"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditation/UtilityClass/Utility.m"
+            timestampString = "511940114.991292"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "+isPastDateLimitExceeds:endDate:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

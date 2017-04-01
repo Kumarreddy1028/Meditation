@@ -173,6 +173,7 @@
                           {
                               NSMutableDictionary *dic = [servicesArr objectAtIndex:i];
                               GlobalMeditationModelClass *obj=[[GlobalMeditationModelClass alloc]initWithDictionary:dic];
+                              obj.startDt = [obj.startDt dateByAddingTimeInterval:(NSTimeInterval)[Utility totalDurationFromString:[dic objectForKey:@"duration"]]];
                               if ([obj.startDt timeIntervalSinceDate:[NSDate date]] >= 0) {
                                   isFound = TRUE;
                                   
@@ -181,7 +182,7 @@
                                   dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
                                   NSString *currentDatestring = [dateFormatter stringFromDate:[NSDate date]];
 
-                                  [self performSelector:@selector(changeServerDate:) withObject:obj.startDate afterDelay:3.0];
+                                  [self performSelector:@selector(changeServerDate:) withObject:obj.startDate afterDelay:2.0];
                                   [[Utility sharedInstance] setOnlineUsers:obj.meditators];
                                   break;
                               }
