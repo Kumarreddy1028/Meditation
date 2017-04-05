@@ -26,8 +26,13 @@
 
 - (void)setType:(GlobalMeditationHeaderViewType)type {
     _type = type;
-    NSString *titleString = type == GlobalMeditationHeaderViewTypeUpcomming ? @"       upcoming meditations" : @"       past meditations";
+    NSString *titleString = type == GlobalMeditationHeaderViewTypeUpcomming ? @"   upcoming meditation schedule" : @"   past meditations";
     _titleLabel.text = titleString;
+    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
+
+    } else {
+        [_titleLabel setFont:[UIFont fontWithName:@"Santana" size:16.0f]];
+    }
 }
 
 - (void)setIsSelected:(BOOL)isSelected {

@@ -2008,109 +2008,117 @@
                                 <rect key="frame" x="0.0" y="85" width="768" height="939"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="f4F-uR-DsD">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="855"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="vnE-IV-Bfb">
+                                    <rect key="frame" x="0.0" y="88" width="768" height="800"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Se3-LE-eD8">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="555"/>
-                                            <color key="tintColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="555" id="xUs-9V-w52"/>
-                                            </constraints>
-                                        </mapView>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEH-YV-ZdT">
-                                            <rect key="frame" x="0.0" y="555" width="768" height="230"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4F-uR-DsD">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="800"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-5D-3j6">
-                                                    <rect key="frame" x="173" y="13" width="38" height="38"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meditators" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-80-egt">
-                                                    <rect key="frame" x="401" y="13" width="48" height="38"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="worldwide" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-hD-CyM">
-                                                    <rect key="frame" x="639" y="13" width="38" height="38"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CX-7G-GXI">
-                                                    <rect key="frame" x="77" y="63" width="230" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="meditators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz9-9n-weD">
-                                                    <rect key="frame" x="361" y="63" width="128" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="countries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUs-eu-6Mf">
-                                                    <rect key="frame" x="608" y="63" width="100" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnw-1t-l3d">
-                                                    <rect key="frame" x="26" y="140" width="716" height="60"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.3803921569" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="25"/>
-                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal">
-                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="btnJoinActn:" destination="lX7-OW-lCW" eventType="touchUpInside" id="9wX-4n-ZbO"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3j-Qt-14G">
-                                                    <rect key="frame" x="608" y="89" width="100" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="16"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKW-Xf-jn4">
-                                                    <rect key="frame" x="377" y="89" width="100" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="16"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icg-Yx-x6b">
-                                                    <rect key="frame" x="50" y="89" width="285" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="16"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Se3-LE-eD8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="555"/>
+                                                    <color key="tintColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="555" id="xUs-9V-w52"/>
+                                                    </constraints>
+                                                </mapView>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEH-YV-ZdT">
+                                                    <rect key="frame" x="0.0" y="555" width="768" height="200"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="ezd-5D-3j6">
+                                                            <rect key="frame" x="173" y="13" width="38" height="38"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meditators" translatesAutoresizingMaskIntoConstraints="NO" id="0lX-80-egt">
+                                                            <rect key="frame" x="401" y="13" width="48" height="38"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="worldwide" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-hD-CyM">
+                                                            <rect key="frame" x="639" y="13" width="38" height="38"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CX-7G-GXI">
+                                                            <rect key="frame" x="77" y="63" width="230" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="meditators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz9-9n-weD">
+                                                            <rect key="frame" x="361" y="63" width="128" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="countries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUs-eu-6Mf">
+                                                            <rect key="frame" x="608" y="63" width="100" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnw-1t-l3d">
+                                                            <rect key="frame" x="26" y="120" width="716" height="60"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.3803921569" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="25"/>
+                                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="btnJoinActn:" destination="lX7-OW-lCW" eventType="touchUpInside" id="9wX-4n-ZbO"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3j-Qt-14G">
+                                                            <rect key="frame" x="608" y="89" width="100" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="16"/>
+                                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKW-Xf-jn4">
+                                                            <rect key="frame" x="377" y="89" width="100" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="16"/>
+                                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icg-Yx-x6b">
+                                                            <rect key="frame" x="50" y="89" width="285" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="16"/>
+                                                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.28000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Se3-LE-eD8" firstAttribute="trailing" secondItem="xEH-YV-ZdT" secondAttribute="trailing" id="3yS-Tx-gSU"/>
+                                                <constraint firstAttribute="trailing" secondItem="Se3-LE-eD8" secondAttribute="trailing" id="6Sc-Eu-Hyr"/>
+                                                <constraint firstItem="xEH-YV-ZdT" firstAttribute="top" secondItem="Se3-LE-eD8" secondAttribute="bottom" id="Htg-vE-o1i"/>
+                                                <constraint firstItem="Se3-LE-eD8" firstAttribute="top" secondItem="f4F-uR-DsD" secondAttribute="top" id="QAb-TH-lix"/>
+                                                <constraint firstItem="Se3-LE-eD8" firstAttribute="leading" secondItem="f4F-uR-DsD" secondAttribute="leading" id="SWV-bw-7qg"/>
+                                                <constraint firstAttribute="bottom" secondItem="xEH-YV-ZdT" secondAttribute="bottom" constant="-761" id="w0B-6p-x03"/>
+                                                <constraint firstItem="Se3-LE-eD8" firstAttribute="leading" secondItem="xEH-YV-ZdT" secondAttribute="leading" id="xyk-C3-cLW"/>
+                                            </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="forthcoming schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMr-Zj-kC8">
-                                            <rect key="frame" x="20" y="795" width="663" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="24"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.28000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="Se3-LE-eD8" firstAttribute="leading" secondItem="f4F-uR-DsD" secondAttribute="leading" id="6Bv-BC-bQ3"/>
-                                        <constraint firstAttribute="trailing" secondItem="Se3-LE-eD8" secondAttribute="trailing" id="ajf-yt-6i1"/>
-                                        <constraint firstItem="Se3-LE-eD8" firstAttribute="top" secondItem="f4F-uR-DsD" secondAttribute="top" id="mcI-Qf-lQt"/>
+                                        <constraint firstItem="f4F-uR-DsD" firstAttribute="leading" secondItem="vnE-IV-Bfb" secondAttribute="leading" id="3Gd-p5-GVf"/>
+                                        <constraint firstItem="f4F-uR-DsD" firstAttribute="top" secondItem="vnE-IV-Bfb" secondAttribute="top" id="UAC-pm-oyS"/>
+                                        <constraint firstAttribute="trailing" secondItem="f4F-uR-DsD" secondAttribute="trailing" id="n51-zP-6dL"/>
+                                        <constraint firstAttribute="bottom" secondItem="f4F-uR-DsD" secondAttribute="bottom" id="tdz-el-VuF"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="60" id="19O-rg-BpQ" customClass="GlobalMeditationTableViewCell">
-                                        <rect key="frame" x="0.0" y="883" width="768" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="19O-rg-BpQ" customClass="GlobalMeditationTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="19O-rg-BpQ" id="b2n-1s-bNJ">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -2154,21 +2162,15 @@
                                     <outlet property="delegate" destination="lX7-OW-lCW" id="Hsd-sj-Eo7"/>
                                 </connections>
                             </tableView>
-                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-Dy-1Bq">
-                                <rect key="frame" x="0.0" y="85" width="768" height="939"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jdV-6a-Pkl" firstAttribute="leading" secondItem="MsP-tB-sMq" secondAttribute="leading" id="1Qv-7w-TWB"/>
-                            <constraint firstItem="dJR-Dy-1Bq" firstAttribute="top" secondItem="jkx-RH-64b" secondAttribute="bottom" constant="15" id="3eh-C3-0wY"/>
                             <constraint firstItem="oBm-H1-C65" firstAttribute="top" secondItem="jdV-6a-Pkl" secondAttribute="bottom" id="4jM-fm-eVc"/>
                             <constraint firstItem="aUt-A9-QJI" firstAttribute="leading" secondItem="Qei-fy-szl" secondAttribute="trailing" constant="20" id="5XV-rW-AXt"/>
                             <constraint firstItem="rWC-Fe-WAI" firstAttribute="leading" secondItem="MsP-tB-sMq" secondAttribute="leading" id="6RR-fu-Gqf"/>
                             <constraint firstItem="zrB-6q-wfh" firstAttribute="leading" secondItem="MsP-tB-sMq" secondAttribute="leading" constant="15" id="75X-2S-byh"/>
                             <constraint firstAttribute="trailing" secondItem="IZw-IL-M3A" secondAttribute="trailing" constant="15" id="BYJ-Fc-gZZ"/>
-                            <constraint firstItem="oBm-H1-C65" firstAttribute="top" secondItem="dJR-Dy-1Bq" secondAttribute="bottom" id="DoO-wA-FXL"/>
                             <constraint firstItem="jdV-6a-Pkl" firstAttribute="top" secondItem="jkx-RH-64b" secondAttribute="bottom" constant="15" id="Ejd-pg-brj"/>
                             <constraint firstItem="jkx-RH-64b" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="GPe-OV-a4a"/>
                             <constraint firstAttribute="trailing" secondItem="rWC-Fe-WAI" secondAttribute="trailing" id="H0p-5C-PqM"/>
@@ -2176,11 +2178,9 @@
                             <constraint firstItem="jkx-RH-64b" firstAttribute="centerX" secondItem="MsP-tB-sMq" secondAttribute="centerX" id="T8z-uw-A1y"/>
                             <constraint firstItem="rWC-Fe-WAI" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" id="cwB-LI-oh0"/>
                             <constraint firstItem="aUt-A9-QJI" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="eec-Lh-KQ2"/>
-                            <constraint firstAttribute="trailing" secondItem="dJR-Dy-1Bq" secondAttribute="trailing" id="gaU-d7-5di"/>
                             <constraint firstAttribute="trailing" secondItem="aUt-A9-QJI" secondAttribute="trailing" constant="15" id="hW0-Re-KPk"/>
                             <constraint firstItem="zrB-6q-wfh" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="icW-I8-0gT"/>
                             <constraint firstAttribute="trailing" secondItem="jdV-6a-Pkl" secondAttribute="trailing" id="mZe-6e-b9w"/>
-                            <constraint firstItem="dJR-Dy-1Bq" firstAttribute="leading" secondItem="MsP-tB-sMq" secondAttribute="leading" id="ohB-5l-7E3"/>
                             <constraint firstItem="Qei-fy-szl" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="ruh-Fg-TVX"/>
                             <constraint firstItem="oBm-H1-C65" firstAttribute="top" secondItem="rWC-Fe-WAI" secondAttribute="bottom" id="xhe-Ht-RCh"/>
                         </constraints>
@@ -2196,7 +2196,6 @@
                         <outlet property="countries" destination="V3j-Qt-14G" id="yrE-VK-udl"/>
                         <outlet property="dashboardBtn" destination="aUt-A9-QJI" id="F26-5D-O3S"/>
                         <outlet property="infoBtn" destination="Qei-fy-szl" id="3WB-Yc-Cqa"/>
-                        <outlet property="infoWebView" destination="dJR-Dy-1Bq" id="PrT-kQ-Wkc"/>
                         <outlet property="istDateTime" destination="8CX-7G-GXI" id="OFp-WQ-BZY"/>
                         <outlet property="mapViewOutlet" destination="Se3-LE-eD8" id="LTc-hF-UHs"/>
                         <outlet property="meditatorsCount" destination="hKW-Xf-jn4" id="K8c-4C-1cj"/>

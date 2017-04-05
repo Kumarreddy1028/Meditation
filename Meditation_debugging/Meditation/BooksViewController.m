@@ -177,6 +177,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    NSLog(@"arrBooksModelObjects.count - 1 %lu", (arrBooksModelObjects.count - 1));
     return arrBooksModelObjects.count - 1;
 }
 

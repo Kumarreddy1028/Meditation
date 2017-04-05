@@ -68,6 +68,7 @@
 
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationPostTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GlobalMeditationPostTableViewCell"];
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationHeaderView" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"GlobalMeditationHeaderView"];
+    [self.tableViewOutlet reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -267,7 +268,15 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 44;
+    
+    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
+        return 70;
+
+    } else {
+        return 60;
+    }
+    
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -275,6 +284,12 @@
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     GlobalMeditationHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GlobalMeditationHeaderView"];
+//    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
+//        
+//    } else {
+//        [view.te setFont:[UIFont fontWithName:@"Santana" size:10.0f]];
+//    }
+
     view.type = (GlobalMeditationHeaderViewType)section;
     view.delegate = self;
     if (view.type == GlobalMeditationHeaderViewTypeUpcomming) {
@@ -309,7 +324,6 @@
     }
 
     [self.tableViewOutlet reloadSections:[NSIndexSet indexSetWithIndex:type] withRowAnimation:UITableViewRowAnimationFade];
-    
     
 }
 
@@ -729,7 +743,7 @@
                               obj.startDt = [obj.startDt dateByAddingTimeInterval:(NSTimeInterval)[Utility totalDurationFromString:obj.duration]];
                               if ([obj.startDt timeIntervalSinceDate:[NSDate date]] >= 0) {
                                   [upcomingMeditations addObject:obj];
-
+                                  isUpcomingSelected = TRUE;
                               } else {
                                   NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
                                   [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -738,6 +752,7 @@
                                   // Meditation past date checking(more than 3 days not considering the event)
                                   if (false == [Utility isPastDateLimitExceeds:[NSDate date] endDate:startDate]) {
                                       [pastMeditatiions addObject:obj];
+                                      isPastSelected = TRUE;
                                   }
                               }
                           }
