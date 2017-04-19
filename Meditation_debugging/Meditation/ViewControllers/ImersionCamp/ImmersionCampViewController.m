@@ -27,7 +27,7 @@
     self.navigationController.navigationBarHidden = YES;
     [self.eventTitle setText:self.event.eventName];
     [self.eventDescTextView setText:self.event.eventDescription];
-    [self.eventDescTextView setFont:[UIFont fontWithName:@"santana" size:15.0]];
+    [self.eventDescTextView setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15.0]];
    
     NSString *str = [NSString stringWithFormat:@"Meditation Camp: %@ - %@\n\n",self.event.startOn, self.event.endOn];
     NSMutableString *total = [NSMutableString new];
@@ -52,7 +52,7 @@
         fontSize = 15.0;
     }
     NSDictionary *attrsDictionary = @{
-                               NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
+                               NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:fontSize],
                                NSForegroundColorAttributeName : color
                                };
     [string addAttributes:attrsDictionary range:NSMakeRange(0,str.length)];
@@ -68,7 +68,7 @@
     [string addAttributes:attrsDictionary2 range:NSMakeRange(str.length+self.event.heading.length, self.event.seat.length+15)];
 
     NSDictionary *attrsDictionary3 = @{
-                                      NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
+                                      NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:fontSize],
                                       NSForegroundColorAttributeName : color
                                       };
     [string addAttributes:attrsDictionary3 range:NSMakeRange(str.length+self.event.heading.length+self.event.seat.length+15,self.event.eventDescription.length)];

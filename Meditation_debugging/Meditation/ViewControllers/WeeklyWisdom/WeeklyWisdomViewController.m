@@ -378,7 +378,7 @@
                   
                   NSString *string = self.weeklyTextView.text;
                   NSDictionary *ats = @{
-                                        NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
+                                        NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:fontSize],
                                         NSParagraphStyleAttributeName : paragraphStyle,
                                         };
                   
@@ -410,7 +410,7 @@
                       
                       NSString *string = self.weeklyTextView.text;
                       NSDictionary *ats = @{
-                                            NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
+                                            NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:fontSize],
                                             NSParagraphStyleAttributeName : paragraphStyle,
                                             };
                       

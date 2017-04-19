@@ -73,10 +73,10 @@
         frameX = (self.view.frame.size.width - width)/2;
     }
     labelFirst =[[UILabel alloc]initWithFrame:CGRectMake(frameX, self.view.frame.size.height - 85, 80, 20)];
-    [labelFirst setFont:[UIFont fontWithName:@"santana-Bold" size:18]];
+    [labelFirst setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:18]];
     labelSecond =[[UILabel alloc]initWithFrame:CGRectMake(frameX + width - 90, self.view.frame.size.height - 85, 90, 20)];
     NSString *slt=self.duration;
-    [labelSecond setFont:[UIFont fontWithName:@"santana-Bold" size:18]];
+    [labelSecond setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:18]];
 
     labelFirst.textColor =  [self colorWithHexString:self.color];
     labelSecond.textColor =  [self colorWithHexString:self.color];

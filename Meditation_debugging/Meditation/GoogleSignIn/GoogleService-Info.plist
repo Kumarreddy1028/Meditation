@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>402183120701-s0bh0ter624m19ksalqirq9qaicu7b87.apps.googleusercontent.com</string>
+	<string>271006501796-egj8di88aee8gjin05iutamvef2i397j.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.402183120701-s0bh0ter624m19ksalqirq9qaicu7b87</string>
+	<string>com.googleusercontent.apps.271006501796-egj8di88aee8gjin05iutamvef2i397j</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.commonRapidID.meditation</string>
+	<string>com.pinprickeffect.meditation</string>
 	<key>IS_ADS_ENABLED</key>
 	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -23,6 +23,6 @@
 	<key>GOOGLE_APP_ID</key>
 	<string>1:402183120701:ios:35ca349da615c87c</string>
 	<key>PROJECT_ID</key>
-	<string>pinprickeffect</string>
+	<string>Om Swami Meditation</string>
 </dict>
 </plist>

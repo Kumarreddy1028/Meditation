@@ -38,7 +38,7 @@ NSMutableArray *spriteNodeNameArray;
     spriteNodeNameArray = [NSMutableArray  arrayWithObjects:@"global_meditation",@"meditate_now",@"daily_quotes",@"daily_hunter",@"vedio",@"community",@"weekly_wisdom",@"Time_Logo", nil];
     SKSpriteNode *global_meditation = (SKSpriteNode *)[self childNodeWithName:[spriteNodeNameArray objectAtIndex:0]];
 
-    time_logo = [SKLabelNode labelNodeWithFontNamed:@"Santana-Bold"];
+    time_logo = [SKLabelNode labelNodeWithFontNamed:@"ProximaNova-Bold"];
     time_logo.name = @"Time_Logo";
     if ([Utility sharedInstance].isDeviceIpad)
     {

@@ -311,7 +311,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
 //        if ([UIFont respondsToSelector:@selector(preferredFontForTextStyle:)]) {
 //            _font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
 //        } else {
-            _font = [UIFont fontWithName:@"santana" size:15.0f];
+            _font = [UIFont fontWithName:@"ProximaNova-Regular" size:15.0f];
 //        }
         
         NSBundle *bundle = [NSBundle bundleForClass:[self class]];
@@ -365,7 +365,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
         } else{
             CGSize stringSize;
             if([string respondsToSelector:@selector(sizeWithAttributes:)]){
-                stringSize = [string sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"santana" size:self.stringLabel.font.pointSize]}];
+                stringSize = [string sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"ProximaNova-Regular" size:self.stringLabel.font.pointSize]}];
             } else{
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated"

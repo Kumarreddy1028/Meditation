@@ -409,7 +409,7 @@
             titleLbl.backgroundColor=[UIColor clearColor];
             titleLbl.textColor=[UIColor whiteColor];
             [titleLbl setTextAlignment:NSTextAlignmentCenter];
-            [titleLbl setFont:[UIFont fontWithName:@"santana" size:32]];
+            [titleLbl setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:32]];
             [navigationView addSubview:navigationImageView];
             [navigationView addSubview:titleLbl];
             [navigationView addSubview:dashboardBtn];

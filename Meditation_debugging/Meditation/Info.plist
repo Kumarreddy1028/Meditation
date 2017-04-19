@@ -25,7 +25,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb160362147687887</string>
+				<string>fb270746240039142</string>
 			</array>
 		</dict>
 		<dict>
@@ -47,6 +47,15 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.pinprickeffect.meditation</string>
+				<string>com.googleusercontent.apps.271006501796-egj8di88aee8gjin05iutamvef2i397j</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>ch.seriot.STTwitterDemoiOSSafari</string>
 			<key>CFBundleURLSchemes</key>
@@ -56,20 +65,23 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.5</string>
 	<key>FacebookAppID</key>
-	<string>160362147687887</string>
+	<string>270746240039142</string>
 	<key>FacebookDisplayName</key>
-	<string>Pin Prick Effect</string>
+	<string>Om Swami Medi­t­a­t­ions</string>
 	<key>Fonts </key>
-	<array/>
+	<array>
+		<string>Proxima Nova Bold.otf</string>
+		<string>ProximaNova-Regular.otf</string>
+	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbauth2</string>
-		<string>com.commonRapidID.meditation</string>
-		<string>com.googleusercontent.apps.1234567890-abcdefghijklmnopqrstuvwxyz</string>
+		<string>com.pinprickeffect.meditation</string>
+		<string>com.googleusercontent.apps.271006501796-egj8di88aee8gjin05iutamvef2i397j</string>
 		<string>com-google-gidconsent-google</string>
 		<string>com-google-gidconsent-youtube</string>
 		<string>com-google-gidconsent</string>
@@ -111,6 +123,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

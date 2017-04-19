@@ -31,9 +31,9 @@
     self.dayCircleRatio = 1.;
     self.dayDotRatio = 1. / 9.;
     
-    self.menuMonthTextFont = [UIFont fontWithName:@"santana" size:14.0];
-    self.weekDayTextFont = [UIFont fontWithName:@"santana" size:13.0];
-    self.dayTextFont = [UIFont fontWithName:@"santana" size:15.0];
+    self.menuMonthTextFont = [UIFont fontWithName:@"ProximaNova-Regular" size:14.0];
+    self.weekDayTextFont = [UIFont fontWithName:@"ProximaNova-Regular" size:13.0];
+    self.dayTextFont = [UIFont fontWithName:@"ProximaNova-Regular" size:15.0];
     
     self.menuMonthTextColor = [UIColor blackColor];
    self.weekDayTextColor = [UIColor colorWithRed:152./256. green:147./256. blue:157./256. alpha:1.];

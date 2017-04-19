@@ -110,9 +110,9 @@
             quoteTextView=[[UITextView alloc]init];
             quoteTextView.frame=CGRectMake(15, 190, dailyQuoteSubView.frame.size.width-30, dailyQuoteSubView.frame.size.height-250);
             [quoteTextView setTextContainerInset:UIEdgeInsetsMake(5, 10, 5, 10)];
-            [quoteTextView setFont:[UIFont fontWithName:@"santana" size:20]];
+            [quoteTextView setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:20]];
             
-            [titleLabel setFont:[UIFont fontWithName:@"santana" size:30]];
+            [titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:30]];
         }
         else
         {
@@ -133,8 +133,8 @@
             quoteTextView=[[UITextView alloc]init];
             quoteTextView.frame=CGRectMake(15, 90, dailyQuoteSubView.frame.size.width-30, dailyQuoteSubView.frame.size.height-200);
             [quoteTextView setTextContainerInset:UIEdgeInsetsMake(5, 10, 5, 10)];
-            [quoteTextView setFont:[UIFont fontWithName:@"santana" size:17]];
-            [titleLabel setFont:[UIFont fontWithName:@"santana" size:20]];
+            [quoteTextView setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:17]];
+            [titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:20]];
         }
       //  gifImageView.contentMode = UIViewContentModeScaleAspectFill;
 

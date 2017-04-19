@@ -505,11 +505,11 @@ static Utility *__utility;
     NSAttributedString *attributedPlaceholder;
     if ([Utility sharedInstance].isDeviceIpad)
     {
-     attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont fontWithName:@"santana" size:21.0] }];
+     attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:21.0] }];
     }
     else
     {
-       attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont fontWithName:@"santana" size:17.0] }];
+       attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholderText attributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor],NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:17.0] }];
         
     }
     return attributedPlaceholder;
@@ -710,7 +710,7 @@ static Utility *__utility;
         CGFloat fontSize = 21;
         NSString *string = str;
         NSDictionary *ats = @{
-                              NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
+                              NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:fontSize],
                               NSParagraphStyleAttributeName : paragraphStyle,
                               };
         
@@ -727,7 +727,7 @@ static Utility *__utility;
         CGFloat fontSize = 17;
         NSString *string = str;
         NSDictionary *ats = @{
-                              NSFontAttributeName : [UIFont fontWithName:@"santana" size:fontSize],
+                              NSFontAttributeName : [UIFont fontWithName:@"ProximaNova-Regular" size:fontSize],
                               NSParagraphStyleAttributeName : paragraphStyle,
                               };
         

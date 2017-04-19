@@ -15,6 +15,7 @@
 #import "MDLabel.h"
 #import "GlobalMeditationPostTableViewCell.h"
 #import "GlobalMeditationHeaderView.h"
+#import "GlobalMeditationPostHeaderView.h"
 
 @interface GlobalMeditationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate, GlobalMeditationPostTableViewCellDelegate, GlobalMeditationHeaderViewDelegate>
 {
@@ -53,13 +54,13 @@
     {
         self.btnJoin.layer.cornerRadius=10.0;
         [self.infoTextView setTextContainerInset:UIEdgeInsetsMake(50, 50, 60, 60)];
-        [self.infoTextView setFont:[UIFont fontWithName:@"santana" size:20.0]];
+        [self.infoTextView setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:20.0]];
     }
     else
     {
         self.btnJoin.layer.cornerRadius=5.0;
         [self.infoTextView setTextContainerInset:UIEdgeInsetsMake(25, 30, 25, 30)];
-        [self.infoTextView setFont:[UIFont fontWithName:@"santana" size:16.0]];
+        [self.infoTextView setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:16.0]];
     }
    
     self.btnJoin.clipsToBounds=YES;
@@ -68,6 +69,7 @@
 
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationPostTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GlobalMeditationPostTableViewCell"];
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationHeaderView" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"GlobalMeditationHeaderView"];
+    [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationPostHeaderView" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"GlobalMeditationPostHeaderView"];
     [self.tableViewOutlet reloadData];
 }
 
@@ -270,9 +272,20 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
     if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
+        
+        if ((section == 1)&&(pastMeditatiions.count == 0)) {
+            return 90;
+        }
+        
         return 70;
+        
 
     } else {
+        
+        if ((section == 1)&&(pastMeditatiions.count == 0)) {
+            return 80;
+        }
+
         return 60;
     }
     
@@ -283,24 +296,35 @@
     return 60;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    
+    
     GlobalMeditationHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GlobalMeditationHeaderView"];
 //    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
 //        
 //    } else {
-//        [view.te setFont:[UIFont fontWithName:@"Santana" size:10.0f]];
+//        [view.te setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:10.0f]];
 //    }
 
     view.type = (GlobalMeditationHeaderViewType)section;
     view.delegate = self;
     if (view.type == GlobalMeditationHeaderViewTypeUpcomming) {
         view.isSelected = isUpcomingSelected;
+        
+        
     } else {
         view.isSelected = isPastSelected;
+        if (pastMeditatiions.count == 0) {
+            GlobalMeditationPostHeaderView *view1 = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GlobalMeditationPostHeaderView"];
+            //            GlobalMeditationPostHeaderView *view1 = [[GlobalMeditationPostHeaderView alloc] initWithReuseIdentifier:@"GlobalMeditationPostHeaderView"];
+            return view1;
+        }
+
     }
 //    MDLabel *label = [[MDLabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(tableView.bounds), 30)];
 //    label.leftPading = 17;
 //    [label setTextColor:[UIColor whiteColor]];
-//    [label setFont:[UIFont fontWithName:@"Santana" size:16.0]];
+//    [label setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:16.0]];
 //    if (section == 0) {
 //        [label setText:@"Upcoming Meditations"];
 //    } else {

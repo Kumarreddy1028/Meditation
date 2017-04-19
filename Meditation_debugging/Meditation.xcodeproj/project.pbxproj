@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D31D5601EA1AC11004F5999 /* GlobalMeditationPostHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D31D55E1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.m */; };
+		0D31D5611EA1AC12004F5999 /* GlobalMeditationPostHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D31D55F1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.xib */; };
+		0D81B50B1EA44E6300BC96D8 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32931C71E80300813E99 /* SettingsViewController.m */; };
+		0D81B50C1EA4555600BC96D8 /* SettingsIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA21CC89ED8009F4B50 /* SettingsIpadViewController.m */; };
+		0DCD925F1EA3F53700B6E5D1 /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD925D1EA3F53700B6E5D1 /* Proxima Nova Bold.otf */; };
+		0DCD92601EA3F53700B6E5D1 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD925E1EA3F53700B6E5D1 /* ProximaNova-Regular.otf */; };
 		1814A0671D2D0802009FB069 /* RecentSearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A0661D2D0801009FB069 /* RecentSearchListViewController.m */; };
 		1814A0921D2D3A6B009FB069 /* TOCropViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1814A0691D2D3A6B009FB069 /* TOCropViewControllerLocalizable.strings */; };
 		1814A0931D2D3A6B009FB069 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1814A0721D2D3A6B009FB069 /* Info.plist */; };
@@ -134,7 +140,6 @@
 		99CC328B1C71E6FF00813E99 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CC328A1C71E6FF00813E99 /* CoreLocation.framework */; };
 		99CC328D1C71E70700813E99 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CC328C1C71E70700813E99 /* AVFoundation.framework */; };
 		99CC32941C71E80300813E99 /* DailyHumourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32901C71E80300813E99 /* DailyHumourViewController.m */; };
-		99CC32951C71E80300813E99 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32931C71E80300813E99 /* SettingsViewController.m */; };
 		99CC32991C71E82E00813E99 /* DailyQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32981C71E82E00813E99 /* DailyQuoteViewController.m */; };
 		99CC329D1C71E95900813E99 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC329C1C71E95900813E99 /* WeeklyWisdomViewController.m */; };
 		99CC32AA1C71ECD600813E99 /* DiscussionAboutSwamijiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32A01C71ECD600813E99 /* DiscussionAboutSwamijiViewController.m */; };
@@ -160,7 +165,6 @@
 		CFC70F931CC89C6A009F4B50 /* IpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC70F921CC89C6A009F4B50 /* IpadStoryboard.storyboard */; };
 		CFC70F961CC89D35009F4B50 /* MeditatorsModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70F951CC89D35009F4B50 /* MeditatorsModelClass.m */; };
 		CFC70F9A1CC89DF5009F4B50 /* SVPulsingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70F991CC89DF5009F4B50 /* SVPulsingAnnotationView.m */; };
-		CFC70FA31CC89ED8009F4B50 /* SettingsIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA21CC89ED8009F4B50 /* SettingsIpadViewController.m */; };
 		CFC70FA61CC89EF8009F4B50 /* MeditateNowIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA51CC89EF8009F4B50 /* MeditateNowIpadViewController.m */; };
 		CFC70FA91CC89F33009F4B50 /* MeditateNowIpadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA81CC89F33009F4B50 /* MeditateNowIpadCell.m */; };
 		CFCE6EBA1CAAB8340000AD10 /* Chats.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE6EB71CAAB8340000AD10 /* Chats.m */; };
@@ -200,6 +204,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D31D55D1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalMeditationPostHeaderView.h; sourceTree = "<group>"; };
+		0D31D55E1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalMeditationPostHeaderView.m; sourceTree = "<group>"; };
+		0D31D55F1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalMeditationPostHeaderView.xib; sourceTree = "<group>"; };
+		0DCD925D1EA3F53700B6E5D1 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		0DCD925E1EA3F53700B6E5D1 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
 		1814A0651D2D0801009FB069 /* RecentSearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSearchListViewController.h; sourceTree = "<group>"; };
 		1814A0661D2D0801009FB069 /* RecentSearchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentSearchListViewController.m; sourceTree = "<group>"; };
 		1814A06A1D2D3A6B009FB069 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
@@ -866,6 +875,8 @@
 				800E1BD21C8D546F00501016 /* Santana-RegularCondensed.ttf */,
 				800E1BD31C8D546F00501016 /* Santana.ttf */,
 				800E1BD41C8D546F00501016 /* SantanaXtraCondensed.ttf */,
+				0DCD925D1EA3F53700B6E5D1 /* Proxima Nova Bold.otf */,
+				0DCD925E1EA3F53700B6E5D1 /* ProximaNova-Regular.otf */,
 			);
 			path = santana;
 			sourceTree = "<group>";
@@ -1284,6 +1295,9 @@
 				18B84AD51E691B9F00B81286 /* GlobalMeditationHeaderView.h */,
 				18B84AD61E691B9F00B81286 /* GlobalMeditationHeaderView.m */,
 				18B84AD81E691BB900B81286 /* GlobalMeditationHeaderView.xib */,
+				0D31D55D1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.h */,
+				0D31D55E1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.m */,
+				0D31D55F1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -1462,7 +1476,7 @@
 				TargetAttributes = {
 					998D6D691C608B4100D9E543 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 5M4R6UQ5NU;
+						DevelopmentTeam = KY5YD2HZMG;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1511,6 +1525,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCD925F1EA3F53700B6E5D1 /* Proxima Nova Bold.otf in Resources */,
+				0DCD92601EA3F53700B6E5D1 /* ProximaNova-Regular.otf in Resources */,
 				800E1B671C8D508100501016 /* DefaultLine.png in Resources */,
 				1890C4171CD8AAA0009E0F6B /* meditate_now_ipad.png in Resources */,
 				18B84AD91E691BB900B81286 /* GlobalMeditationHeaderView.xib in Resources */,
@@ -1544,6 +1560,7 @@
 				800E1BD81C8D546F00501016 /* Santana-RegularCondensed.ttf in Resources */,
 				80D8C4981C9934A000DB4AFC /* GoogleService-Info.plist in Resources */,
 				CFC70F931CC89C6A009F4B50 /* IpadStoryboard.storyboard in Resources */,
+				0D31D5611EA1AC12004F5999 /* GlobalMeditationPostHeaderView.xib in Resources */,
 				800E1BDA1C8D546F00501016 /* SantanaXtraCondensed.ttf in Resources */,
 				1890C4141CD8AAA0009E0F6B /* daily_humuor_ipad.png in Resources */,
 				800E1B691C8D508100501016 /* Menu_PopOver_BG@2x.png in Resources */,
@@ -1567,6 +1584,7 @@
 				CF212D1C1C64869900F3B6A1 /* MeditationMusicViewController.m in Sources */,
 				CFE628D31D00728E00E320C0 /* News&EventsViewController.m in Sources */,
 				800E1B771C8D50FA00501016 /* VideoInfoModel.m in Sources */,
+				0D31D5601EA1AC11004F5999 /* GlobalMeditationPostHeaderView.m in Sources */,
 				CFDF7D821C69FCC5000A15D3 /* AboutPPEViewController.m in Sources */,
 				CFDF7D7E1C69FC9E000A15D3 /* SideMenuTableViewController.m in Sources */,
 				1814A09B1D2D3A6B009FB069 /* TOCropToolbar.m in Sources */,
@@ -1663,7 +1681,6 @@
 				800E1B541C8D4F9300501016 /* AFHTTPSessionManager.m in Sources */,
 				80D8C4C01C998A9600DB4AFC /* NSString+STTwitter.m in Sources */,
 				800E1B591C8D4F9300501016 /* AFURLSessionManager.m in Sources */,
-				CFC70FA31CC89ED8009F4B50 /* SettingsIpadViewController.m in Sources */,
 				CFFE073B1D05AE1A003E9359 /* EventsModelClass.m in Sources */,
 				CFE451CA1C6B2F7C00E1BC90 /* JTCalendarDayView.m in Sources */,
 				80D8C4C11C998A9600DB4AFC /* STHTTPRequest+STTwitter.m in Sources */,
@@ -1686,14 +1703,15 @@
 				800E1BB81C8D53E900501016 /* MKAnnotationView+WebCache.m in Sources */,
 				CFDF7D7A1C69F884000A15D3 /* UIViewController+MFSideMenuAdditions.m in Sources */,
 				CFD1DF441D227E3000737B88 /* Utility.m in Sources */,
+				0D81B50B1EA44E6300BC96D8 /* SettingsViewController.m in Sources */,
 				80C64A081CA2749600714FD8 /* Data_Model.xcdatamodeld in Sources */,
 				1814A0671D2D0802009FB069 /* RecentSearchListViewController.m in Sources */,
 				CFE451CC1C6B2F7C00E1BC90 /* JTCalendarMenuView.m in Sources */,
 				800E1BBE1C8D53E900501016 /* SDWebImageDownloaderOperation.m in Sources */,
 				800E1BB91C8D53E900501016 /* NSData+ImageContentType.m in Sources */,
+				0D81B50C1EA4555600BC96D8 /* SettingsIpadViewController.m in Sources */,
 				800E1BC51C8D53E900501016 /* UIImageView+HighlightedWebCache.m in Sources */,
 				80D8C4BE1C998A9600DB4AFC /* NSDateFormatter+STTwitter.m in Sources */,
-				99CC32951C71E80300813E99 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1837,8 +1855,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Divami Design Labs Private Limited (5M4R6UQ5NU)";
-				DEVELOPMENT_TEAM = 5M4R6UQ5NU;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				DEVELOPMENT_TEAM = KY5YD2HZMG;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1851,10 +1869,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.divami.meditation;
-				PRODUCT_NAME = "Pin Prick Effect";
-				PROVISIONING_PROFILE = "20572cc4-7ccd-491e-927f-7d64d942d044";
-				PROVISIONING_PROFILE_SPECIFIER = Meditation_Adhoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinprickeffect.meditation;
+				PRODUCT_NAME = "Om Swami Meditations";
+				PROVISIONING_PROFILE = "a89abf53-777c-47fe-86fe-152fc913a1bc";
+				PROVISIONING_PROFILE_SPECIFIER = PPEAppStore;
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -1867,8 +1885,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Divami Design Labs Private Limited (5M4R6UQ5NU)";
-				DEVELOPMENT_TEAM = 5M4R6UQ5NU;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				DEVELOPMENT_TEAM = KY5YD2HZMG;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1881,10 +1899,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.divami.meditation;
-				PRODUCT_NAME = "Pin Prick Effect";
-				PROVISIONING_PROFILE = "20572cc4-7ccd-491e-927f-7d64d942d044";
-				PROVISIONING_PROFILE_SPECIFIER = Meditation_Adhoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinprickeffect.meditation;
+				PRODUCT_NAME = "Om Swami Meditations";
+				PROVISIONING_PROFILE = "a89abf53-777c-47fe-86fe-152fc913a1bc";
+				PROVISIONING_PROFILE_SPECIFIER = PPEAppStore;
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};

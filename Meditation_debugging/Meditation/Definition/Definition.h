@@ -28,12 +28,12 @@
 #define Decode_Type                                 @"2"
 #define Zipjson_Type                                @"2"
 
-#define Google_Client_ID                            @"208078458988-a0tlohndgt4pefvcv18dd4brdohe5995.apps.googleusercontent.com"
+#define Google_Client_ID                            @"271006501796-egj8di88aee8gjin05iutamvef2i397j.apps.googleusercontent.com"
 #define Twitter_Consumer_Key       @"caF37zwrZG17PtHFv7QYYtYrT"
 #define  Twitter_Consumer_Secret                                                            @"wzzzBdZPutTHPAI4jOUeeLml0LJt2182bR6joyCs9gHQj33EPJ"
 //#define Twitter_Consumer_Key       @"hxFds2KSu2ZBYohhOCCtRsdyC"
 //#define  Twitter_Consumer_Secret                                                            @"jmdWfx3dpG9M371Y4PpRD9jVPFLCD19yPpKVQ1i7aPNoO2vRgW"
-#define facebook_App_Id                             @"160362147687887"
+#define facebook_App_Id                             @"270746240039142"
 //#define facebook_App_Id                             @"187925611588556"
 
 #endif /* Definition_h */

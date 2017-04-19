@@ -11,56 +11,68 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="kNY-zj-SD9" customClass="GlobalMeditationHeaderView">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+        <view contentMode="scaleToFill" id="kNY-zj-SD9" customClass="GlobalMeditationPostHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRe-TD-Zuf">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="es3-y1-4Od">
-                    <rect key="frame" x="20" y="0.0" width="295" height="60"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meditate at will, available for 3 days after completion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyv-f4-SMi">
+                    <rect key="frame" x="20" y="45" width="300" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6kV-1c-rtT"/>
+                        <constraint firstAttribute="width" constant="300" id="Vk8-8d-vRb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="past meditations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="es3-y1-4Od">
+                    <rect key="frame" x="20" y="5" width="309" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-LI-Edd">
-                    <rect key="frame" x="323" y="0.0" width="44" height="60"/>
+                    <rect key="frame" x="323" y="5" width="44" height="70"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="2eK-Ne-4rR"/>
                     </constraints>
-                    <state key="normal" image="DownArrow"/>
+                    <state key="normal" image="UpArrow"/>
                     <state key="selected" image="UpArrow"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="GlobalMeditationPostHeaderView"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="es3-y1-4Od" secondAttribute="bottom" constant="10" id="2Al-1O-CGX"/>
+                <constraint firstAttribute="bottom" secondItem="es3-y1-4Od" secondAttribute="bottom" constant="35" id="2Al-1O-CGX"/>
                 <constraint firstItem="MRe-TD-Zuf" firstAttribute="centerX" secondItem="kNY-zj-SD9" secondAttribute="centerX" id="523-Oo-NzN"/>
-                <constraint firstAttribute="bottom" secondItem="MRe-TD-Zuf" secondAttribute="bottom" constant="10" id="7BT-AN-yif"/>
+                <constraint firstAttribute="bottom" secondItem="MRe-TD-Zuf" secondAttribute="bottom" id="7BT-AN-yif"/>
+                <constraint firstAttribute="trailing" secondItem="cyv-f4-SMi" secondAttribute="trailing" constant="55" id="B6O-xm-GUN"/>
+                <constraint firstItem="cyv-f4-SMi" firstAttribute="leading" secondItem="kNY-zj-SD9" secondAttribute="leading" constant="20" id="Cvw-Uv-Di0"/>
                 <constraint firstAttribute="trailing" secondItem="MRe-TD-Zuf" secondAttribute="trailing" id="L4a-eW-S64"/>
                 <constraint firstItem="MRe-TD-Zuf" firstAttribute="top" secondItem="kNY-zj-SD9" secondAttribute="top" id="M7S-Jg-e5S"/>
                 <constraint firstItem="MRe-TD-Zuf" firstAttribute="leading" secondItem="kNY-zj-SD9" secondAttribute="leading" id="Uo7-Q9-3YY"/>
-                <constraint firstItem="dik-LI-Edd" firstAttribute="leading" secondItem="es3-y1-4Od" secondAttribute="trailing" constant="8" id="g20-If-adU"/>
+                <constraint firstItem="dik-LI-Edd" firstAttribute="leading" secondItem="es3-y1-4Od" secondAttribute="trailing" constant="-6" id="g20-If-adU"/>
                 <constraint firstItem="es3-y1-4Od" firstAttribute="leading" secondItem="kNY-zj-SD9" secondAttribute="leading" constant="20" id="iTV-pY-bgp"/>
-                <constraint firstItem="es3-y1-4Od" firstAttribute="top" secondItem="kNY-zj-SD9" secondAttribute="top" id="jRZ-F1-K5R"/>
-                <constraint firstAttribute="bottom" secondItem="dik-LI-Edd" secondAttribute="bottom" constant="10" id="m9s-BV-tAC"/>
+                <constraint firstItem="es3-y1-4Od" firstAttribute="top" secondItem="kNY-zj-SD9" secondAttribute="top" constant="5" id="jRZ-F1-K5R"/>
+                <constraint firstItem="cyv-f4-SMi" firstAttribute="top" secondItem="es3-y1-4Od" secondAttribute="bottom" id="juy-0g-t8f"/>
+                <constraint firstAttribute="bottom" secondItem="dik-LI-Edd" secondAttribute="bottom" constant="5" id="m9s-BV-tAC"/>
                 <constraint firstAttribute="trailing" secondItem="dik-LI-Edd" secondAttribute="trailing" constant="8" id="vOh-jl-DzO"/>
-                <constraint firstItem="dik-LI-Edd" firstAttribute="top" secondItem="kNY-zj-SD9" secondAttribute="top" id="yQj-mT-6Ev"/>
+                <constraint firstItem="dik-LI-Edd" firstAttribute="top" secondItem="kNY-zj-SD9" secondAttribute="top" constant="5" id="yQj-mT-6Ev"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="_arrowButton" destination="dik-LI-Edd" id="g1y-VS-szD"/>
-                <outlet property="_titleLabel" destination="es3-y1-4Od" id="Fuh-4r-O1P"/>
+                <outlet property="_titleLabel" destination="es3-y1-4Od" id="6F8-Kr-Xv7"/>
             </connections>
             <point key="canvasLocation" x="45.5" y="115"/>
         </view>
     </objects>
     <resources>
-        <image name="DownArrow" width="33" height="33"/>
         <image name="UpArrow" width="33" height="33"/>
     </resources>
 </document>

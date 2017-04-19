@@ -93,7 +93,7 @@
                                                                  nil)
                      forState:UIControlStateNormal];
     [_doneTextButton setTitleColor:[UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f] forState:UIControlStateNormal];
-    [_doneTextButton.titleLabel setFont:[UIFont fontWithName:@"santana" size:17.0f]];
+    [_doneTextButton.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:17.0f]];
     [_doneTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_doneTextButton];
     
@@ -109,7 +109,7 @@
                                                                    resourceBundle,
                                                                    nil)
                        forState:UIControlStateNormal];
-    [_cancelTextButton.titleLabel setFont:[UIFont fontWithName:@"santana" size:17.0f]];
+    [_cancelTextButton.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:17.0f]];
     [_cancelTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_cancelTextButton];
     

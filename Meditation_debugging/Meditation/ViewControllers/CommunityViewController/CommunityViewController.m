@@ -249,10 +249,10 @@
     viewLabel.backgroundColor=[UIColor clearColor];
     viewLabel.textColor=[UIColor whiteColor];
     if ([Utility sharedInstance].isDeviceIpad) {
-        viewLabel.font=[UIFont fontWithName:@"Santana" size:24.0];
+        viewLabel.font=[UIFont fontWithName:@"ProximaNova-Regular" size:24.0];
     }
     else
-        viewLabel.font=[UIFont fontWithName:@"Santana" size:14.0];
+        viewLabel.font=[UIFont fontWithName:@"ProximaNova-Regular" size:14.0];
     if (section==0)
     {
         viewLabel.text=@"upcoming events";

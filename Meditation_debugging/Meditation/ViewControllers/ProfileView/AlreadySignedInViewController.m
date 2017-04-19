@@ -384,7 +384,7 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             toolView.backgroundColor = [UIColor colorWithRed:249/255.0 green:249/255.0 blue:249/255.0 alpha:1];
             UIButton *doneBtn;
             //        UIButton *cancelBtn=[[UIButton alloc]initWithFrame:CGRectMake(5,20,65,20)];
-            //        [cancelBtn.titleLabel setFont:[UIFont fontWithName:@"santana" size:15]];
+            //        [cancelBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15]];
             //        [cancelBtn setTitle:@"Cancel" forState:UIControlStateNormal];
             //        [cancelBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
             //        [cancelBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
@@ -393,18 +393,18 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
             {
                 titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200,10,400,40)];
                 
-                [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:24.0]];
+                [titleLbl setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:24.0]];
                  doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -80,10,75,40)];
-                [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:24]];
+                [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:24]];
 
             }
             else
             {
                 titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,20,200,20)];
 
-                [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:15.0]];
+                [titleLbl setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:15.0]];
                  doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -50,20,45,20)];
-                [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:15]];
+                [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:15]];
 
             }
             [doneBtn setTitle:@"done" forState:UIControlStateNormal];
@@ -616,18 +616,18 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
         {
             contentPickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0 ,61,self.view.frame.size.width,200)];
             doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -80,20,75,20)];
-            [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:24]];
+            [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:24]];
             titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 200,10,400,40)];
-            [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:24.0]];
+            [titleLbl setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:24.0]];
 
         }
         else
         {
             contentPickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0 ,61,self.view.frame.size.width,100)];
             doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -50,20,45,20)];
-            [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:15]];
+            [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:15]];
             titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,10,200,40)];
-            [titleLbl setFont:[UIFont fontWithName:@"santana-Bold" size:15.0]];
+            [titleLbl setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:15.0]];
 
         }
         contentPickerView.delegate = self;
@@ -640,7 +640,7 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
         [doneBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
         
         //        UIButton *cancelBtn=[[UIButton alloc]initWithFrame:CGRectMake(5,20,65,20)];
-        //        [cancelBtn.titleLabel setFont:[UIFont fontWithName:@"santana" size:15]];
+        //        [cancelBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15]];
         //        [cancelBtn setTitle:@"Cancel" forState:UIControlStateNormal];
         //        [cancelBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         //        [cancelBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
@@ -860,11 +860,11 @@ if (![self.btnEdit.currentImage isEqual:[UIImage imageNamed:@"edit"]])          
                           }
                           if ([Utility sharedInstance].isDeviceIpad )
                           {
-                              [self.selfDescriptionTextView setFont:[UIFont fontWithName:@"santana-Bold" size:21.0]];
+                              [self.selfDescriptionTextView setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:21.0]];
                           }
                           else
                           {
-                              [self.selfDescriptionTextView setFont:[UIFont fontWithName:@"santana-Bold" size:17.0]];
+                              [self.selfDescriptionTextView setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:17.0]];
                           }
                           self.lblDescriptionTextCount.text = [NSString stringWithFormat:@"%ld/%d",textCount ,MAX_TEXT_LIMIT_FOR_DESCRIPTION];
                       }

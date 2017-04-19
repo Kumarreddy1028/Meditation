@@ -106,7 +106,7 @@
             gifImageView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, gifView.frame.size.width, 135)];
             shareButton=[[UIButton alloc]initWithFrame:CGRectMake(dailyHumourView.frame.size.width-60,5, 50,50)];
             [humourTextView setTextContainerInset:UIEdgeInsetsMake(25, 25, 30, 30)];
-            [titleLabel setFont:[UIFont fontWithName:@"santana" size:30]];
+            [titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:30]];
             
 
         }
@@ -122,7 +122,7 @@
             
             shareButton=[[UIButton alloc]initWithFrame:CGRectMake(dailyHumourView.frame.size.width-40, 6, 30, 30)];
             [humourTextView setTextContainerInset:UIEdgeInsetsMake(5, 10, 5, 10)];
-            [titleLabel setFont:[UIFont fontWithName:@"santana" size:20]];
+            [titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:20]];
         }
         
         humourTextView.editable=NO;
@@ -622,11 +622,11 @@
               }
               }
               if ([Utility sharedInstance].isDeviceIpad) {
-                  [humourTextView setFont:[UIFont fontWithName:@"santana" size:24.0]];
+                  [humourTextView setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:24.0]];
               }
               else
               {
-                  [humourTextView setFont:[UIFont fontWithName:@"santana" size:17.0]];
+                  [humourTextView setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:17.0]];
               }
           }
           else

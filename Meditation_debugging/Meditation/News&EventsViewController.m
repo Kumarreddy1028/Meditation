@@ -362,7 +362,7 @@
     MDLabel *label = [[MDLabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(bgView.frame), headerHeight)];
     label.leftPading = 17;
     [label setTextColor:[UIColor whiteColor]];
-    [label setFont:[UIFont fontWithName:@"Santana" size:(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) ? 30.0 : 20.0]];
+    [label setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad) ? 30.0 : 20.0]];
     
     if (tableView.numberOfSections == 2) {
         if (section == 0) {

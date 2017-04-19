@@ -11,6 +11,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Proxima Nova Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
         <array key="Santana-Bold.ttf">
             <string>Santana-Bold</string>
         </array>
@@ -83,7 +89,7 @@
                                     <constraint firstAttribute="height" constant="15" id="4zF-Ir-8zR"/>
                                     <constraint firstAttribute="width" constant="40" id="dV5-wh-ThE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -163,7 +169,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bvg-xZ-Nra" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gfo-Zr-JsJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gfo-Zr-JsJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -228,13 +234,13 @@
                                                         <constraint firstAttribute="width" constant="81" id="33W-df-FFi"/>
                                                         <constraint firstAttribute="height" constant="21" id="xcB-RH-hlO"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11march" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-FV-AU2">
                                                     <rect key="frame" x="97" y="26" width="171" height="21"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -243,7 +249,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="VNo-Qv-LVK"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -359,7 +365,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="GUK-tO-Mto"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -368,7 +374,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="Rej-AN-PKD"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -605,7 +611,7 @@
                                 <rect key="frame" x="20" y="197" width="335" height="470"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outlet property="delegate" destination="MRc-WC-gFl" id="BvN-vw-pOz"/>
@@ -878,7 +884,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="dbP-GE-7o1"/>
                                                                 <constraint firstAttribute="width" constant="90" id="vb2-su-g5Q"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -890,10 +896,10 @@
                                                                 <constraint firstAttribute="height" constant="25" id="Mz9-NR-ztD"/>
                                                                 <constraint firstAttribute="width" constant="84" id="nbj-Pn-R8a"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                             <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
-                                                            <size key="titleShadowOffset" width="-1" height="-1"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
                                                             <state key="normal" title="guided" image="pin_unselect">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -905,9 +911,9 @@
                                                                 <constraint firstAttribute="height" constant="25" id="517-mx-UZe"/>
                                                                 <constraint firstAttribute="width" constant="90" id="RXy-td-Ii2"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                             <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                            <size key="titleShadowOffset" width="-1" height="-1"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
                                                             <state key="normal" title="music" image="pin_select">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -920,7 +926,7 @@
                                                                 <constraint firstAttribute="height" constant="11" id="4e6-V6-pKm"/>
                                                             </constraints>
                                                             <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Z-Te-BQb">
@@ -929,8 +935,8 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="32" id="U49-9U-xI4"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
-                                                            <size key="titleShadowOffset" width="-1" height="-1"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
                                                             <state key="normal" title="start">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -942,7 +948,8 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="32" id="zgB-De-cJU"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                                                            <size key="titleShadowOffset" width="-1" height="1"/>
                                                             <state key="normal" title="download">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1121,73 +1128,12 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-p7-Htn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
+                                            <rect key="frame" x="0.0" y="5" width="375" height="220"/>
                                             <color key="tintColor" red="0.38039215686274508" green="0.28235294117647058" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </mapView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mj4-11-2cu">
-                                            <rect key="frame" x="0.0" y="281" width="375" height="135"/>
+                                            <rect key="frame" x="0.0" y="221" width="375" height="135"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="Qwq-ha-n0I">
-                                                    <rect key="frame" x="96" y="13" width="25" height="25"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="avF-kH-Jsv"/>
-                                                        <constraint firstAttribute="width" constant="25" id="lyJ-DX-XGH"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditators" translatesAutoresizingMaskIntoConstraints="NO" id="vK1-w0-GAb">
-                                                    <rect key="frame" x="190" y="13" width="31" height="26"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="26" id="5Hf-aC-BeR"/>
-                                                        <constraint firstAttribute="width" constant="31" id="aYc-Or-XWN"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldwide" translatesAutoresizingMaskIntoConstraints="NO" id="DCM-Dc-TGP">
-                                                    <rect key="frame" x="280" y="13" width="28" height="25"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="28" id="9fi-wc-LqH"/>
-                                                        <constraint firstAttribute="height" constant="25" id="yhP-4M-Q14"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhl-Bk-833">
-                                                    <rect key="frame" x="48" y="47" width="120" height="18"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="18" id="csl-cw-6ap"/>
-                                                        <constraint firstAttribute="width" constant="120" id="ufE-lk-MlT"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="11"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meditators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2w-Wi-rMC">
-                                                    <rect key="frame" x="174" y="47" width="63" height="18"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="18" id="4zY-ej-CQp"/>
-                                                        <constraint firstAttribute="width" constant="63" id="bu3-W6-NBU"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="11"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="countries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKK-zL-Cgc">
-                                                    <rect key="frame" x="264" y="46" width="60" height="18"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="jVp-Hb-Amg"/>
-                                                        <constraint firstAttribute="height" constant="18" id="nsA-Y4-vRL"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="11"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zko-3j-xEg">
-                                                    <rect key="frame" x="48" y="65" width="120" height="16"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="16" id="K7f-jv-4Y2"/>
-                                                        <constraint firstAttribute="width" constant="120" id="pf0-go-MUZ"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="13"/>
-                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7do-k8-kGz">
                                                     <rect key="frame" x="20" y="89" width="335" height="44"/>
                                                     <color key="backgroundColor" red="0.3803921569" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1203,71 +1149,132 @@
                                                         <action selector="btnJoinActn:" destination="bdh-EH-par" eventType="touchUpInside" id="1QX-cV-Q6D"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvU-MV-9Fx">
-                                                    <rect key="frame" x="280" y="65" width="30" height="16"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="in" translatesAutoresizingMaskIntoConstraints="NO" id="Qwq-ha-n0I">
+                                                    <rect key="frame" x="66" y="14" width="25" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="16" id="nyy-66-C2R"/>
-                                                        <constraint firstAttribute="width" constant="30" id="y9g-UA-wmP"/>
+                                                        <constraint firstAttribute="height" constant="25" id="avF-kH-Jsv"/>
+                                                        <constraint firstAttribute="width" constant="25" id="lyJ-DX-XGH"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="13"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditators" translatesAutoresizingMaskIntoConstraints="NO" id="vK1-w0-GAb">
+                                                    <rect key="frame" x="172" y="13" width="31" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26" id="5Hf-aC-BeR"/>
+                                                        <constraint firstAttribute="width" constant="31" id="aYc-Or-XWN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldwide" translatesAutoresizingMaskIntoConstraints="NO" id="DCM-Dc-TGP">
+                                                    <rect key="frame" x="281" y="14" width="28" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="28" id="9fi-wc-LqH"/>
+                                                        <constraint firstAttribute="height" constant="25" id="yhP-4M-Q14"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhl-Bk-833">
+                                                    <rect key="frame" x="20" y="47" width="116" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="csl-cw-6ap"/>
+                                                        <constraint firstAttribute="width" constant="116" id="ufE-lk-MlT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="11"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meditators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2w-Wi-rMC">
+                                                    <rect key="frame" x="156" y="47" width="63" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="4zY-ej-CQp"/>
+                                                        <constraint firstAttribute="width" constant="63" id="bu3-W6-NBU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="11"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zko-3j-xEg">
+                                                    <rect key="frame" x="20" y="66" width="116" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="K7f-jv-4Y2"/>
+                                                        <constraint firstAttribute="width" constant="116" id="pf0-go-MUZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUA-PU-rkA">
-                                                    <rect key="frame" x="180" y="65" width="50" height="16"/>
+                                                    <rect key="frame" x="162" y="66" width="50" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="K38-lM-lxg"/>
                                                         <constraint firstAttribute="width" constant="50" id="zJZ-bR-Kmj"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="countries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKK-zL-Cgc">
+                                                    <rect key="frame" x="265" y="47" width="60" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="jVp-Hb-Amg"/>
+                                                        <constraint firstAttribute="height" constant="18" id="nsA-Y4-vRL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="11"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n.a." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvU-MV-9Fx">
+                                                    <rect key="frame" x="281" y="66" width="30" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="nyy-66-C2R"/>
+                                                        <constraint firstAttribute="width" constant="30" id="y9g-UA-wmP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="C2w-Wi-rMC" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="17.5" id="1r3-2K-Ryy"/>
-                                                <constraint firstItem="nUA-PU-rkA" firstAttribute="top" secondItem="C2w-Wi-rMC" secondAttribute="bottom" id="3BO-o5-7bI"/>
+                                                <constraint firstItem="C2w-Wi-rMC" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" id="1r3-2K-Ryy"/>
+                                                <constraint firstItem="nUA-PU-rkA" firstAttribute="top" secondItem="C2w-Wi-rMC" secondAttribute="bottom" constant="1" id="3BO-o5-7bI"/>
                                                 <constraint firstItem="tvU-MV-9Fx" firstAttribute="centerX" secondItem="HKK-zL-Cgc" secondAttribute="centerX" constant="1" id="3UD-i8-Aah"/>
-                                                <constraint firstItem="Zko-3j-xEg" firstAttribute="top" secondItem="lhl-Bk-833" secondAttribute="bottom" id="ABO-eG-Sju"/>
+                                                <constraint firstItem="Zko-3j-xEg" firstAttribute="top" secondItem="lhl-Bk-833" secondAttribute="bottom" constant="1" id="ABO-eG-Sju"/>
                                                 <constraint firstItem="vK1-w0-GAb" firstAttribute="top" secondItem="Mj4-11-2cu" secondAttribute="top" constant="13" id="Ave-G4-IPx"/>
-                                                <constraint firstItem="7do-k8-kGz" firstAttribute="top" secondItem="nUA-PU-rkA" secondAttribute="bottom" constant="8" id="BU5-aB-Kr7"/>
+                                                <constraint firstItem="7do-k8-kGz" firstAttribute="top" secondItem="nUA-PU-rkA" secondAttribute="bottom" constant="7" id="BU5-aB-Kr7"/>
                                                 <constraint firstItem="7do-k8-kGz" firstAttribute="leading" secondItem="Mj4-11-2cu" secondAttribute="leading" constant="20" id="FXj-cG-q10"/>
-                                                <constraint firstItem="nUA-PU-rkA" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="17" id="G5p-uG-4uj"/>
-                                                <constraint firstItem="lhl-Bk-833" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="-80" id="JLt-gA-v1H"/>
-                                                <constraint firstItem="Qwq-ha-n0I" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="-79.5" id="LT3-dL-wb6"/>
+                                                <constraint firstItem="nUA-PU-rkA" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="-0.5" id="G5p-uG-4uj"/>
+                                                <constraint firstItem="lhl-Bk-833" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="-109.5" id="JLt-gA-v1H"/>
+                                                <constraint firstItem="Qwq-ha-n0I" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="-109" id="LT3-dL-wb6"/>
                                                 <constraint firstItem="7do-k8-kGz" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" id="Lq0-ot-gDa"/>
-                                                <constraint firstItem="DCM-Dc-TGP" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="106" id="NIP-ug-RFT"/>
+                                                <constraint firstItem="DCM-Dc-TGP" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="107.5" id="NIP-ug-RFT"/>
                                                 <constraint firstItem="HKK-zL-Cgc" firstAttribute="centerX" secondItem="DCM-Dc-TGP" secondAttribute="centerX" id="OuX-bC-Qyq"/>
                                                 <constraint firstItem="HKK-zL-Cgc" firstAttribute="top" secondItem="DCM-Dc-TGP" secondAttribute="bottom" constant="8" id="SAx-lm-chJ"/>
                                                 <constraint firstItem="C2w-Wi-rMC" firstAttribute="top" secondItem="vK1-w0-GAb" secondAttribute="bottom" constant="8" id="SLh-mG-9ev"/>
                                                 <constraint firstAttribute="height" constant="135" id="SX6-q3-Ief"/>
-                                                <constraint firstItem="Zko-3j-xEg" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="-80" id="bIt-Uk-4gv"/>
-                                                <constraint firstItem="DCM-Dc-TGP" firstAttribute="top" secondItem="Mj4-11-2cu" secondAttribute="top" constant="13" id="bed-vM-SGW"/>
-                                                <constraint firstItem="lhl-Bk-833" firstAttribute="top" secondItem="Qwq-ha-n0I" secondAttribute="bottom" constant="9" id="bic-lr-xLd"/>
+                                                <constraint firstItem="Zko-3j-xEg" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="-109.5" id="bIt-Uk-4gv"/>
+                                                <constraint firstItem="DCM-Dc-TGP" firstAttribute="top" secondItem="Mj4-11-2cu" secondAttribute="top" constant="14" id="bed-vM-SGW"/>
+                                                <constraint firstItem="lhl-Bk-833" firstAttribute="top" secondItem="Qwq-ha-n0I" secondAttribute="bottom" constant="8" id="bic-lr-xLd"/>
                                                 <constraint firstAttribute="trailing" secondItem="7do-k8-kGz" secondAttribute="trailing" constant="20" id="e2h-eu-out"/>
-                                                <constraint firstItem="Qwq-ha-n0I" firstAttribute="top" secondItem="Mj4-11-2cu" secondAttribute="top" constant="13" id="ean-ow-gJd"/>
-                                                <constraint firstItem="vK1-w0-GAb" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" constant="17.5" id="oSv-9m-aRK"/>
+                                                <constraint firstItem="Qwq-ha-n0I" firstAttribute="top" secondItem="Mj4-11-2cu" secondAttribute="top" constant="14" id="ean-ow-gJd"/>
+                                                <constraint firstItem="vK1-w0-GAb" firstAttribute="centerX" secondItem="Mj4-11-2cu" secondAttribute="centerX" id="oSv-9m-aRK"/>
                                                 <constraint firstItem="tvU-MV-9Fx" firstAttribute="top" secondItem="HKK-zL-Cgc" secondAttribute="bottom" constant="1" id="vqx-yb-PpV"/>
                                             </constraints>
                                         </view>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toc-qf-xFx">
-                                            <rect key="frame" x="20" y="416" width="200" height="0.0"/>
+                                            <rect key="frame" x="20" y="351" width="200" height="0.0"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="9TT-WG-YKE"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.28000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="toc-qf-xFx" secondAttribute="bottom" id="0PM-fS-9Hw"/>
+                                        <constraint firstAttribute="bottom" secondItem="toc-qf-xFx" secondAttribute="bottom" constant="65" id="0PM-fS-9Hw"/>
                                         <constraint firstItem="Mj4-11-2cu" firstAttribute="leading" secondItem="x9w-IR-qku" secondAttribute="leading" id="Vnr-HU-ANG"/>
-                                        <constraint firstItem="hyv-p7-Htn" firstAttribute="top" secondItem="x9w-IR-qku" secondAttribute="top" id="ZVO-OQ-Stm"/>
-                                        <constraint firstItem="toc-qf-xFx" firstAttribute="top" secondItem="Mj4-11-2cu" secondAttribute="bottom" id="bf3-Xa-eFa"/>
-                                        <constraint firstItem="Mj4-11-2cu" firstAttribute="top" secondItem="hyv-p7-Htn" secondAttribute="bottom" constant="-2" id="djY-hm-9k8"/>
+                                        <constraint firstItem="hyv-p7-Htn" firstAttribute="top" secondItem="x9w-IR-qku" secondAttribute="top" constant="5" id="ZVO-OQ-Stm"/>
+                                        <constraint firstItem="toc-qf-xFx" firstAttribute="top" secondItem="Mj4-11-2cu" secondAttribute="bottom" constant="-5" id="bf3-Xa-eFa"/>
+                                        <constraint firstItem="Mj4-11-2cu" firstAttribute="top" secondItem="hyv-p7-Htn" secondAttribute="bottom" constant="-4" id="djY-hm-9k8"/>
                                         <constraint firstAttribute="trailing" secondItem="hyv-p7-Htn" secondAttribute="trailing" id="hXs-aM-Moo"/>
                                         <constraint firstItem="toc-qf-xFx" firstAttribute="leading" secondItem="x9w-IR-qku" secondAttribute="leading" constant="20" id="m6f-TA-P9y"/>
                                         <constraint firstItem="hyv-p7-Htn" firstAttribute="leading" secondItem="x9w-IR-qku" secondAttribute="leading" id="rSU-8z-nNJ"/>
@@ -1283,9 +1290,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="172.6k mediators" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC0-k2-7fE">
-                                                    <rect key="frame" x="46" y="30" width="129" height="21"/>
+                                                    <rect key="frame" x="46" y="30" width="156" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1316,7 +1323,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15-OCT-15 at 11:30am PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTD-gR-Fwk">
                                                     <rect key="frame" x="46" y="8" width="253" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1351,6 +1358,11 @@
                                     <action selector="dashboardBtnActn:" destination="bdh-EH-par" eventType="touchUpInside" id="XaQ-rQ-moa"/>
                                 </connections>
                             </button>
+                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7h-6G-vUb">
+                                <rect key="frame" x="0.0" y="32" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="global meditation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwu-DV-beY">
                                 <rect key="frame" x="49" y="20" width="234" height="25"/>
                                 <constraints>
@@ -1360,30 +1372,22 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7h-6G-vUb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="X7h-6G-vUb" firstAttribute="leading" secondItem="qcQ-W9-JEx" secondAttribute="leading" id="24q-lC-528"/>
                             <constraint firstItem="8x3-eg-euc" firstAttribute="top" secondItem="qcQ-W9-JEx" secondAttribute="top" constant="16" id="2h2-Uk-xRn"/>
                             <constraint firstItem="uXN-yk-kwD" firstAttribute="top" secondItem="pDO-sV-hPf" secondAttribute="bottom" constant="16" id="4Xl-b2-lsV"/>
                             <constraint firstAttribute="trailing" secondItem="rGg-Nt-Scm" secondAttribute="trailing" constant="10" id="7OZ-ND-p2S"/>
                             <constraint firstItem="iwu-DV-beY" firstAttribute="top" secondItem="pDO-sV-hPf" secondAttribute="bottom" constant="20" id="7Uu-zb-rn5"/>
                             <constraint firstItem="rGg-Nt-Scm" firstAttribute="leading" secondItem="eaP-Qt-uuw" secondAttribute="trailing" constant="10" id="7cX-Q9-0G8"/>
-                            <constraint firstItem="4sn-e2-Wh3" firstAttribute="top" secondItem="X7h-6G-vUb" secondAttribute="bottom" id="94b-oZ-j1y"/>
                             <constraint firstItem="DED-qU-5AH" firstAttribute="leading" secondItem="qcQ-W9-JEx" secondAttribute="leading" id="Gkz-pj-T2s"/>
                             <constraint firstItem="eaP-Qt-uuw" firstAttribute="top" secondItem="qcQ-W9-JEx" secondAttribute="top" constant="16" id="Kqv-tj-Vg5"/>
                             <constraint firstItem="DED-qU-5AH" firstAttribute="top" secondItem="rGg-Nt-Scm" secondAttribute="bottom" constant="15" id="OIT-xC-hu6"/>
-                            <constraint firstAttribute="trailing" secondItem="X7h-6G-vUb" secondAttribute="trailing" id="Toy-sy-lar"/>
                             <constraint firstAttribute="trailing" secondItem="DED-qU-5AH" secondAttribute="trailing" id="YPL-hA-dWZ"/>
                             <constraint firstItem="sm2-7h-KFo" firstAttribute="top" secondItem="qcQ-W9-JEx" secondAttribute="top" id="ZUY-hK-a0F"/>
                             <constraint firstItem="4sn-e2-Wh3" firstAttribute="top" secondItem="sm2-7h-KFo" secondAttribute="bottom" id="bL3-cJ-aLa"/>
                             <constraint firstAttribute="trailing" secondItem="sm2-7h-KFo" secondAttribute="trailing" id="dZE-sC-UXD"/>
                             <constraint firstItem="4sn-e2-Wh3" firstAttribute="top" secondItem="DED-qU-5AH" secondAttribute="bottom" id="fE6-xN-Wy1"/>
-                            <constraint firstItem="X7h-6G-vUb" firstAttribute="top" secondItem="rGg-Nt-Scm" secondAttribute="bottom" constant="15" id="h88-3d-DX8"/>
                             <constraint firstItem="iwu-DV-beY" firstAttribute="leading" secondItem="uXN-yk-kwD" secondAttribute="trailing" constant="6" id="jEZ-Tk-lQa"/>
                             <constraint firstItem="sm2-7h-KFo" firstAttribute="leading" secondItem="qcQ-W9-JEx" secondAttribute="leading" id="jic-zO-sbH"/>
                             <constraint firstAttribute="trailing" secondItem="8x3-eg-euc" secondAttribute="trailing" constant="10" id="lWd-hS-ZeP"/>
@@ -1496,23 +1500,23 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvj-EN-zNg">
-                                        <rect key="frame" x="73" y="44" width="11" height="13.5"/>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                        <rect key="frame" x="73" y="44" width="11" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meditators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2U9-0H-MCp">
-                                        <rect key="frame" x="150.5" y="44" width="61" height="13.5"/>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                        <rect key="frame" x="150.5" y="44" width="60.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbz-RK-OeD">
-                                        <rect key="frame" x="43" y="64" width="73" height="15"/>
+                                        <rect key="frame" x="43" y="64" width="73" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="73" id="ETN-rI-KcL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1522,7 +1526,7 @@
                                             <constraint firstAttribute="width" constant="39" id="8gU-5u-och"/>
                                             <constraint firstAttribute="height" constant="16" id="HHu-fK-U5g"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1532,7 +1536,7 @@
                                             <constraint firstAttribute="width" constant="21" id="8ua-Eb-xDc"/>
                                             <constraint firstAttribute="height" constant="16" id="uJ4-S2-Hbb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1542,7 +1546,7 @@
                                             <constraint firstAttribute="height" constant="14" id="LyS-1U-2T0"/>
                                             <constraint firstAttribute="width" constant="60" id="Wm4-Sn-xNq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1667,7 +1671,7 @@
                                     <constraint firstAttribute="width" constant="20" id="3Ay-B9-0ZC"/>
                                     <constraint firstAttribute="height" constant="15" id="QuH-9k-Uh8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1676,7 +1680,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="tVL-S2-p83"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1855,7 +1859,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="izR-an-YaM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1941,7 +1945,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWX-L6-pD6">
                                                     <rect key="frame" x="56" y="19" width="256" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1968,7 +1972,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dashboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvI-Fd-uoA">
                                                     <rect key="frame" x="56" y="19" width="92" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1995,7 +1999,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="about" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAK-w5-zit">
                                                     <rect key="frame" x="56" y="19" width="168" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2022,7 +2026,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sje-CJ-E0w">
                                                     <rect key="frame" x="56" y="19" width="72" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2044,7 +2048,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Om Swami's blog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKv-Wu-OyX">
                                                     <rect key="frame" x="56" y="19" width="215" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2082,7 +2086,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Om Swami videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOX-De-Wcm">
                                                     <rect key="frame" x="52" y="20" width="215" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2116,7 +2120,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="social share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBz-zJ-ug4">
                                                     <rect key="frame" x="56" y="19" width="96" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2143,7 +2147,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ni-43-FSm">
                                                     <rect key="frame" x="56" y="19" width="125" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="0.8901960784313725" green="0.81176470588235294" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -2342,7 +2346,7 @@
                                                             <action selector="facebookSignInActionButton:" destination="9Ti-4a-xRN" eventType="touchUpInside" id="Vjc-KA-oxf"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXZ-bv-fdP" userLabel="twitter">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXZ-bv-fdP" userLabel="twitter">
                                                         <rect key="frame" x="159" y="214" width="57" height="57"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="57" id="Lbw-05-G9h"/>
@@ -2454,7 +2458,7 @@
                                                 <rect key="frame" x="70" y="105" width="100" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Submit">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -2465,7 +2469,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your email id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-5f-NJL">
                                                 <rect key="frame" x="8" y="50" width="224" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="9Ti-4a-xRN" id="Tug-YE-wxM"/>
@@ -2584,7 +2588,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="qgU-Fb-2tK"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="Hkf-o1-Pms" id="O12-YG-MVz"/>
@@ -2640,7 +2644,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="lrN-KM-iOZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="19"/>
                                                 <state key="normal" title="sign up">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2656,7 +2660,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="TvN-xf-HIk"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="Hkf-o1-Pms" id="kdr-pd-x1T"/>
@@ -2676,7 +2680,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="CA1-TE-P4W"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="Hkf-o1-Pms" id="Zey-Tw-lax"/>
@@ -2800,7 +2804,7 @@
                                     <constraint firstAttribute="height" constant="15" id="9fn-Rc-8Xu"/>
                                     <constraint firstAttribute="width" constant="20" id="gxS-5W-Uww"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2828,7 +2832,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Qre-SR-VI6"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2837,7 +2841,7 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="P2X-FM-iuW" appends="YES" id="nUY-pV-Grr"/>
@@ -2966,7 +2970,7 @@
                                                             <constraint firstAttribute="height" constant="20" id="Hfh-ZL-GVR"/>
                                                             <constraint firstAttribute="width" constant="142" id="xrQ-nh-rF6"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2988,7 +2992,7 @@
                                                             <constraint firstAttribute="width" constant="150" id="2MP-UX-HdY"/>
                                                             <constraint firstAttribute="height" constant="30" id="lVF-mx-O6m"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69287455669999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -2998,12 +3002,13 @@
                                                             <constraint firstAttribute="height" constant="40" id="0w9-ja-9E3"/>
                                                             <constraint firstAttribute="width" constant="128" id="QAY-FC-dw8"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                                         <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kan-Qd-rUw">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                         <connections>
                                                             <action selector="expandButtonAction:" destination="246-Gg-5Pp" eventType="touchUpInside" id="NM2-aJ-0yV"/>
                                                         </connections>
@@ -3034,7 +3039,7 @@
                                                             <constraint firstAttribute="height" constant="21" id="5dF-HG-NMf"/>
                                                             <constraint firstAttribute="width" constant="100" id="Gha-Am-tR6"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3044,7 +3049,7 @@
                                                             <constraint firstAttribute="height" constant="33" id="H30-nA-Wsu"/>
                                                             <constraint firstAttribute="width" constant="31" id="zyv-s9-C1f"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                         <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                                         <state key="normal" image="unselect">
@@ -3061,7 +3066,7 @@
                                                             <constraint firstAttribute="height" constant="33" id="oT9-Dp-2kv"/>
                                                             <constraint firstAttribute="width" constant="33" id="v1b-xL-NXQ"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                         <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                                         <state key="normal" image="unselect">
@@ -3078,7 +3083,7 @@
                                                             <constraint firstAttribute="width" constant="185" id="HQN-Aq-a9N"/>
                                                             <constraint firstAttribute="height" constant="21" id="WyV-hI-gYc"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3088,7 +3093,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="33" id="OmM-dr-8gd"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                         <state key="normal" title="save">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -3099,7 +3104,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5B-ii-fR1">
                                                         <rect key="frame" x="45" y="55" width="42" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70154633620689655" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3134,7 +3139,7 @@
                                                             <constraint firstAttribute="width" constant="197" id="ED2-hy-XO8"/>
                                                             <constraint firstAttribute="height" constant="30" id="u0u-sk-g1L"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69287455669999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3144,12 +3149,13 @@
                                                             <constraint firstAttribute="width" constant="80" id="7i1-WA-8Rn"/>
                                                             <constraint firstAttribute="height" constant="40" id="8a1-yj-7Z6"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                                         <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUF-Jc-5RK">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                         <connections>
                                                             <action selector="expandButtonAction:" destination="246-Gg-5Pp" eventType="touchUpInside" id="MPs-QQ-5xF"/>
                                                         </connections>
@@ -3180,7 +3186,7 @@
                                                             <constraint firstAttribute="height" constant="21" id="40Z-d6-DmY"/>
                                                             <constraint firstAttribute="width" constant="172" id="JQb-9T-cZA"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3274,7 +3280,7 @@
                                                             <constraint firstAttribute="height" constant="21" id="ddC-NA-mEb"/>
                                                             <constraint firstAttribute="width" constant="40" id="hCa-bo-YUV"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3299,7 +3305,7 @@
                                                             <constraint firstAttribute="width" constant="40" id="bkg-HQ-zZh"/>
                                                             <constraint firstAttribute="height" constant="21" id="dub-f8-ivL"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3324,7 +3330,7 @@
                                                             <constraint firstAttribute="height" constant="21" id="Lon-UU-Qn8"/>
                                                             <constraint firstAttribute="width" constant="150" id="SR0-mD-n3c"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3391,7 +3397,7 @@
                                                             <constraint firstAttribute="width" constant="80" id="QSI-lJ-66d"/>
                                                             <constraint firstAttribute="height" constant="30" id="YVM-Yg-7oT"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3401,7 +3407,7 @@
                                                             <constraint firstAttribute="width" constant="90" id="2Mm-EQ-G0F"/>
                                                             <constraint firstAttribute="height" constant="30" id="wE2-9c-ERi"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="13"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3439,7 +3445,7 @@
                                                             <constraint firstAttribute="width" constant="40" id="899-hp-PWI"/>
                                                             <constraint firstAttribute="height" constant="21" id="ycq-hz-UuU"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3492,7 +3498,7 @@
                                                             <constraint firstAttribute="height" constant="2" id="UUw-Hz-PxH"/>
                                                             <constraint firstAttribute="width" constant="2" id="q7b-I5-eKh"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3503,7 +3509,7 @@
                                                             <constraint firstAttribute="width" constant="2" id="DGn-rt-1Yc"/>
                                                             <constraint firstAttribute="height" constant="2" id="eQG-Qu-OaE"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3556,7 +3562,7 @@
                                                             <constraint firstAttribute="height" constant="2" id="TSy-8a-vT0"/>
                                                             <constraint firstAttribute="width" constant="2" id="qR1-Zt-4HT"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3567,7 +3573,7 @@
                                                             <constraint firstAttribute="height" constant="2" id="XQK-Fy-8F3"/>
                                                             <constraint firstAttribute="width" constant="2" id="k9y-FQ-FMG"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3630,7 +3636,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="QIJ-KV-4Gh"/>
                                                             <constraint firstAttribute="height" constant="33" id="njT-J8-2Vl"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3690,7 +3696,7 @@
                                                             <constraint firstAttribute="height" constant="20" id="Dsy-Wk-tTH"/>
                                                             <constraint firstAttribute="width" constant="90" id="aMs-ZX-ANM"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3712,7 +3718,7 @@
                                                             <constraint firstAttribute="width" constant="150" id="e7x-Zt-ZDc"/>
                                                             <constraint firstAttribute="height" constant="30" id="kjx-FN-iVI"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3733,7 +3739,7 @@
                                                             <constraint firstAttribute="width" constant="90" id="DyU-S1-yus"/>
                                                             <constraint firstAttribute="height" constant="20" id="dyY-r8-aV1"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3755,7 +3761,7 @@
                                                             <constraint firstAttribute="height" constant="30" id="qia-hE-zMl"/>
                                                             <constraint firstAttribute="width" constant="150" id="xEn-Xv-mL5"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -3776,7 +3782,7 @@
                                                             <constraint firstAttribute="height" constant="30" id="Upj-Re-n5G"/>
                                                             <constraint firstAttribute="width" constant="150" id="rtN-B6-8Ln"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -4179,7 +4185,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="dzv-lV-Nq4"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="14"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -4307,7 +4313,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="4DO-nG-sMB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75202047409999995" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -4316,7 +4322,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="iwC-tt-Mqg"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -4325,7 +4331,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="9Ft-FM-C0K"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -4393,7 +4399,7 @@
                                         <rect key="frame" x="20" y="200" width="335" height="333"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -4527,16 +4533,16 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="TVE-2c-JLt"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-Ga-snm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-Ga-snm">
                                                     <rect key="frame" x="20" y="40" width="305" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="kH3-ys-K9v"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -4546,13 +4552,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="B8l-pg-sJ4"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ncM-Ga-snm" firstAttribute="top" secondItem="2Pt-sd-N90" secondAttribute="bottom" id="2Oh-AH-RTl"/>
+                                                <constraint firstItem="ncM-Ga-snm" firstAttribute="top" secondItem="2Pt-sd-N90" secondAttribute="bottom" constant="5" id="2Oh-AH-RTl"/>
                                                 <constraint firstAttribute="trailing" secondItem="ncM-Ga-snm" secondAttribute="trailing" constant="50" id="3Wc-xg-XcB"/>
                                                 <constraint firstItem="iuK-cG-LcQ" firstAttribute="leading" secondItem="8KN-Pb-jZk" secondAttribute="leading" id="A86-0T-jqw"/>
                                                 <constraint firstAttribute="bottom" secondItem="iuK-cG-LcQ" secondAttribute="bottom" id="CNE-H7-Bry"/>
@@ -4580,16 +4586,16 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="AdO-6l-lb9"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlH-do-YU2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlH-do-YU2">
                                                     <rect key="frame" x="20" y="40" width="305" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="s5f-j2-29u"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -4599,7 +4605,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="neb-0d-wrK"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                     <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -4610,7 +4616,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="oXx-EW-5WD" secondAttribute="trailing" constant="100" id="OYa-mS-xUS"/>
                                                 <constraint firstItem="IlH-do-YU2" firstAttribute="leading" secondItem="oYk-pK-MBT" secondAttribute="leading" constant="20" id="Pgl-pK-sSv"/>
                                                 <constraint firstAttribute="trailing" secondItem="Rn3-jG-php" secondAttribute="trailing" id="T2P-fg-TUy"/>
-                                                <constraint firstItem="IlH-do-YU2" firstAttribute="top" secondItem="oXx-EW-5WD" secondAttribute="bottom" id="ZN2-FE-o7E"/>
+                                                <constraint firstItem="IlH-do-YU2" firstAttribute="top" secondItem="oXx-EW-5WD" secondAttribute="bottom" constant="5" id="ZN2-FE-o7E"/>
                                                 <constraint firstItem="Rn3-jG-php" firstAttribute="leading" secondItem="oYk-pK-MBT" secondAttribute="leading" id="azM-xP-Ird"/>
                                                 <constraint firstItem="oXx-EW-5WD" firstAttribute="leading" secondItem="oYk-pK-MBT" secondAttribute="leading" constant="20" id="d5H-TS-J0A"/>
                                                 <constraint firstAttribute="bottom" secondItem="Rn3-jG-php" secondAttribute="bottom" id="dN1-IN-lXv"/>
@@ -4678,7 +4684,7 @@
                                     <constraint firstAttribute="width" constant="150" id="Los-iC-jxt"/>
                                     <constraint firstAttribute="height" constant="25" id="M3b-Xt-S5o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4698,7 +4704,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="news" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYr-1M-KHl">
                                         <rect key="frame" x="17" y="5" width="318" height="34"/>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -4734,7 +4740,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsY-bG-C90">
@@ -4859,7 +4865,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="VYV-wR-HLw"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="Kij-mH-7TL"/>
@@ -4871,15 +4877,15 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="0gA-v7-bRj"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-dH-OSo">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-dH-OSo">
                                                 <rect key="frame" x="32" y="156" width="18" height="18"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="14" id="JJI-fu-qr8"/>
-                                                    <constraint firstAttribute="width" constant="14" id="qDG-yw-NJ6"/>
+                                                    <constraint firstAttribute="height" constant="18" id="JJI-fu-qr8"/>
+                                                    <constraint firstAttribute="width" constant="18" id="qDG-yw-NJ6"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lnR-Og-Soh">
@@ -4917,7 +4923,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="lVO-1V-u4l"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="_placeholdertext." value="YES"/>
@@ -4950,7 +4956,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="wtD-Zo-UJH"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="bbY-w3-SZr"/>
@@ -5017,7 +5023,7 @@
                                                     <constraint firstAttribute="width" constant="76" id="Apm-b7-nNc"/>
                                                     <constraint firstAttribute="height" constant="21" id="PGG-Hp-UoP"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -5037,7 +5043,7 @@
                                                     <constraint firstAttribute="height" constant="120" id="CqO-YQ-fw8"/>
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="RkH-5j-mCj"/>
@@ -5050,14 +5056,14 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04r-1v-fKQ">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04r-1v-fKQ">
                                                 <rect key="frame" x="94" y="445" width="152" height="35"/>
                                                 <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="5fe-Qq-fbd"/>
                                                     <constraint firstAttribute="width" constant="152" id="AEQ-cM-4m8"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="change password">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -5087,7 +5093,7 @@
                                             <constraint firstItem="PHD-Bz-8PC" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="GRa-xX-aWj"/>
                                             <constraint firstAttribute="trailing" secondItem="d4U-XD-Yfa" secondAttribute="trailing" constant="30" id="ItQ-4r-g4q"/>
                                             <constraint firstItem="raM-Ld-nJe" firstAttribute="top" secondItem="AQk-EA-adc" secondAttribute="bottom" constant="4" id="JoA-gh-YEh"/>
-                                            <constraint firstItem="lnR-Og-Soh" firstAttribute="leading" secondItem="J8h-dH-OSo" secondAttribute="trailing" constant="8" id="KcX-3r-Bri"/>
+                                            <constraint firstItem="lnR-Og-Soh" firstAttribute="leading" secondItem="J8h-dH-OSo" secondAttribute="trailing" constant="4" id="KcX-3r-Bri"/>
                                             <constraint firstAttribute="trailing" secondItem="NDb-0w-bXx" secondAttribute="trailing" constant="30" id="LVy-fT-VjA"/>
                                             <constraint firstAttribute="trailing" secondItem="lnR-Og-Soh" secondAttribute="trailing" constant="33" id="MhX-Qu-7tL"/>
                                             <constraint firstAttribute="trailing" secondItem="2XP-bX-MZB" secondAttribute="trailing" constant="32" id="Ml7-Cv-4gG"/>
@@ -5099,7 +5105,7 @@
                                             <constraint firstItem="q6M-Cz-Kku" firstAttribute="top" secondItem="Vw5-wO-Zn5" secondAttribute="bottom" constant="4" id="Rqp-ep-FsG"/>
                                             <constraint firstItem="Vdn-Cl-e1T" firstAttribute="top" secondItem="O8F-TK-dg6" secondAttribute="bottom" constant="4" id="TFO-VA-Efd"/>
                                             <constraint firstAttribute="trailing" secondItem="raM-Ld-nJe" secondAttribute="trailing" constant="33" id="VBx-7S-CTJ"/>
-                                            <constraint firstItem="04r-1v-fKQ" firstAttribute="centerX" secondItem="G3n-7r-fg9" secondAttribute="centerX" id="Vqv-l5-jIk"/>
+                                            <constraint firstItem="04r-1v-fKQ" firstAttribute="centerX" secondItem="G3n-7r-fg9" secondAttribute="centerX" constant="10" id="Vqv-l5-jIk"/>
                                             <constraint firstItem="AQk-EA-adc" firstAttribute="top" secondItem="G3n-7r-fg9" secondAttribute="top" constant="5" id="Wm1-EW-2dN"/>
                                             <constraint firstItem="uS8-8f-6j1" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="Yg9-zg-hEw"/>
                                             <constraint firstItem="9Ow-re-jvQ" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="30" id="Yuh-Ox-LV6"/>
@@ -5115,7 +5121,7 @@
                                             <constraint firstItem="J8h-dH-OSo" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="fsF-P7-LOp"/>
                                             <constraint firstItem="31W-q8-cnJ" firstAttribute="top" secondItem="d4U-XD-Yfa" secondAttribute="bottom" constant="-22" id="iDm-Rz-kDE"/>
                                             <constraint firstItem="twW-ki-g6A" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="iid-Zc-oRH"/>
-                                            <constraint firstItem="J8h-dH-OSo" firstAttribute="top" secondItem="9Ow-re-jvQ" secondAttribute="bottom" constant="14" id="j8f-OR-ghb"/>
+                                            <constraint firstItem="J8h-dH-OSo" firstAttribute="top" secondItem="9Ow-re-jvQ" secondAttribute="bottom" constant="12" id="j8f-OR-ghb"/>
                                             <constraint firstItem="zsW-cr-SGZ" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="32" id="ng5-5C-X9H"/>
                                             <constraint firstItem="d4U-XD-Yfa" firstAttribute="leading" secondItem="G3n-7r-fg9" secondAttribute="leading" constant="30" id="sBf-cc-Iap"/>
                                             <constraint firstItem="O8F-TK-dg6" firstAttribute="leading" secondItem="PHD-Bz-8PC" secondAttribute="trailing" constant="6" id="u6h-XT-fg1"/>
@@ -5224,7 +5230,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="cSh-iH-ybZ"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" secureTextEntry="YES"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="pDg-Q8-lHZ" id="f37-ii-b3Z"/>
@@ -5247,7 +5253,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="qaL-IL-V6K"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" secureTextEntry="YES"/>
                                                 <connections>
                                                     <action selector="txtNewPswdChangeEvent:" destination="83j-hC-GpN" eventType="editingChanged" id="MFm-as-1xn"/>
@@ -5271,7 +5277,7 @@
                                                     <constraint firstAttribute="height" constant="35" id="TNL-Ca-0Zr"/>
                                                 </constraints>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" secureTextEntry="YES"/>
                                                 <connections>
                                                     <action selector="txtConfirmPswdChangeEvent:" destination="83j-hC-GpN" eventType="editingChanged" id="WCW-Ff-TPm"/>
@@ -5446,7 +5452,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZE-l4-YRc" customClass="chatsLabel">
                                                                     <rect key="frame" x="10" y="5" width="275" height="21"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -5456,7 +5462,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="12" id="8U4-fa-5zb"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -5495,7 +5501,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy8-Jy-AzD" customClass="chatsLabel">
                                                                     <rect key="frame" x="90" y="5" width="275" height="21"/>
                                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -5505,7 +5511,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="12" id="HXO-sP-BRE"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -5545,7 +5551,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="0aI-9T-j7L"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="send"/>
                                             </textField>
                                         </subviews>
@@ -5670,7 +5676,7 @@
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYN-mj-ceD">
                                                             <rect key="frame" x="110" y="15" width="225" height="0.0"/>
-                                                            <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                             <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -5731,13 +5737,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="BDs-Jq-Omu"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV1-bL-dxi">
                                                     <rect key="frame" x="15" y="358" width="345" height="0.0"/>
-                                                    <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -5898,7 +5904,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qze-6C-WLK">
                                         <rect key="frame" x="17" y="5" width="336" height="34"/>
-                                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -5949,7 +5955,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="Gb4-Up-fA2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                         <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -5958,7 +5964,7 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>

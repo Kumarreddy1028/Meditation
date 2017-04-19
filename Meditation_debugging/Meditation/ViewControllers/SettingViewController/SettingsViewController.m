@@ -10,7 +10,7 @@
 #import "MLKMenuPopover.h"
 #import "DashboardViewController.h"
 #import "AppDelegate.h"
-#import "Pin_Prick_Effect-Swift.h"
+#import "Om_Swami_Meditations-Swift.h"
 
 
 @interface SettingsViewController ()<MLKMenuPopoverDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
@@ -248,12 +248,12 @@
     
     setTimeFormatSwitch = [[SevenSwitch alloc] initWithFrame:CGRectMake(self.view.frame.size.width-55, 13, 45, 24)];
     setTimeFormatSwitch.onLabel.text=@"12";
-    [setTimeFormatSwitch.onLabel setFont:[UIFont fontWithName:@"santana" size:13.0]];
+    [setTimeFormatSwitch.onLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:13.0]];
     [setTimeFormatSwitch.onLabel setTextAlignment:NSTextAlignmentRight];
     setTimeFormatSwitch.onLabel.textColor=[UIColor blackColor];
     setTimeFormatSwitch.onTintColor=[UIColor colorWithRed:246.0/255 green:225.0/255 blue:136.0/255 alpha:1.0];;
     setTimeFormatSwitch.offLabel.text=@"24";
-    [setTimeFormatSwitch.offLabel setFont:[UIFont fontWithName:@"santana" size:13.0]];
+    [setTimeFormatSwitch.offLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:13.0]];
 
     [setTimeFormatSwitch.offLabel setTextAlignment:NSTextAlignmentCenter];
     
@@ -541,7 +541,7 @@
         pickerView.backgroundColor = [UIColor whiteColor];
         toolView.backgroundColor = [UIColor colorWithRed:96.0/255 green:74.0/255 blue:121.0/255 alpha:1.0];
         UIButton *doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(frame.size.width - 60,5,50,30)];
-        [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:17]];
+        [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:17]];
         [doneBtn setTitle:@"done" forState:UIControlStateNormal];
         doneBtn.titleLabel.textColor = [UIColor blueColor];
         [doneBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
@@ -1392,7 +1392,7 @@
 //    UIView *toolView = [[UIView alloc]initWithFrame:frame];
 //    toolView.backgroundColor = [UIColor colorWithRed:96.0/255 green:74.0/255 blue:121.0/255 alpha:1.0];
 //    UIButton *doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(150,5,50,30)];
-//    [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:17]];
+//    [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:17]];
 //    [doneBtn setTitle:@"done" forState:UIControlStateNormal];
 //     doneBtn.titleLabel.textColor = [UIColor blueColor];
 //    [doneBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
@@ -1433,14 +1433,14 @@
     UIView *toolView = [[UIView alloc]initWithFrame:frame];
     toolView.backgroundColor = [UIColor colorWithRed:249/255.0 green:249/255.0 blue:249/255.0 alpha:1];
     
-    UIButton *doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -50,20,45,20)];    [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:17]];
+    UIButton *doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -50,20,45,20)];    [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:17]];
     [doneBtn setTitle:@"done" forState:UIControlStateNormal];
     [doneBtn setTitleColor:[UIColor colorWithRed:96/255.0 green:72/255.0 blue:121/255.0 alpha:1] forState:UIControlStateNormal];
     [doneBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     
     UILabel *titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,20,200,20)];
     [titleLbl setTextAlignment:NSTextAlignmentCenter];
-    [titleLbl setFont:[UIFont fontWithName:@"santana" size:15.0]];
+    [titleLbl setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15.0]];
     [titleLbl setText:@"reminder to meditate at"];
     [titleLbl setTextColor:[UIColor colorWithRed:0 green:0 blue:00 alpha:0.69]];
     
@@ -1531,7 +1531,7 @@
 //    pickerView.backgroundColor = [UIColor whiteColor];
 //    toolView.backgroundColor = [UIColor colorWithRed:96.0/255 green:74.0/255 blue:121.0/255 alpha:1.0];
 //    UIButton *doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(150,5,50,30)];
-//    [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:17]];
+//    [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:17]];
 //    [doneBtn setTitle:@"done" forState:UIControlStateNormal];
 //    doneBtn.titleLabel.textColor = [UIColor blueColor];
 //    [doneBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
@@ -1558,20 +1558,20 @@
         pickerView.backgroundColor = [UIColor whiteColor];
         toolView.backgroundColor = [UIColor colorWithRed:249/255.0 green:249/255.0 blue:249/255.0 alpha:1];
         UIButton *doneBtn=[[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width -50,20,45,20)];
-        [doneBtn.titleLabel setFont:[UIFont fontWithName:@"santana-Bold" size:15]];
+        [doneBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Bold" size:15]];
         [doneBtn setTitle:@"done" forState:UIControlStateNormal];
         [doneBtn setTitleColor:[UIColor colorWithRed:96/255.0 green:72/255.0 blue:121/255.0 alpha:1] forState:UIControlStateNormal];
         [doneBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
         
 //        UIButton *cancelBtn=[[UIButton alloc]initWithFrame:CGRectMake(5,20,65,20)];
-//        [cancelBtn.titleLabel setFont:[UIFont fontWithName:@"santana" size:15]];
+//        [cancelBtn.titleLabel setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15]];
 //        [cancelBtn setTitle:@"Cancel" forState:UIControlStateNormal];
 //        [cancelBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
 //        [cancelBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
         
         UILabel *titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100,20,200,20)];
         [titleLbl setTextAlignment:NSTextAlignmentCenter];
-        [titleLbl setFont:[UIFont fontWithName:@"santana" size:15.0]];
+        [titleLbl setFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15.0]];
         [titleLbl setText:@"before meditation"];
         [titleLbl setTextColor:[UIColor colorWithRed:0 green:0 blue:00 alpha:0.69]];
 //        [titleLbl setTitleColor:[UIColor redColor] forState:UIControlStateNormal];

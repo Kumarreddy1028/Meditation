@@ -73,7 +73,7 @@
 
     MeditateNowModelClass *obj=[_dataArray objectAtIndex:indexPath.section];
 
-   CGSize size=[self getsizeOfString:obj.topicDescription andMaxWidth:self.view.frame.size.width-50 andFont:[UIFont fontWithName:@"santana" size:15.0]];
+   CGSize size=[self getsizeOfString:obj.topicDescription andMaxWidth:self.view.frame.size.width-50 andFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15.0]];
     
     if (size.height > 90)
     {
@@ -241,7 +241,7 @@
     
     viewLabel.backgroundColor=[UIColor clearColor];
     viewLabel.textColor=[UIColor colorWithRed:66/255.0 green:60/255.0 blue:79/255.0 alpha:1];
-    viewLabel.font=[UIFont fontWithName:@"santana" size:17.0];
+    viewLabel.font=[UIFont fontWithName:@"ProximaNova-Regular" size:17.0];
     viewLabel.text=obj.topicName;
     [sectionView addSubview:viewLabel];
     
@@ -270,7 +270,7 @@
 
     /***********Add a Label on sectionView **********/
     rightLabel=[[UILabel alloc]initWithFrame:CGRectMake( _tableView.frame.size.width-43,33,35,10)];
-    rightLabel.font=[UIFont fontWithName:@"santana" size:11.0];
+    rightLabel.font=[UIFont fontWithName:@"ProximaNova-Regular" size:11.0];
     rightLabel.textAlignment = NSTextAlignmentCenter;
     rightLabel.text = [[Utility sharedInstance] convertNumberIntoDepiction:obj.likeCounts];
     rightLabel.textColor=[UIColor lightGrayColor];
