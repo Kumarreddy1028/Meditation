@@ -87,6 +87,9 @@
     labelSecond.text = [self changeTimeformat:slt];
     labelSecond.textAlignment = NSTextAlignmentRight;
     customProgressView=objProgress.DrawProgressView;
+    [playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
+    [playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateHighlighted];
+
     
     [customProgressView setFrame:CGRectMake(frameX, self.view.frame.size.height - 60, width, 15)];
     
@@ -210,6 +213,11 @@
 - (void)playBtnAction:(UIButton*)sender
 {
 
+    if ([labelFirst.text isEqualToString:@"loading.."]) {
+        return;
+    }
+
+    
     if ([playButton isSelected])
     {
         [playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];

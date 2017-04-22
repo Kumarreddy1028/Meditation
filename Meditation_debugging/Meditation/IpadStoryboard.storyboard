@@ -534,25 +534,17 @@
                                     <action selector="closeButtonActn:" destination="IEa-O1-hCw" eventType="touchUpInside" id="QuE-Lf-8NA"/>
                                 </connections>
                             </button>
-                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0N-6Q-TkD">
-                                <rect key="frame" x="0.0" y="85" width="768" height="939"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MeY-aq-bCW" firstAttribute="top" secondItem="wJr-49-lfp" secondAttribute="bottom" id="7kh-u3-dze"/>
                             <constraint firstItem="wJr-49-lfp" firstAttribute="top" secondItem="YFj-nG-gkq" secondAttribute="top" id="Byc-tF-9Fj"/>
                             <constraint firstAttribute="trailing" secondItem="Eq9-Ws-zYA" secondAttribute="trailing" constant="15" id="DXh-Mz-wpU"/>
-                            <constraint firstItem="Y0N-6Q-TkD" firstAttribute="leading" secondItem="YFj-nG-gkq" secondAttribute="leading" id="Flx-dK-tFb"/>
                             <constraint firstItem="bwc-R0-U5m" firstAttribute="top" secondItem="CaC-FK-khk" secondAttribute="bottom" constant="15" id="HlR-EB-SrH"/>
                             <constraint firstItem="zUm-Uq-lPg" firstAttribute="leading" secondItem="YFj-nG-gkq" secondAttribute="leading" constant="15" id="JZu-rr-5Ld"/>
                             <constraint firstAttribute="trailing" secondItem="bwc-R0-U5m" secondAttribute="trailing" constant="15" id="KCf-5A-iSc"/>
-                            <constraint firstItem="MeY-aq-bCW" firstAttribute="top" secondItem="Y0N-6Q-TkD" secondAttribute="bottom" id="Lmj-HT-6yN"/>
                             <constraint firstItem="jFi-5u-pqS" firstAttribute="top" secondItem="CaC-FK-khk" secondAttribute="bottom" constant="75" id="OfV-Ho-yVz"/>
                             <constraint firstItem="jFi-5u-pqS" firstAttribute="centerX" secondItem="YFj-nG-gkq" secondAttribute="centerX" id="OzF-Qp-H8n"/>
-                            <constraint firstAttribute="trailing" secondItem="Y0N-6Q-TkD" secondAttribute="trailing" id="l2R-nh-VCv"/>
-                            <constraint firstItem="Y0N-6Q-TkD" firstAttribute="top" secondItem="Eq9-Ws-zYA" secondAttribute="bottom" constant="15" id="oEr-b6-WfQ"/>
                             <constraint firstItem="zUm-Uq-lPg" firstAttribute="top" secondItem="CaC-FK-khk" secondAttribute="bottom" constant="15" id="pST-SA-IrQ"/>
                             <constraint firstItem="Eq9-Ws-zYA" firstAttribute="top" secondItem="CaC-FK-khk" secondAttribute="bottom" constant="15" id="s9Z-JH-XFY"/>
                             <constraint firstItem="wJr-49-lfp" firstAttribute="leading" secondItem="YFj-nG-gkq" secondAttribute="leading" id="ty1-ph-cia"/>
@@ -575,6 +567,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Syl-ll-eh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <webView hidden="YES" contentMode="scaleToFill" id="Y0N-6Q-TkD">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="939"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
             </objects>
             <point key="canvasLocation" x="-7884" y="-9214"/>
         </scene>
@@ -2168,6 +2165,10 @@
                                     <outlet property="delegate" destination="lX7-OW-lCW" id="Hsd-sj-Eo7"/>
                                 </connections>
                             </tableView>
+                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zf-It-ilU">
+                                <rect key="frame" x="0.0" y="85" width="768" height="939"/>
+                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -2181,14 +2182,18 @@
                             <constraint firstItem="jkx-RH-64b" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="GPe-OV-a4a"/>
                             <constraint firstAttribute="trailing" secondItem="rWC-Fe-WAI" secondAttribute="trailing" id="H0p-5C-PqM"/>
                             <constraint firstItem="IZw-IL-M3A" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="OZx-jj-GJM"/>
+                            <constraint firstItem="oBm-H1-C65" firstAttribute="top" secondItem="7Zf-It-ilU" secondAttribute="bottom" id="RDV-wX-5Sx"/>
                             <constraint firstItem="jkx-RH-64b" firstAttribute="centerX" secondItem="MsP-tB-sMq" secondAttribute="centerX" id="T8z-uw-A1y"/>
                             <constraint firstItem="rWC-Fe-WAI" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" id="cwB-LI-oh0"/>
                             <constraint firstItem="aUt-A9-QJI" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="eec-Lh-KQ2"/>
+                            <constraint firstAttribute="trailing" secondItem="7Zf-It-ilU" secondAttribute="trailing" id="enz-UO-66G"/>
                             <constraint firstAttribute="trailing" secondItem="aUt-A9-QJI" secondAttribute="trailing" constant="15" id="hW0-Re-KPk"/>
                             <constraint firstItem="zrB-6q-wfh" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="icW-I8-0gT"/>
                             <constraint firstAttribute="trailing" secondItem="jdV-6a-Pkl" secondAttribute="trailing" id="mZe-6e-b9w"/>
                             <constraint firstItem="Qei-fy-szl" firstAttribute="top" secondItem="cgf-bz-IG0" secondAttribute="bottom" constant="15" id="ruh-Fg-TVX"/>
+                            <constraint firstItem="7Zf-It-ilU" firstAttribute="top" secondItem="jkx-RH-64b" secondAttribute="bottom" constant="15" id="vm1-jD-mxw"/>
                             <constraint firstItem="oBm-H1-C65" firstAttribute="top" secondItem="rWC-Fe-WAI" secondAttribute="bottom" id="xhe-Ht-RCh"/>
+                            <constraint firstItem="7Zf-It-ilU" firstAttribute="leading" secondItem="MsP-tB-sMq" secondAttribute="leading" id="ztB-7u-Vrq"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -2202,6 +2207,7 @@
                         <outlet property="countries" destination="V3j-Qt-14G" id="yrE-VK-udl"/>
                         <outlet property="dashboardBtn" destination="aUt-A9-QJI" id="F26-5D-O3S"/>
                         <outlet property="infoBtn" destination="Qei-fy-szl" id="3WB-Yc-Cqa"/>
+                        <outlet property="infoWebView" destination="7Zf-It-ilU" id="byD-S3-nBb"/>
                         <outlet property="istDateTime" destination="8CX-7G-GXI" id="OFp-WQ-BZY"/>
                         <outlet property="mapViewOutlet" destination="Se3-LE-eD8" id="LTc-hF-UHs"/>
                         <outlet property="meditatorsCount" destination="hKW-Xf-jn4" id="K8c-4C-1cj"/>
@@ -5041,7 +5047,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvZ-bQ-oyn">
                                 <rect key="frame" x="0.0" y="145" width="768" height="879"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
