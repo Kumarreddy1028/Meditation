@@ -8,7 +8,7 @@
 
 #import "SettingsIpadViewController.h"
 #import "MLKMenuPopover.h"
-#import "Om_Swami_Meditations-Swift.h"
+#import "Black_Lotus-Swift.h"
 
 @interface SettingsIpadViewController ()<MLKMenuPopoverDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
 {

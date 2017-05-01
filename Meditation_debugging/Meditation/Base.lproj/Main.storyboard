@@ -169,7 +169,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bvg-xZ-Nra" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gfo-Zr-JsJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gfo-Zr-JsJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -198,14 +198,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G0-T5-DZ9">
-                                <rect key="frame" x="10" y="16" width="33" height="71"/>
+                                <rect key="frame" x="10" y="16" width="33" height="74"/>
                                 <state key="normal" image="back"/>
                                 <connections>
                                     <action selector="menuBtnActn:" destination="SlI-ah-ad0" eventType="touchUpInside" id="hEe-bf-fW0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="community" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx4-9J-HVq">
-                                <rect key="frame" x="113" y="40" width="150" height="23"/>
+                                <rect key="frame" x="113" y="40" width="150" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="rcI-n1-EOu"/>
                                 </constraints>
@@ -477,7 +477,7 @@
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2u-ec-QiC">
-                                        <rect key="frame" x="20" y="9" width="162.5" height="33"/>
+                                        <rect key="frame" x="20" y="9" width="163" height="33"/>
                                         <color key="backgroundColor" red="0.37647058823529411" green="0.29019607843137252" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="kBJ-q1-aGl"/>
@@ -491,7 +491,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4y-Ns-mxD">
-                                        <rect key="frame" x="192.5" y="9" width="162.5" height="33"/>
+                                        <rect key="frame" x="193" y="9" width="162" height="33"/>
                                         <color key="backgroundColor" red="0.37647058823529411" green="0.29019607843137252" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="j2h-h8-gUA"/>
@@ -1506,7 +1506,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meditators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2U9-0H-MCp">
-                                        <rect key="frame" x="150.5" y="44" width="60.5" height="16"/>
+                                        <rect key="frame" x="149" y="44" width="63" height="16"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -4371,7 +4371,7 @@
                                         </constraints>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-ci-hZD">
-                                        <rect key="frame" x="192.5" y="554" width="162.5" height="35"/>
+                                        <rect key="frame" x="193" y="554" width="162" height="35"/>
                                         <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
                                         <state key="normal" title="share">
@@ -4382,7 +4382,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAE-gl-mB8">
-                                        <rect key="frame" x="20" y="554" width="162.5" height="35"/>
+                                        <rect key="frame" x="20" y="554" width="163" height="35"/>
                                         <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="q6R-aL-pJd"/>
@@ -5923,7 +5923,7 @@
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNq-C5-nKZ">
-                                        <rect key="frame" x="20" y="504" width="162.5" height="35"/>
+                                        <rect key="frame" x="20" y="504" width="163" height="35"/>
                                         <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="7B8-ig-70u"/>
@@ -5937,7 +5937,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-dd-Wea">
-                                        <rect key="frame" x="192.5" y="504" width="162.5" height="35"/>
+                                        <rect key="frame" x="193" y="504" width="162" height="35"/>
                                         <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="nAx-EX-Px4"/>

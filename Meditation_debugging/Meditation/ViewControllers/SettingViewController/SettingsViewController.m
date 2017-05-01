@@ -10,7 +10,7 @@
 #import "MLKMenuPopover.h"
 #import "DashboardViewController.h"
 #import "AppDelegate.h"
-#import "Om_Swami_Meditations-Swift.h"
+#import "Black_Lotus-Swift.h"
 
 
 @interface SettingsViewController ()<MLKMenuPopoverDelegate,UIPickerViewDelegate,UIPickerViewDataSource>

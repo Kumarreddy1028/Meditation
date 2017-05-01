@@ -428,7 +428,7 @@
 		9934B7B01C71EF8D00326DBB /* ServerMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerMessageTableViewCell.m; sourceTree = "<group>"; };
 		9934B7B11C71EF8D00326DBB /* VideoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoListTableViewCell.h; sourceTree = "<group>"; };
 		9934B7B21C71EF8D00326DBB /* VideoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoListTableViewCell.m; sourceTree = "<group>"; };
-		998D6D6A1C608B4100D9E543 /* Pin Prick Effect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pin Prick Effect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		998D6D6A1C608B4100D9E543 /* Black Lotus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Lotus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		998D6D6E1C608B4100D9E543 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		998D6D771C608B4100D9E543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		998D6D791C608B4100D9E543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -999,7 +999,7 @@
 		998D6D6B1C608B4100D9E543 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				998D6D6A1C608B4100D9E543 /* Pin Prick Effect.app */,
+				998D6D6A1C608B4100D9E543 /* Black Lotus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1461,7 +1461,7 @@
 			);
 			name = Meditation;
 			productName = Meditation;
-			productReference = 998D6D6A1C608B4100D9E543 /* Pin Prick Effect.app */;
+			productReference = 998D6D6A1C608B4100D9E543 /* Black Lotus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1476,7 +1476,8 @@
 				TargetAttributes = {
 					998D6D691C608B4100D9E543 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = KY5YD2HZMG;
+						DevelopmentTeam = 3F2YQ9FSH8;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1855,8 +1856,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
-				DEVELOPMENT_TEAM = KY5YD2HZMG;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 3F2YQ9FSH8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1869,10 +1871,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinprickeffect.meditation;
-				PRODUCT_NAME = "Om Swami Meditations";
-				PROVISIONING_PROFILE = "a89abf53-777c-47fe-86fe-152fc913a1bc";
-				PROVISIONING_PROFILE_SPECIFIER = PPEAppStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shikshadashboard.apstore;
+				PRODUCT_NAME = "Black Lotus";
+				PROVISIONING_PROFILE = "925a1dce-492e-4906-a026-28aaf349832a";
+				PROVISIONING_PROFILE_SPECIFIER = AppStoreMProvision;
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -1885,8 +1887,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
-				DEVELOPMENT_TEAM = KY5YD2HZMG;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 3F2YQ9FSH8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1899,10 +1902,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinprickeffect.meditation;
-				PRODUCT_NAME = "Om Swami Meditations";
-				PROVISIONING_PROFILE = "a89abf53-777c-47fe-86fe-152fc913a1bc";
-				PROVISIONING_PROFILE_SPECIFIER = PPEAppStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shikshadashboard.apstore;
+				PRODUCT_NAME = "Black Lotus";
+				PROVISIONING_PROFILE = "925a1dce-492e-4906-a026-28aaf349832a";
+				PROVISIONING_PROFILE_SPECIFIER = AppStoreMProvision;
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};

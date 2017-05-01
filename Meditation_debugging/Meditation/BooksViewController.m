@@ -356,7 +356,7 @@
     {
         if ([country isEqualToString:@"India"])
         {
-            NSURL *buyUrl = [NSURL URLWithString:bookToShow.bookUrl];
+            NSURL *buyUrl = [NSURL URLWithString:bookToShow.bookUrl];  // INDIA MARKET
             
             if ([[UIApplication sharedApplication] canOpenURL: buyUrl])
             {
@@ -365,7 +365,7 @@
         }
         else
         {
-            NSURL *buyUrl = [NSURL URLWithString:bookToShow.countryUrl];
+            NSURL *buyUrl = [NSURL URLWithString:bookToShow.countryUrl]; // .COM MARKET
             
             if ([[UIApplication sharedApplication] canOpenURL: buyUrl])
             {

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "998D6D691C608B4100D9E543"
-               BuildableName = "Om Swami Meditations.app"
+               BuildableName = "Black Lotus.app"
                BlueprintName = "Meditation"
                ReferencedContainer = "container:Meditation.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "998D6D691C608B4100D9E543"
-            BuildableName = "Om Swami Meditations.app"
+            BuildableName = "Black Lotus.app"
             BlueprintName = "Meditation"
             ReferencedContainer = "container:Meditation.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "998D6D691C608B4100D9E543"
-            BuildableName = "Om Swami Meditations.app"
+            BuildableName = "Black Lotus.app"
             BlueprintName = "Meditation"
             ReferencedContainer = "container:Meditation.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "998D6D691C608B4100D9E543"
-            BuildableName = "Om Swami Meditations.app"
+            BuildableName = "Black Lotus.app"
             BlueprintName = "Meditation"
             ReferencedContainer = "container:Meditation.xcodeproj">
          </BuildableReference>
