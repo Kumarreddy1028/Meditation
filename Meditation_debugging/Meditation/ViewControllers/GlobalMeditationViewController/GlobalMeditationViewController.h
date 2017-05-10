@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "CustomMkAnnotationViewForGlobalMeditation.h"
 
 typedef enum {
     rowLikeStateLike, //row is liked
@@ -41,5 +42,13 @@ typedef enum {
 @property (weak, nonatomic) IBOutlet UIButton *dashboardBtn;
 @property (weak, nonatomic) IBOutlet UILabel *titleGlobalMeditation;
 @property (weak, nonatomic) IBOutlet UIWebView *infoWebView;
+
+@property (retain, nonatomic) NSMutableArray *upcomingMeditations, *pastMeditatiions, *dataArray;
+
+@property (strong, nonatomic) CustomMkAnnotationViewForGlobalMeditation *customAnnotation;
+@property (retain, nonatomic) NSMutableDictionary *responseDict;
+-(void)serviceCallForGlobalMeditationJoin:(NSInteger) index;
+-(void)serviceCallForGlobalMeditationUnJoin:(NSInteger) index;
+-(void)serviceCallForLatLong;
 
 @end

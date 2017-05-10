@@ -16,12 +16,11 @@
 #import "GlobalMeditationPostTableViewCell.h"
 #import "GlobalMeditationHeaderView.h"
 #import "GlobalMeditationPostHeaderView.h"
+#import "GlobalMeditationMapCell.h"
 
-@interface GlobalMeditationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate, GlobalMeditationPostTableViewCellDelegate, GlobalMeditationHeaderViewDelegate>
+@interface GlobalMeditationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate, GlobalMeditationPostTableViewCellDelegate, GlobalMeditationHeaderViewDelegate, GlobalMeditationMapCellDelegate>
 {
 
-    NSMutableArray *dataArray;
-    NSMutableArray *upcomingMeditations, *pastMeditatiions;
     NSString *str;
     NSTimer *myTimer;
     CLLocationCoordinate2D centerCoor;
@@ -70,7 +69,9 @@
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationPostTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GlobalMeditationPostTableViewCell"];
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationHeaderView" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"GlobalMeditationHeaderView"];
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationPostHeaderView" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"GlobalMeditationPostHeaderView"];
-    [self.tableViewOutlet reloadData];
+    [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationMapCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GlobalMeditationMapCell"];
+
+//    [self.tableViewOutlet reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -88,10 +89,10 @@
 - (void)setLatestTopicDetails
 {
     
-    GlobalMeditationModelClass *obj=[upcomingMeditations firstObject];
+    GlobalMeditationModelClass *obj=[_upcomingMeditations firstObject];
     if (!obj) {
-        if ([pastMeditatiions count]) {
-            obj = [pastMeditatiions lastObject];
+        if ([_pastMeditatiions count]) {
+            obj = [_pastMeditatiions lastObject];
         }
     }
     if (obj == nil) {
@@ -135,7 +136,7 @@
     
     
     
-    if (([startingdate compare:CurrentDate] == NSOrderedDescending) && (![obj isEqual:[pastMeditatiions lastObject]])) {
+    if (([startingdate compare:CurrentDate] == NSOrderedDescending) && (![obj isEqual:[_pastMeditatiions lastObject]])) {
         if ([obj.isJoined isEqualToString:@"already joined"])
         {
             [self.btnJoin setTitle:@"unjoin" forState:UIControlStateNormal];
@@ -166,11 +167,11 @@
 
     }
     if ([finishedDate compare:CurrentDate] == NSOrderedAscending) {
-        if ([obj isEqual:[pastMeditatiions lastObject]]) {
+        if ([obj isEqual:[_pastMeditatiions lastObject]]) {
             NSLog(@"finishedDate is earlier than CurrentDate");
             self.timeLeft.text=@"Finished";
             [self.btnJoin setTitle:@"Finished" forState:UIControlStateNormal];
-            GlobalMeditationModelClass *obj=[dataArray objectAtIndex:0];
+            GlobalMeditationModelClass *obj=[_dataArray objectAtIndex:0];
             str=[Utility timeDifference:[NSDate date] ToDate:obj.startDate];
             self.timeLeft.text=[Utility changeTimeformat:str];
             [[Utility sharedInstance] setIsFinished:TRUE];
@@ -208,9 +209,9 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0 && isUpcomingSelected) {
-        return upcomingMeditations.count-1;
+        return _upcomingMeditations.count;
     } else if (section == 1 && isPastSelected) {
-        return pastMeditatiions.count;
+        return _pastMeditatiions.count;
     }
     return 0;
 }
@@ -219,7 +220,7 @@
 {
     GlobalMeditationModelClass *obj;
     UITableViewCell *targetCell;
-    obj = indexPath.section == 0 ? upcomingMeditations[indexPath.row+1] : pastMeditatiions[indexPath.row];
+    obj = indexPath.section == 0 ? _upcomingMeditations[indexPath.row] : _pastMeditatiions[indexPath.row];
     
     NSString *inDateStr = obj.startDate;
     NSString *s = @"yyyy-MM-dd HH:mm:ss";
@@ -236,6 +237,25 @@
     NSString *stringTime = [outDateFormatter stringFromDate:outDate];
     NSString *strDateTime=[[[NSString stringWithFormat:@"%@ at %@ ",stringDate,stringTime]stringByReplacingOccurrencesOfString:@"AM" withString:@"am"]stringByReplacingOccurrencesOfString:@"PM" withString:@"pm"];
     if (indexPath.section == 0) {
+        
+        if (indexPath.row == 0) {
+                        GlobalMeditationMapCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cellmapid"];
+            cell.viewcontroller = self;
+            self.mapViewOutlet.showsUserLocation = YES;
+            cell.respDict = self.responseDict;
+//            cell.mapViewOutlet.delegate = self;
+            cell.mapViewOutlet.showsUserLocation = YES;
+            [cell.btnJoin addTarget:self action:@selector(btnJoinActn:) forControlEvents:UIControlEventTouchUpInside];
+            [cell configureCell];
+            
+                        targetCell = cell;
+//            GlobalMeditationTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cellID"];
+//            targetCell = cell;
+            
+                    }
+        else
+            {
+        
         GlobalMeditationTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cellID"];
         targetCell = cell;
         cell.pinBtn.tag=indexPath.row;
@@ -247,15 +267,20 @@
         //    cell.labelNumberOfMeditators.text = obj.meditators;
         
         if (![obj.isJoined isEqualToString:@"already joined"] || obj.isJoined == nil) {
-            [cell.pinBtn setImage:[UIImage imageNamed:@"pin_unselect"] forState:UIControlStateNormal];
+            [cell.pinBtn setTitle:@"join" forState:UIControlStateNormal];
+//            [cell.pinBtn setImage:[UIImage imageNamed:@"pin_unselect"] forState:UIControlStateNormal];
             [cell.joinBtn setTitle:@"join" forState:UIControlStateNormal];
         }
         else
         {
-            [cell.pinBtn setImage:[UIImage imageNamed:@"pin_select"] forState:UIControlStateNormal];
+//            [cell.pinBtn setImage:[UIImage imageNamed:@"pin_select"] forState:UIControlStateNormal];
+            [cell.pinBtn setTitle:@"unjoin" forState:UIControlStateNormal];
+
             [cell.joinBtn setTitle:@"unjoin" forState:UIControlStateNormal];
 
         }
+        
+    }
     } else {
         GlobalMeditationPostTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GlobalMeditationPostTableViewCell"];
         targetCell = cell;
@@ -273,7 +298,7 @@
     
     if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
         
-        if ((section == 1)&&(pastMeditatiions.count == 0)) {
+        if ((section == 1)&&(_pastMeditatiions.count == 0)) {
             return 90;
         }
         
@@ -282,7 +307,7 @@
 
     } else {
         
-        if ((section == 1)&&(pastMeditatiions.count == 0)) {
+        if ((section == 1)&&(_pastMeditatiions.count == 0)) {
             return 80;
         }
 
@@ -293,8 +318,18 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    if (indexPath.section == 0) {
+        if(indexPath.row == 0) {
+            return 755;
+        } else {
+            return 80;
+        }
+    }
+    else {
+        return 60;
+    }
 }
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     
@@ -314,7 +349,7 @@
         
     } else {
         view.isSelected = isPastSelected;
-        if (pastMeditatiions.count == 0) {
+        if (_pastMeditatiions.count == 0) {
             GlobalMeditationPostHeaderView *view1 = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GlobalMeditationPostHeaderView"];
             //            GlobalMeditationPostHeaderView *view1 = [[GlobalMeditationPostHeaderView alloc] initWithReuseIdentifier:@"GlobalMeditationPostHeaderView"];
             return view1;
@@ -337,11 +372,11 @@
 - (void)didSelectedHeader:(GlobalMeditationHeaderView *)view type:(GlobalMeditationHeaderViewType)type {
     if (type == GlobalMeditationHeaderViewTypeUpcomming) {
         isUpcomingSelected = !isUpcomingSelected;
-        if ([upcomingMeditations count] < 2) {
+        if ([_upcomingMeditations count] < 2) {
             return;
         }
     } else {
-        if ([pastMeditatiions count] == 0) {
+        if ([_pastMeditatiions count] == 0) {
             return;
         }
         isPastSelected = !isPastSelected;
@@ -355,7 +390,7 @@
 
 - (void)pastMeditationCellDidSelectPlay:(GlobalMeditationPostTableViewCell *)cell {
     NSIndexPath *indexPath = [self.tableViewOutlet indexPathForCell:cell];
-    GlobalMeditationModelClass *obj = pastMeditatiions[indexPath.row];
+    GlobalMeditationModelClass *obj = _pastMeditatiions[indexPath.row];
     
     MeditationMusicViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"Musicstoryboard"];
     BOOL guided;
@@ -375,6 +410,7 @@
         [self.navigationController pushViewController:cont animated:YES];
     
 }
+
 -(void)timeUpdate
 {
     return;
@@ -386,7 +422,7 @@
     }
     else
     {
-        GlobalMeditationModelClass *obj=[dataArray objectAtIndex:0];
+        GlobalMeditationModelClass *obj=[_dataArray objectAtIndex:0];
         str=[Utility timeDifference:[NSDate date] ToDate:obj.startDate];
         self.timeLeft.text=[Utility changeTimeformat:str];
         
@@ -466,7 +502,7 @@
         if (sender.tag != -1) {
             index = sender.tag;
         }
-        GlobalMeditationModelClass *currentTopic = [upcomingMeditations objectAtIndex:index];
+        GlobalMeditationModelClass *currentTopic = [_upcomingMeditations objectAtIndex:index];
             if ([self.btnJoin.titleLabel.text isEqualToString:@"Begin"])
             {
                 if ([currentTopic.isJoined isEqualToString:@"already joined"])
@@ -559,7 +595,7 @@
     BOOL loggedIn = [[NSUserDefaults standardUserDefaults] boolForKey:@"loggedIn"];
     if (loggedIn)
     {
-         GlobalMeditationModelClass *obj = [upcomingMeditations objectAtIndex:button.tag+1];
+         GlobalMeditationModelClass *obj = [_upcomingMeditations objectAtIndex:button.tag];
         if (![obj.isJoined isEqualToString:@"already joined"])
         {
             [self changeRowLikeStateTo:rowLikeStateLike ofRowWithTopicId:obj andButton:button];
@@ -609,7 +645,9 @@
             [dict setObject:[NSString stringWithFormat:@"                           %f",[Utility sharedInstance].annotationCoord.longitude] forKey:@"longitude"];
             [dict setObject:country forKey:@"country"];
 
-            imageToBeSet = [UIImage imageNamed:@"pin_select"];
+            //imageToBeSet = [UIImage imageNamed:@"pin_select"];
+            
+
         }
             break;
         case rowLikeStateUnlike:
@@ -620,7 +658,7 @@
             [dict setObject:topic.topicId forKey:@"topic_id"];
             [dict setObject:@"2" forKey:@"device_type"];
             [dict setObject:[[Utility sharedInstance] getDeviceToken] forKey:@"device_token"];
-            imageToBeSet = [UIImage imageNamed:@"pin_unselect"];
+//            imageToBeSet = [UIImage imageNamed:@"pin_unselect"];
         }
             break;
             
@@ -696,13 +734,13 @@
     NSLog(@"%s", __FUNCTION__);
 
     
-    for (GlobalMeditationModelClass *objreal in pastMeditatiions) {
+    for (GlobalMeditationModelClass *objreal in _pastMeditatiions) {
         if ([objreal isEqual:obj]) {
             return;
         }
     }
-    [upcomingMeditations removeObject:obj];
-    [pastMeditatiions addObject:obj];
+    [_upcomingMeditations removeObject:obj];
+    [_pastMeditatiions addObject:obj];
     [_tableViewOutlet reloadData];
 }
 
@@ -755,18 +793,18 @@
 //                          [[Utility sharedInstance] setOnlineUsers:[servicesArr[0] objectForKey:@"meditator_count"]];
                           [[NSNotificationCenter defaultCenter] postNotificationName:@"changeOnlineUsersCount" object:nil];
 
-                          dataArray=[NSMutableArray new];
-                          upcomingMeditations = [NSMutableArray new];
+                          _dataArray=[NSMutableArray new];
+                          _upcomingMeditations = [NSMutableArray new];
                           
-                          pastMeditatiions = [NSMutableArray new];
+                          _pastMeditatiions = [NSMutableArray new];
                           for(NSDictionary *dic in servicesArr)
                           {
                               GlobalMeditationModelClass *obj=[[GlobalMeditationModelClass alloc]initWithDictionary:dic];
                               
-                              [dataArray addObject:obj];
+                              [_dataArray addObject:obj];
                               obj.startDt = [obj.startDt dateByAddingTimeInterval:(NSTimeInterval)[Utility totalDurationFromString:obj.duration]];
                               if ([obj.startDt timeIntervalSinceDate:[NSDate date]] >= 0) {
-                                  [upcomingMeditations addObject:obj];
+                                  [_upcomingMeditations addObject:obj];
                                   isUpcomingSelected = TRUE;
                               } else {
                                   NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -775,14 +813,14 @@
                                   NSDate *startDate = [dateFormatter dateFromString:[dic objectForKey:@"start_date"]];
                                   // Meditation past date checking(more than 3 days not considering the event)
                                   if (false == [Utility isPastDateLimitExceeds:[NSDate date] endDate:startDate]) {
-                                      [pastMeditatiions addObject:obj];
+                                      [_pastMeditatiions addObject:obj];
                                       isPastSelected = TRUE;
                                   }
                               }
                           }
                           myTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(setLatestTopicDetails) userInfo:nil repeats:YES];
                           [myTimer fire];
-                          [self.tableViewOutlet reloadData];
+//                          [self.tableViewOutlet reloadData];
                           [self serviceCallForLatLong];
 
                       }
@@ -807,7 +845,7 @@
     if ([country isKindOfClass:[NSNull class]] || country == nil) {
         country = @"";
     }
-    GlobalMeditationModelClass *obj = [upcomingMeditations objectAtIndex:index];
+    GlobalMeditationModelClass *obj = [_upcomingMeditations objectAtIndex:index];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"SERVICE_USER_GLOBAL_MEDITATION_REGISTRATION" forKey:@"REQUEST_TYPE_SENT"];
     [dict setObject:[Utility userId] forKey:User_Id];
@@ -866,7 +904,7 @@
     {
         return;
     }
-    GlobalMeditationModelClass *obj = [upcomingMeditations objectAtIndex:index];
+    GlobalMeditationModelClass *obj = [_upcomingMeditations objectAtIndex:index];
 
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"SERVICE_USER_GLOBAL_MEDITATION_UNREGISTRATION" forKey:@"REQUEST_TYPE_SENT"];
@@ -923,7 +961,7 @@
 
 -(void)serviceCallForLatLong
 {
-    GlobalMeditationModelClass *obj = [dataArray objectAtIndex:0];
+    GlobalMeditationModelClass *obj = [_dataArray objectAtIndex:0];
     NSString *topicIdStr;
     
     if (obj == nil)
@@ -959,6 +997,7 @@
           if ([responseObject isKindOfClass:[NSDictionary class]])
           {
               responseObject = [Utility convertDictionaryIntoUTF8:[responseObject allValues] dictionary:responseObject];
+              self.responseDict = responseObject;
           }
           if (!error)
           {
@@ -979,6 +1018,7 @@
                   {
                       locationIndex = 0;
                       [self addRegionOnMap:responseObject];
+                    
                   }
               }
           }
@@ -1177,9 +1217,11 @@
             for (NSDictionary *dict in latLongArray)
             {
                 CLLocationCoordinate2D center=CLLocationCoordinate2DMake([[dict objectForKey:@"latitude"] doubleValue], [[dict objectForKey:@"longitude"] doubleValue]);
-                CustomMkAnnotationViewForGlobalMeditation *customAnnotation=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
+                CustomMkAnnotationViewForGlobalMeditation *customAnnotation1=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
                 
-                [self.mapViewOutlet addAnnotation:customAnnotation];
+                [self.mapViewOutlet addAnnotation:customAnnotation1];
+                self.customAnnotation = customAnnotation1;
+
             }
         }
     }
@@ -1188,11 +1230,13 @@
         for (NSDictionary *dict in latLongArray)
         {
             CLLocationCoordinate2D center=CLLocationCoordinate2DMake([[dict objectForKey:@"latitude"] doubleValue], [[dict objectForKey:@"longitude"] doubleValue]);
-            CustomMkAnnotationViewForGlobalMeditation *customAnnotation=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
+            CustomMkAnnotationViewForGlobalMeditation *customAnnotation1=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
             
-            [self.mapViewOutlet addAnnotation:customAnnotation];
+            [self.mapViewOutlet addAnnotation:customAnnotation1];
+            self.customAnnotation = customAnnotation1;
         }
     }
+    [self.tableViewOutlet reloadData];
 }
 
 

@@ -26,7 +26,7 @@
 
 - (void)setType:(GlobalMeditationHeaderViewType)type {
     _type = type;
-    NSString *titleString = type == GlobalMeditationHeaderViewTypeUpcomming ? @"upcoming meditation schedule" : @"past meditations";
+    NSString *titleString = type == GlobalMeditationHeaderViewTypeUpcomming ? @"current schedule" : @"past meditations";
     _titleLabel.text = titleString;
     if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
 
