@@ -33,6 +33,34 @@
     [super awakeFromNib];
     
     [self.midView bringSubviewToFront:self];
+    _btnJoin.layer.masksToBounds = NO;
+    _btnJoin.layer.cornerRadius = 8; // if you like rounded corners
+    _btnJoin.layer.shadowOffset = CGSizeMake(-1, -1);
+    _btnJoin.layer.shadowRadius = 5;
+    _btnJoin.layer.shadowOpacity = 0.5;
+    
+    _shadowView.layer.masksToBounds = NO;
+    _shadowView.layer.cornerRadius = 8; // if you like rounded corners
+    _shadowView.layer.shadowOffset = CGSizeMake(-1, -1);
+    _shadowView.layer.shadowRadius = 5;
+    _shadowView.layer.shadowOpacity = 0.5;
+    
+    
+//    self.mapViewOutlet.layer.masksToBounds = NO;
+//    self.mapViewOutlet.layer.cornerRadius = 8; // if you like rounded corners
+//    self.mapViewOutlet.layer.shadowOffset = CGSizeMake(-1, -1);
+//    self.mapViewOutlet.layer.shadowRadius = 5;
+//    self.mapViewOutlet.layer.shadowOpacity = 0.5;
+//    
+//    
+//    self.midView.layer.masksToBounds = NO;
+//    self.midView.layer.cornerRadius = 8; // if you like rounded corners
+//    self.midView.layer.shadowOffset = CGSizeMake(-1, -1);
+//    self.midView.layer.shadowRadius = 5;
+//    self.midView.layer.shadowOpacity = 0.5;
+    
+    
+    
 //    [self setBackgroundColor:[UIColor blackColor]];
     // Initialization code
 //    CLLocationCoordinate2D center=CLLocationCoordinate2DMake([[dict objectForKey:@"latitude"] doubleValue], [[dict objectForKey:@"longitude"] doubleValue]);
@@ -48,6 +76,7 @@
 
 - (void) configureCell {
     self.mapViewOutlet.showsUserLocation = YES;
+    
     [self.mapViewOutlet setMapType:MKMapTypeStandard];
     [self.mapViewOutlet setZoomEnabled:YES];
     [self.mapViewOutlet setScrollEnabled:YES];

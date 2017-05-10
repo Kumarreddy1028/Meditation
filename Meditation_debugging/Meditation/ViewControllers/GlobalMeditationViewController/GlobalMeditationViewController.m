@@ -17,7 +17,7 @@
 #import "GlobalMeditationHeaderView.h"
 #import "GlobalMeditationPostHeaderView.h"
 #import "GlobalMeditationMapCell.h"
-
+#define CUR_MEDITATION_LIMIT 2
 @interface GlobalMeditationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate, GlobalMeditationPostTableViewCellDelegate, GlobalMeditationHeaderViewDelegate, GlobalMeditationMapCellDelegate>
 {
 
@@ -209,7 +209,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0 && isUpcomingSelected) {
-        return _upcomingMeditations.count;
+        return _upcomingMeditations.count>CUR_MEDITATION_LIMIT?CUR_MEDITATION_LIMIT:_upcomingMeditations.count;
     } else if (section == 1 && isPastSelected) {
         return _pastMeditatiions.count;
     }
@@ -260,7 +260,7 @@
         targetCell = cell;
         cell.pinBtn.tag=indexPath.row;
         
-        cell.labelNumberOfMeditators.text=[[[Utility sharedInstance] convertNumberIntoDepiction:obj.meditators]stringByAppendingString:@" meditators"];
+        cell.labelNumberOfMeditators.text=[[[Utility sharedInstance] convertNumberIntoDepiction:obj.meditators]stringByAppendingString:@""];
         cell.joinBtn.tag = indexPath.row+1;
         
         cell.labelTimingAndDate.text=strDateTime;
@@ -320,7 +320,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if(indexPath.row == 0) {
-            return 755;
+            return 560;
         } else {
             return 80;
         }

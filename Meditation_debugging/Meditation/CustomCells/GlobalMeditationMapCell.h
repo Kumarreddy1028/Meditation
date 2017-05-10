@@ -21,7 +21,8 @@
 - (IBAction)btnJoinActn:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *btnMenu;
 - (IBAction)btnMenuActn:(id)sender;
-@property (strong, nonatomic) IBOutlet MKMapView *mapViewOutlet;
+@property (weak, nonatomic) IBOutlet MKMapView *mapViewOutlet;
+@property (weak, nonatomic) IBOutlet UIView *shadowView;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
 @property (weak, nonatomic) IBOutlet UIView *midView;

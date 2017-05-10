@@ -9,8 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Santana.ttf">
-            <string>Santana</string>
+        <array key="Santana-Bold.ttf">
+            <string>Santana-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -26,14 +26,14 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="172.6k mediators" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-DA-cx6">
                         <rect key="frame" x="25" y="30" width="129" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15-OCT-15 at 11:30am PST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg3-UY-eOA">
                         <rect key="frame" x="25" y="8" width="253" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -43,7 +43,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="cuH-7G-nZw"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Santana" family="Santana" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
                         <state key="normal" title="Play"/>
                         <connections>
                             <action selector="onTapPlay:" destination="9g2-tE-Lxb" eventType="touchUpInside" id="hEH-Gl-z0G"/>
