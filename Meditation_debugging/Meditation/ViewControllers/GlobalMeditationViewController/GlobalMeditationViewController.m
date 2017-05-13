@@ -207,7 +207,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+{   
     if (section == 0 && isUpcomingSelected) {
         return _upcomingMeditations.count>CUR_MEDITATION_LIMIT?CUR_MEDITATION_LIMIT:_upcomingMeditations.count;
     } else if (section == 1 && isPastSelected) {
@@ -241,10 +241,13 @@
         if (indexPath.row == 0) {
                         GlobalMeditationMapCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cellmapid"];
             cell.viewcontroller = self;
-            self.mapViewOutlet.showsUserLocation = YES;
+            
+            cell.mapViewOutlet.delegate = cell;
+            
+//            self.mapViewOutlet.showsUserLocation = YES;
             cell.respDict = self.responseDict;
 //            cell.mapViewOutlet.delegate = self;
-            cell.mapViewOutlet.showsUserLocation = YES;
+//            cell.mapViewOutlet.showsUserLocation = YES;
             [cell.btnJoin addTarget:self action:@selector(btnJoinActn:) forControlEvents:UIControlEventTouchUpInside];
             [cell configureCell];
             
@@ -320,9 +323,19 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         if(indexPath.row == 0) {
+            if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
+                return 560;
+            }
+            else {
+                return 340;
+            }
             return 560;
         } else {
-            return 80;
+            if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
+                            return 80;
+            } else {
+                return 60;
+            }
         }
     }
     else {
@@ -349,11 +362,11 @@
         
     } else {
         view.isSelected = isPastSelected;
-        if (_pastMeditatiions.count == 0) {
-            GlobalMeditationPostHeaderView *view1 = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GlobalMeditationPostHeaderView"];
-            //            GlobalMeditationPostHeaderView *view1 = [[GlobalMeditationPostHeaderView alloc] initWithReuseIdentifier:@"GlobalMeditationPostHeaderView"];
-            return view1;
-        }
+//        if (_pastMeditatiions.count == 0) {
+//            GlobalMeditationPostHeaderView *view1 = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"GlobalMeditationPostHeaderView"];
+//            //            GlobalMeditationPostHeaderView *view1 = [[GlobalMeditationPostHeaderView alloc] initWithReuseIdentifier:@"GlobalMeditationPostHeaderView"];
+//            return view1;
+//        }
 
     }
 //    MDLabel *label = [[MDLabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(tableView.bounds), 30)];
@@ -482,6 +495,7 @@
     if ([sender titleForState:UIControlStateNormal] == nil) {
         return;
     }
+    self.btnJoin = sender;
 //    GlobalMeditationModelClass *currentTopic = [dataArray objectAtIndex:0];
 //
 //    MeditationMusicViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"Musicstoryboard"];
@@ -1293,6 +1307,7 @@
 
 - (IBAction)infoBtnActn:(id)sender
 {
+    [self.tableViewOutlet reloadData];
     self.closeBtn.hidden=NO;
     self.infoWebView.hidden=NO;
     self.btnMenu.hidden=YES;

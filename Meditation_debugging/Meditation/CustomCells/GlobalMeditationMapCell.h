@@ -16,7 +16,7 @@
 
 @end
 
-@interface GlobalMeditationMapCell : UITableViewCell
+@interface GlobalMeditationMapCell : UITableViewCell <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnJoin;
 - (IBAction)btnJoinActn:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *btnMenu;

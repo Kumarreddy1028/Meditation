@@ -82,6 +82,15 @@
     [self.mapViewOutlet setScrollEnabled:YES];
     [self.mapViewOutlet setCenterCoordinate:self.mapViewOutlet.userLocation.location.coordinate animated:YES];
     [self addRegionOnMap:self.respDict];
+    
+    
+    MKPointAnnotation *ann = [[MKPointAnnotation alloc] init];
+    ann.title = @"The title";
+    ann.subtitle = @"A subtitle";
+    ann.coordinate = CLLocationCoordinate2DMake (60.123456, 10.123456);
+    [self.mapViewOutlet addAnnotation:ann];
+    [self.mapViewOutlet setShowsUserLocation:YES];
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -405,9 +414,10 @@
 
 - (IBAction)btnJoinActn:(UIButton *)sender
 {
+    return;
+    
     [self.viewcontroller btnJoinActn:sender];
     
-    return;
     if ([sender titleForState:UIControlStateNormal] == nil) {
         return;
     }

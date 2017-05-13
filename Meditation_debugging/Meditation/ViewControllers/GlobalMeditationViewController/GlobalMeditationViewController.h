@@ -15,7 +15,7 @@ typedef enum {
     rowLikeStateUnlike, //row is unliked
 } rowLikeState;
 
-@interface GlobalMeditationViewController : UIViewController
+@interface GlobalMeditationViewController : UIViewController <MKMapViewDelegate, MKAnnotation>
 @property (weak, nonatomic) IBOutlet UIButton *btnJoin;
 - (IBAction)btnJoinActn:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *btnMenu;

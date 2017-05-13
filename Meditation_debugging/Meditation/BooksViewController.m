@@ -354,7 +354,7 @@
     }
     else
     {
-        if ([country isEqualToString:@"India"])
+        if (![country isEqualToString:@"India"])
         {
             NSURL *buyUrl = [NSURL URLWithString:bookToShow.bookUrl];  // INDIA MARKET
             

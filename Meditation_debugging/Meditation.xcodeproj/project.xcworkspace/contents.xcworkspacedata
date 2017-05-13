@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Meditation.xcodeproj">
+      location = "self:/Users/sachintulla/Projects/Working/Release 1.0/Meditation/Meditation_debugging/Meditation.xcodeproj">
    </FileRef>
 </Workspace>
