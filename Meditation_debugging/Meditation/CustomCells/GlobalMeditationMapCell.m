@@ -29,6 +29,15 @@
 
 @implementation GlobalMeditationMapCell
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self configureCell];
+    }
+    return self;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     
@@ -76,21 +85,21 @@
 
 - (void) configureCell {
     self.mapViewOutlet.showsUserLocation = YES;
-    
-    [self.mapViewOutlet setMapType:MKMapTypeStandard];
-    [self.mapViewOutlet setZoomEnabled:YES];
-    [self.mapViewOutlet setScrollEnabled:YES];
-    [self.mapViewOutlet setCenterCoordinate:self.mapViewOutlet.userLocation.location.coordinate animated:YES];
+//    [self.mapViewOutlet setShowsScale:YES];
+//    [self.mapViewOutlet setMapType:MKMapTypeStandard];
+//    [self.mapViewOutlet setZoomEnabled:YES];
+//    [self.mapViewOutlet setScrollEnabled:YES];
+//    [self.mapViewOutlet setCenterCoordinate:self.mapViewOutlet.userLocation.location.coordinate animated:YES];
+    [self setLatestTopicDetails];
     [self addRegionOnMap:self.respDict];
     
     
-    MKPointAnnotation *ann = [[MKPointAnnotation alloc] init];
+   /* MKPointAnnotation *ann = [[MKPointAnnotation alloc] init];
     ann.title = @"The title";
     ann.subtitle = @"A subtitle";
-    ann.coordinate = CLLocationCoordinate2DMake (60.123456, 10.123456);
+    ann.coordinate = CLLocationCoordinate2DMake (17.439111, 78.377987);
     [self.mapViewOutlet addAnnotation:ann];
-    [self.mapViewOutlet setShowsUserLocation:YES];
-    
+    [self.mapViewOutlet setCenterCoordinate:ann.coordinate animated:YES]; */
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -124,8 +133,9 @@
                 for (int i = 0; i < latLongArray.count; i++)
                 {
                     
-                    NSLog(@"hello = %lu",(unsigned long)latLongArray.count);
                     NSDictionary *dict = [latLongArray objectAtIndex:i];
+                    NSLog(@"CountcEll = %lu",[[dict objectForKey:@"count"] integerValue]);
+
                     if ([[dict objectForKey:@"count"] integerValue] == 0)
                     {
                         [latLongArray removeObject:dict];
@@ -138,7 +148,7 @@
             {
                 CLLocationCoordinate2D center=CLLocationCoordinate2DMake([[dict objectForKey:@"latitude"] doubleValue], [[dict objectForKey:@"longitude"] doubleValue]);
                 CustomMkAnnotationViewForGlobalMeditation *customAnnotation1=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
-                
+                customAnnotation1.count = [[dict objectForKey:@"count"] integerValue];
                 [self.mapViewOutlet addAnnotation:customAnnotation1];
                 
             }
@@ -150,11 +160,11 @@
         {
             CLLocationCoordinate2D center=CLLocationCoordinate2DMake([[dict objectForKey:@"latitude"] doubleValue], [[dict objectForKey:@"longitude"] doubleValue]);
             CustomMkAnnotationViewForGlobalMeditation *customAnnotation1=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
-            
+            customAnnotation1.count = [[dict objectForKey:@"count"] integerValue];
+
             [self.mapViewOutlet addAnnotation:customAnnotation1];
         }
     }
-    [self setLatestTopicDetails];
 }
 
 
@@ -324,9 +334,9 @@
     dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
     NSDate *dateFromAString = [dateFormatter dateFromString:obj.startDate];
     
-    NSString *remainingDuration = [Utility remaningTime:[NSDate date] endDate:dateFromAString];
+//    NSString *remainingDuration = [Utility remaningTime:[NSDate date] endDate:dateFromAString];
     
-    NSLog(@"strings remaining duration %@", remainingDuration);
+//    NSLog(@"strings remaining duration %@", remainingDuration);
     str = [Utility timeDifference:[NSDate date] ToDate:obj.startDate];
     
     
@@ -339,7 +349,7 @@
     
     NSDate *finishedDate = [startingdate dateByAddingTimeInterval:duration];
     NSDate *CurrentDate = [NSDate date];
-    NSLog(@"difference %f",[Utility getTimeDifference:obj.startDate]);
+//    NSLog(@"difference %f",[Utility getTimeDifference:obj.startDate]);
     //[self timeUpdate];
     
     
@@ -372,7 +382,7 @@
         NSLog(@"duration %fl, Cduration %@", duration, obj.duration);
         int timeToleave = [Utility totalDurationFromString:obj.duration];
         NSLog(@"Timetoleave1 %d", timeToleave);
-        [self performSelector:@selector(removeUpdatedMediation:) withObject:obj afterDelay:duration];
+//        [self performSelector:@selector(removeUpdatedMediation:) withObject:obj afterDelay:duration];
         
         
     }

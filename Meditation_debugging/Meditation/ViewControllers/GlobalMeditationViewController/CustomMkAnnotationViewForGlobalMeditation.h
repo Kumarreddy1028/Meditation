@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SVPulsingAnnotationView.h"
 #import <MapKit/MapKit.h>
 @interface CustomMkAnnotationViewForGlobalMeditation : NSObject<MKAnnotation>
 @property(nonatomic,assign) CLLocationCoordinate2D coordinate;
+@property(nonatomic) float count;
 @property(copy,nonatomic) NSString *title;
 -(id)initWithTitle:(NSString *)newtitle Location:(CLLocationCoordinate2D)location;
 

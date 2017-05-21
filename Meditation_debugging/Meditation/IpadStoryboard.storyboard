@@ -160,7 +160,7 @@
         <scene sceneID="4zo-vK-ett">
             <objects>
                 <navigationController id="pUV-GZ-0QX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AM6-NU-kAA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AM6-NU-kAA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1550,7 +1550,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3na-DG-EtD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3na-DG-EtD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1953,11 +1953,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Zf-It-ilU">
-                                <rect key="frame" x="0.0" y="80" width="768" height="939"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="rWC-Fe-WAI">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
@@ -2036,6 +2031,9 @@
                                                                 <constraint firstAttribute="width" constant="708" id="EOw-TA-bgj"/>
                                                                 <constraint firstAttribute="height" constant="300" id="fTN-tB-O4Y"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="lX7-OW-lCW" id="NCD-Xq-g9R"/>
+                                                            </connections>
                                                         </mapView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEH-YV-ZdT">
                                                             <rect key="frame" x="10" y="300" width="708" height="200"/>
@@ -2247,6 +2245,11 @@
                                     <outlet property="delegate" destination="lX7-OW-lCW" id="Hsd-sj-Eo7"/>
                                 </connections>
                             </tableView>
+                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Zf-It-ilU">
+                                <rect key="frame" x="0.0" y="80" width="768" height="939"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

@@ -747,6 +747,8 @@
     {
         return;
     }
+    [SVProgressHUD show];
+
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"MEDITATION_INFORMATION" forKey:@"REQUEST_TYPE_SENT"];
     
@@ -764,6 +766,8 @@
           {
               responseObject = [Utility convertDictionaryIntoUTF8:[responseObject allValues] dictionary:responseObject];
           }
+          [SVProgressHUD dismissWithDelay:1.0];
+
           if (!error)
           {
               NSLog(@"Reply JSON: %@", responseObject);

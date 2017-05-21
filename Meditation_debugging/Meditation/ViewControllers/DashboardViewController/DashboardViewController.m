@@ -491,6 +491,8 @@
     {
         return;
     }
+    [SVProgressHUD show];
+
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"DASHBOARD_INFORMATION" forKey:@"REQUEST_TYPE_SENT"];
     
@@ -504,6 +506,8 @@
     
     [[manager dataTaskWithRequest:req completionHandler:^(NSURLResponse  * response, id  responseObject, NSError * error )
       {
+          [SVProgressHUD dismissWithDelay:1.0];
+
           responseObject = [Utility convertIntoUTF8:[responseObject allValues] dictionary:responseObject];
           if (!error)
           {

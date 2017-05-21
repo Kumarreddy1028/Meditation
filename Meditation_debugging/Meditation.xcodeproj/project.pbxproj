@@ -212,6 +212,8 @@
 		0D31D55F1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalMeditationPostHeaderView.xib; sourceTree = "<group>"; };
 		0DCD925D1EA3F53700B6E5D1 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
 		0DCD925E1EA3F53700B6E5D1 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		0DFC65B71ECD5DC4002AE7FD /* SVPulsingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPulsingAnnotationView.h; sourceTree = "<group>"; };
+		0DFC65B81ECD5DC4002AE7FD /* SVPulsingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPulsingAnnotationView.m; sourceTree = "<group>"; };
 		1814A0651D2D0801009FB069 /* RecentSearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSearchListViewController.h; sourceTree = "<group>"; };
 		1814A0661D2D0801009FB069 /* RecentSearchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentSearchListViewController.m; sourceTree = "<group>"; };
 		1814A06A1D2D3A6B009FB069 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
@@ -764,6 +766,8 @@
 				800E1B751C8D50FA00501016 /* VideoInfoModel.m */,
 				804F41821CA1905900E0D528 /* GlobalMeditationModelClass.h */,
 				804F41831CA1905900E0D528 /* GlobalMeditationModelClass.m */,
+				0DFC65B71ECD5DC4002AE7FD /* SVPulsingAnnotationView.h */,
+				0DFC65B81ECD5DC4002AE7FD /* SVPulsingAnnotationView.m */,
 			);
 			path = ModelClasses;
 			sourceTree = "<group>";
@@ -1862,8 +1866,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karthik Sankaran (ZRBRBVJD76)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karthik Sankaran (ZRBRBVJD76)";
 				DEVELOPMENT_TEAM = KY5YD2HZMG;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1877,10 +1881,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meditation.adhoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meditation.dev;
 				PRODUCT_NAME = "Black Lotus";
-				PROVISIONING_PROFILE = "0c25204c-0d75-4734-86d5-71928ec1ded3";
-				PROVISIONING_PROFILE_SPECIFIER = MeditationAdhoc;
+				PROVISIONING_PROFILE = "4b3e6434-557d-4609-80a6-b0d910832c01";
+				PROVISIONING_PROFILE_SPECIFIER = "Meditation Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -1893,8 +1897,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karthik Sankaran (ZRBRBVJD76)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karthik Sankaran (ZRBRBVJD76)";
 				DEVELOPMENT_TEAM = KY5YD2HZMG;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1908,10 +1912,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meditation.adhoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meditation.dev;
 				PRODUCT_NAME = "Black Lotus";
-				PROVISIONING_PROFILE = "0c25204c-0d75-4734-86d5-71928ec1ded3";
-				PROVISIONING_PROFILE_SPECIFIER = MeditationAdhoc;
+				PROVISIONING_PROFILE = "4b3e6434-557d-4609-80a6-b0d910832c01";
+				PROVISIONING_PROFILE_SPECIFIER = "Meditation Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};

@@ -23,7 +23,7 @@
 
     NSString *str;
     NSTimer *myTimer;
-    CLLocationCoordinate2D centerCoor;
+    CLLocationCoordinate2D currentCor;
     CLLocationDistance radius;
     NSMutableArray *latLongArray;
     NSInteger locationIndex;
@@ -41,6 +41,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.mapViewOutlet.delegate=self;
+    currentCor = [self getLocation];
+    NSString *latitude = [NSString stringWithFormat:@"%f", currentCor.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%f", currentCor.longitude];
+    
+    NSLog(@"*dLatitude : %@", latitude);
+    NSLog(@"*dLongitude : %@",longitude);
     self.mapSuperView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height -150);
     [self serviceCallForGlobalMeditation];
     
@@ -72,6 +78,8 @@
     [self.tableViewOutlet registerNib:[UINib nibWithNibName:@"GlobalMeditationMapCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"GlobalMeditationMapCell"];
 
 //    [self.tableViewOutlet reloadData];
+    [SVProgressHUD show];
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -114,9 +122,9 @@
     dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
     NSDate *dateFromAString = [dateFormatter dateFromString:obj.startDate];
     
-    NSString *remainingDuration = [Utility remaningTime:[NSDate date] endDate:dateFromAString];
+//    NSString *remainingDuration = [Utility remaningTime:[NSDate date] endDate:dateFromAString];
     
-    NSLog(@"strings remaining duration %@", remainingDuration);
+//    NSLog(@"strings remaining duration %@", remainingDuration);
     str = [Utility timeDifference:[NSDate date] ToDate:obj.startDate];
     
     
@@ -129,7 +137,7 @@
     
     NSDate *finishedDate = [startingdate dateByAddingTimeInterval:duration];
     NSDate *CurrentDate = [NSDate date];
-    NSLog(@"difference %f",[Utility getTimeDifference:obj.startDate]);
+//    NSLog(@"difference %f",[Utility getTimeDifference:obj.startDate]);
     //[self timeUpdate];
     
     
@@ -242,11 +250,12 @@
                         GlobalMeditationMapCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cellmapid"];
             cell.viewcontroller = self;
             
-            cell.mapViewOutlet.delegate = cell;
+//            cell.mapViewOutlet.delegate = cell;
             
 //            self.mapViewOutlet.showsUserLocation = YES;
             cell.respDict = self.responseDict;
-//            cell.mapViewOutlet.delegate = self;
+            cell.mapViewOutlet.delegate = self;
+            
 //            cell.mapViewOutlet.showsUserLocation = YES;
             [cell.btnJoin addTarget:self action:@selector(btnJoinActn:) forControlEvents:UIControlEventTouchUpInside];
             [cell configureCell];
@@ -264,7 +273,7 @@
         cell.pinBtn.tag=indexPath.row;
         
         cell.labelNumberOfMeditators.text=[[[Utility sharedInstance] convertNumberIntoDepiction:obj.meditators]stringByAppendingString:@""];
-        cell.joinBtn.tag = indexPath.row+1;
+        cell.joinBtn.tag = indexPath.row;
         
         cell.labelTimingAndDate.text=strDateTime;
         //    cell.labelNumberOfMeditators.text = obj.meditators;
@@ -301,18 +310,18 @@
     
     if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad){
         
-        if ((section == 1)&&(_pastMeditatiions.count == 0)) {
-            return 90;
-        }
+//        if ((section == 1)&&(_pastMeditatiions.count == 0)) {
+//            return 70;
+//        }
         
         return 70;
         
 
     } else {
         
-        if ((section == 1)&&(_pastMeditatiions.count == 0)) {
-            return 80;
-        }
+//        if ((section == 1)&&(_pastMeditatiions.count == 0)) {
+//            return 60;
+//        }
 
         return 60;
     }
@@ -384,10 +393,10 @@
 
 - (void)didSelectedHeader:(GlobalMeditationHeaderView *)view type:(GlobalMeditationHeaderViewType)type {
     if (type == GlobalMeditationHeaderViewTypeUpcomming) {
-        isUpcomingSelected = !isUpcomingSelected;
-        if ([_upcomingMeditations count] < 2) {
+        if ([_upcomingMeditations count] == 0) {
             return;
         }
+        isUpcomingSelected = !isUpcomingSelected;
     } else {
         if ([_pastMeditatiions count] == 0) {
             return;
@@ -395,7 +404,8 @@
         isPastSelected = !isPastSelected;
     }
 
-    [self.tableViewOutlet reloadSections:[NSIndexSet indexSetWithIndex:type] withRowAnimation:UITableViewRowAnimationFade];
+    //[self.tableViewOutlet reloadSections:[NSIndexSet indexSetWithIndex:type] withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableViewOutlet reloadData];
     
 }
 
@@ -568,10 +578,12 @@
             {
                 if ([currentTopic.isJoined isEqualToString:@"already joined"])
                 {//user has joined.
+                    NSLog(@"User has joined. Now unjoin %lu", (long)index);
                     [self serviceCallForGlobalMeditationUnJoin:index];
                 }
                 else
                 {
+                    NSLog(@"User has NOT joined. Now join %lu", (long)index);
                     [self serviceCallForGlobalMeditationJoin:index];
                 }
 
@@ -769,7 +781,6 @@
     [dict setObject:[Utility userId] forKey:User_Id];
     [dict setObject:@"2" forKey:@"device_type"];
     [dict setObject:[[Utility sharedInstance] getDeviceToken] forKey:@"device_token"];
-    [SVProgressHUD show];
     NSMutableURLRequest *req= [Utility getRequestWithData:dict];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     
@@ -828,12 +839,12 @@
                                   // Meditation past date checking(more than 3 days not considering the event)
                                   if (false == [Utility isPastDateLimitExceeds:[NSDate date] endDate:startDate]) {
                                       [_pastMeditatiions addObject:obj];
-                                      isPastSelected = TRUE;
+                                      isPastSelected = FALSE;
                                   }
                               }
                           }
-                          myTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(setLatestTopicDetails) userInfo:nil repeats:YES];
-                          [myTimer fire];
+//                          myTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(setLatestTopicDetails) userInfo:nil repeats:YES];
+//                          [myTimer fire];
 //                          [self.tableViewOutlet reloadData];
                           [self serviceCallForLatLong];
 
@@ -901,6 +912,7 @@
                   {
                       [self.view makeToast:@"You have joined this meditation."];
                       [self serviceCallForGlobalMeditation];
+//                      [self.tableViewOutlet performSelector:@selector(reloadData) withObject:nil afterDelay:2.0];
                       [self.tableViewOutlet reloadData];
                   }
               }
@@ -963,6 +975,8 @@
                       [self.view makeToast:@"You have left this meditation."];
                       
                       [self serviceCallForGlobalMeditation];
+//                      [self.tableViewOutlet performSelector:@selector(reloadData) withObject:nil afterDelay:2.0];
+                      [self.tableViewOutlet reloadData];
                   }
               }
           }
@@ -975,7 +989,10 @@
 
 -(void)serviceCallForLatLong
 {
-    GlobalMeditationModelClass *obj = [_dataArray objectAtIndex:0];
+    if (!_pastMeditatiions.count) {
+        return;
+    }
+    GlobalMeditationModelClass *obj = [_pastMeditatiions objectAtIndex:0];
     NSString *topicIdStr;
     
     if (obj == nil)
@@ -993,9 +1010,9 @@
     
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"SERVICE_USER_GET_LAT_LONG" forKey:@"REQUEST_TYPE_SENT"];
-    [dict setObject:[NSString stringWithFormat:@"%f",centerCoor.latitude] forKey:@"latitude"];
-    [dict setObject:[NSString stringWithFormat:@"%f",centerCoor.longitude] forKey:@"longitude"];
-    [dict setObject:[NSString stringWithFormat:@"%f",radius] forKey:@"raidus"];
+    [dict setObject:[NSString stringWithFormat:@"%f",currentCor.latitude] forKey:@"latitude"];
+    [dict setObject:[NSString stringWithFormat:@"%f",currentCor.longitude] forKey:@"longitude"];
+    [dict setObject:[NSString stringWithFormat:@"4682"] forKey:@"raidus"]; // 4682
     [dict setObject:@"2" forKey:@"device_type"];
     [dict setObject:[[Utility sharedInstance] getDeviceToken] forKey:@"device_token"];
     [dict setObject:topicIdStr forKey:@"topic_id"];
@@ -1051,6 +1068,7 @@
     if ([annotation isKindOfClass:[MKUserLocation class]])
     {
         self.mapViewOutlet.showsUserLocation=YES;
+        NSLog(@"%s return nil", __func__);
         return nil;
     }
     else if ([annotation isKindOfClass:[CustomMkAnnotationViewForGlobalMeditation class]]) // use whatever annotation class you used when creating the annotation
@@ -1069,36 +1087,53 @@
         }
      
         CGRect frame = annotationView.frame;
+        NSLog(@"adding %f %f %f", annotation.coordinate.latitude, annotation.coordinate.longitude, [(CustomMkAnnotationViewForGlobalMeditation *)annotation count]);
         if ([latLongArray count] && locationIndex < latLongArray.count)
         {
             NSDictionary *dict = [latLongArray objectAtIndex:locationIndex];
             
-            float highestUserCount = [[[latLongArray firstObject] objectForKey:@"count"] floatValue];
+            float highestUserCount = [(CustomMkAnnotationViewForGlobalMeditation *)annotation count];
+            
             if (isRegionWise)
             {
                 if (highestUserCount <= 10)
                 {
+                    NSLog(@"%s return annotation 10x10", __func__);
                     frame.size=CGSizeMake(10, 10);
                 }
                 else
                 {
-                CGFloat size = ([[dict objectForKey:@"count"] integerValue]/highestUserCount)*25.0;
+                CGFloat size = ([(CustomMkAnnotationViewForGlobalMeditation *)annotation count])*0.15;
+                    NSLog(@"return annotation size %f", size);
+                    if (size>30) {
+                        size = 30;
+                    }
                 frame.size = CGSizeMake(size, size);
                 }
             }
             else
             {
-                frame.size = CGSizeMake(10, 10);
+                NSLog(@"%s return annotation 50x50", __func__);
+
+                frame.size = CGSizeMake(50, 50);
             }
         }
         annotationView.frame = frame;
         annotationView.layer.cornerRadius = annotationView.frame.size.width/2;
         annotationView.canShowCallout = NO;
+        [annotationView.layer setShadowColor:[UIColor blackColor].CGColor];
+        [annotationView.layer setShadowOpacity:0.5f];
+        [annotationView.layer setShadowRadius:5.0f];
+        [annotationView.layer setShadowOffset:CGSizeMake(0, 0)];
+        
         [annotationView setBackgroundColor:[UIColor greenColor]];
         locationIndex++;
         self.mapViewOutlet.showsUserLocation=YES;
+                NSLog(@"%s return annotation", __func__);
         return annotationView;
+        
     }
+            NSLog(@"%s END return nil", __func__);
     return nil;
 }
 - (void) mapView:(MKMapView *)aMapView didAddAnnotationViews:(NSArray *)views
@@ -1115,8 +1150,24 @@
         }
     }
 }
+
+
+-(CLLocationCoordinate2D) getLocation{
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    //locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    [locationManager startUpdatingLocation];
+    CLLocation *location = [locationManager location];
+    CLLocationCoordinate2D coordinate = [location coordinate];
+    
+    return coordinate;
+}
+
+
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
+    return;
     for (NSObject *annotation in [mapView annotations])
     {
         if ([annotation isKindOfClass:[MKUserLocation class]])
@@ -1131,7 +1182,7 @@
 
 
  
-    CLLocation *currentLoc = [[CLLocation alloc] initWithLatitude:centerCoor.latitude longitude:centerCoor.longitude];
+    CLLocation *currentLoc = [[CLLocation alloc] initWithLatitude:currentCor.latitude longitude:currentCor.longitude];
     CLLocation *newLoc = [[CLLocation alloc] initWithLatitude:newCenter.latitude longitude:newCenter.longitude];
 
     CLLocationDistance itemDist = [newLoc distanceFromLocation:currentLoc]/1000;
@@ -1190,8 +1241,8 @@
         newCenter = [self getCenterCoordinate];
         
     }
-    else
-        newCenter=centerCoor;
+//    else
+//        newCenter=centerCoor;
 }
 
 - (void)addRegionOnMap:(NSDictionary *)response
@@ -1218,8 +1269,9 @@
                 for (int i = 0; i < latLongArray.count; i++)
                 {
                     
-                    NSLog(@"hello = %lu",(unsigned long)latLongArray.count);
                     NSDictionary *dict = [latLongArray objectAtIndex:i];
+                    NSLog(@"count = %lu",[[dict objectForKey:@"count"] integerValue]);
+
                     if ([[dict objectForKey:@"count"] integerValue] == 0)
                     {
                         [latLongArray removeObject:dict];
@@ -1232,7 +1284,7 @@
             {
                 CLLocationCoordinate2D center=CLLocationCoordinate2DMake([[dict objectForKey:@"latitude"] doubleValue], [[dict objectForKey:@"longitude"] doubleValue]);
                 CustomMkAnnotationViewForGlobalMeditation *customAnnotation1=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
-                
+                customAnnotation1.count = [[dict objectForKey:@"count"] integerValue];
                 [self.mapViewOutlet addAnnotation:customAnnotation1];
                 self.customAnnotation = customAnnotation1;
 
@@ -1245,7 +1297,8 @@
         {
             CLLocationCoordinate2D center=CLLocationCoordinate2DMake([[dict objectForKey:@"latitude"] doubleValue], [[dict objectForKey:@"longitude"] doubleValue]);
             CustomMkAnnotationViewForGlobalMeditation *customAnnotation1=[[CustomMkAnnotationViewForGlobalMeditation alloc]initWithTitle:@"" Location:center];
-            
+            customAnnotation1.count = [[dict objectForKey:@"count"] integerValue];
+
             [self.mapViewOutlet addAnnotation:customAnnotation1];
             self.customAnnotation = customAnnotation1;
         }
@@ -1256,9 +1309,9 @@
 
 - (CLLocationDistance)getRadius
 {
-    centerCoor = [self getCenterCoordinate];
+    //centerCoor = [self getCenterCoordinate];
     // init center location from center coordinate
-    CLLocation *centerLocation = [[CLLocation alloc] initWithLatitude:centerCoor.latitude longitude:centerCoor.longitude];
+    CLLocation *centerLocation = [[CLLocation alloc] initWithLatitude:currentCor.latitude longitude:currentCor.longitude];
     
     CLLocationCoordinate2D topCenterCoor = [self getTopCenterCoordinate];
     CLLocation *topCenterLocation = [[CLLocation alloc] initWithLatitude:topCenterCoor.latitude longitude:topCenterCoor.longitude];
@@ -1333,6 +1386,8 @@
     {
         return;
     }
+    [SVProgressHUD show];
+
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"GLOBAL_MEDITATION_INFORMATION" forKey:@"REQUEST_TYPE_SENT"];
     
@@ -1350,6 +1405,7 @@
           {
               responseObject = [Utility convertDictionaryIntoUTF8:[responseObject allValues] dictionary:responseObject];
           }
+          [SVProgressHUD dismissWithDelay:1.0];
           if (!error)
           {
               NSLog(@"Reply JSON: %@", responseObject);

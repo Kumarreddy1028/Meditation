@@ -22,15 +22,15 @@
     return self;
 }
 
-//-(MKAnnotationView *)annotationView
-//{
-//    MKAnnotationView *annotationView=[[MKAnnotationView alloc]initWithAnnotation:self reuseIdentifier:@"myPin"];
-//    annotationView.enabled=YES;
-//    annotationView.canShowCallout=YES;
-//    annotationView.rightCalloutAccessoryView=[UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-//    
-//    return annotationView;
-//}
+-(MKAnnotationView *)annotationView
+{
+    MKAnnotationView *annotationView=[[MKAnnotationView alloc]initWithAnnotation:self reuseIdentifier:@"myPin"];
+    annotationView.enabled=YES;
+    annotationView.canShowCallout=YES;
+    annotationView.rightCalloutAccessoryView=[UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    
+    return annotationView;
+}
 
 
 @end

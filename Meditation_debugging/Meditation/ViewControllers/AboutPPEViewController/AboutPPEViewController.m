@@ -99,6 +99,9 @@ CGFloat d2;//its the distance that bottomConstraint will cover.
     {
         return;
     }
+    
+    [SVProgressHUD show];
+
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     [dict setObject:@"ABOUT_PPE" forKey:@"REQUEST_TYPE_SENT"];
     
@@ -115,6 +118,8 @@ CGFloat d2;//its the distance that bottomConstraint will cover.
       {
           responseObject = [Utility convertDictionaryIntoUTF8:[responseObject allValues] dictionary:responseObject];
       }
+          [SVProgressHUD dismissWithDelay:1.0];
+
           if (!error)
           {
               NSLog(@"Reply JSON: %@", responseObject);
