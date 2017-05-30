@@ -870,9 +870,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFO-L9-Cdb">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJv-Ax-jrx">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJv-Ax-jrx">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" priority="250" constant="180" id="jjI-sn-O5n"/>
                                                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="265" id="rcm-6O-21T"/>
@@ -885,10 +885,9 @@
                                                                 <constraint firstAttribute="width" constant="90" id="vb2-su-g5Q"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <size key="shadowOffset" width="-1" height="-1"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umB-CD-w2z">
                                                             <rect key="frame" x="25" y="52" width="84" height="25"/>
@@ -896,13 +895,13 @@
                                                                 <constraint firstAttribute="height" constant="25" id="Mz9-NR-ztD"/>
                                                                 <constraint firstAttribute="width" constant="84" id="nbj-Pn-R8a"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                             <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
-                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <size key="titleShadowOffset" width="0.5" height="0.5"/>
                                                             <state key="normal" title="guided" image="pin_unselect">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTT-cZ-73h">
@@ -911,21 +910,22 @@
                                                                 <constraint firstAttribute="height" constant="25" id="517-mx-UZe"/>
                                                                 <constraint firstAttribute="width" constant="90" id="RXy-td-Ii2"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                             <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <size key="titleShadowOffset" width="0.5" height="0.5"/>
                                                             <state key="normal" title="music" image="pin_select">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                             </state>
                                                         </button>
                                                         <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whp-kd-0pE">
                                                             <rect key="frame" x="25" y="97" width="325" height="11"/>
-                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="11" id="4e6-V6-pKm"/>
                                                             </constraints>
-                                                            <color key="textColor" red="0.25882352939999997" green="0.23529411759999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
@@ -935,11 +935,9 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="32" id="U49-9U-xI4"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
                                                             <state key="normal" title="start">
-                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-jm-0zd">
@@ -948,15 +946,13 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="32" id="zgB-De-cJU"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                            <size key="titleShadowOffset" width="-1" height="1"/>
+                                                            <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="17"/>
                                                             <state key="normal" title="download">
-                                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.86894400169999997" green="0.23088821309999999" blue="0.22498951340000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="V2B-jm-0zd" firstAttribute="leading" secondItem="gFO-L9-Cdb" secondAttribute="leading" constant="29" id="3Pv-xR-vA6"/>
                                                         <constraint firstItem="umB-CD-w2z" firstAttribute="top" secondItem="wAl-3L-3o3" secondAttribute="bottom" constant="16" id="3dQ-Xr-niu"/>
@@ -1065,7 +1061,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yx4-df-I27" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3548" y="-2568"/>
+            <point key="canvasLocation" x="-3548.5" y="-2568.5"/>
         </scene>
         <!--Global Meditation View Controller-->
         <scene sceneID="GQf-Ye-reG">
@@ -1459,7 +1455,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meditators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2U9-0H-MCp">
-                                        <rect key="frame" x="150.5" y="44" width="60.5" height="16"/>
+                                        <rect key="frame" x="150" y="44" width="61" height="16"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3030,10 +3026,37 @@
                                                             <action selector="oneHourBtnActn:" destination="246-Gg-5Pp" eventType="touchUpInside" id="hFE-Dk-ko5"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour before the event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebI-k6-kZq">
-                                                        <rect key="frame" x="116" y="54" width="185" height="21"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNl-P8-3FZ">
+                                                        <rect key="frame" x="215" y="48" width="31" height="33"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="185" id="HQN-Aq-a9N"/>
+                                                            <constraint firstAttribute="width" constant="31" id="GVb-XJ-RIP"/>
+                                                            <constraint firstAttribute="height" constant="33" id="Iug-Aj-3Hz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                        <state key="normal" image="unselect">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected" image="select"/>
+                                                        <connections>
+                                                            <action selector="fifteenMinBtnActn:" destination="246-Gg-5Pp" eventType="touchUpInside" id="YpF-aB-J0I"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFD-Vu-Waw">
+                                                        <rect key="frame" x="250" y="54" width="62" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="Iow-ZL-BFQ"/>
+                                                            <constraint firstAttribute="width" constant="62" id="ePd-mR-UI0"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70154633619999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour before" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebI-k6-kZq">
+                                                        <rect key="frame" x="116" y="54" width="99" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="99" id="HQN-Aq-a9N"/>
                                                             <constraint firstAttribute="height" constant="21" id="WyV-hI-gYc"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
@@ -3064,21 +3087,26 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="JNl-P8-3FZ" firstAttribute="leading" secondItem="ebI-k6-kZq" secondAttribute="trailing" id="0Jc-Db-c8U"/>
+                                                    <constraint firstItem="BFD-Vu-Waw" firstAttribute="top" secondItem="K1D-uB-DBL" secondAttribute="top" constant="54" id="59M-Gr-Mej"/>
                                                     <constraint firstItem="69s-7V-Hbd" firstAttribute="top" secondItem="JbD-SQ-FrH" secondAttribute="bottom" constant="5" id="8aZ-J1-Qp3"/>
                                                     <constraint firstItem="ebI-k6-kZq" firstAttribute="leading" secondItem="PGw-EM-g8a" secondAttribute="trailing" constant="-7" id="9Hs-fO-rl6"/>
                                                     <constraint firstItem="PGw-EM-g8a" firstAttribute="leading" secondItem="69s-7V-Hbd" secondAttribute="trailing" constant="42" id="9nz-we-SOe"/>
                                                     <constraint firstItem="9vF-DB-4RU" firstAttribute="top" secondItem="PGw-EM-g8a" secondAttribute="bottom" constant="14" id="BiC-fg-BUl"/>
                                                     <constraint firstItem="ebI-k6-kZq" firstAttribute="top" secondItem="K1D-uB-DBL" secondAttribute="top" constant="54" id="EB0-ww-zDE"/>
                                                     <constraint firstItem="9vF-DB-4RU" firstAttribute="leading" secondItem="K1D-uB-DBL" secondAttribute="leading" constant="17" id="FVp-It-ZdA"/>
+                                                    <constraint firstItem="9vF-DB-4RU" firstAttribute="top" secondItem="JNl-P8-3FZ" secondAttribute="bottom" constant="14" id="IoE-Yx-lLU"/>
                                                     <constraint firstAttribute="bottom" secondItem="G9h-xx-HNP" secondAttribute="bottom" id="JC9-EV-2b0"/>
                                                     <constraint firstItem="9vF-DB-4RU" firstAttribute="centerX" secondItem="K1D-uB-DBL" secondAttribute="centerX" id="Jh9-uR-BKt"/>
                                                     <constraint firstItem="JbD-SQ-FrH" firstAttribute="leading" secondItem="K1D-uB-DBL" secondAttribute="leading" constant="17" id="Pe4-9U-Sd5"/>
                                                     <constraint firstAttribute="height" constant="144" id="RaU-zO-U4v"/>
+                                                    <constraint firstItem="BFD-Vu-Waw" firstAttribute="leading" secondItem="JNl-P8-3FZ" secondAttribute="trailing" constant="4" id="TMN-BL-DHT"/>
                                                     <constraint firstItem="JbD-SQ-FrH" firstAttribute="top" secondItem="K1D-uB-DBL" secondAttribute="top" constant="22" id="Ykt-L9-pow"/>
                                                     <constraint firstItem="G9h-xx-HNP" firstAttribute="top" secondItem="K1D-uB-DBL" secondAttribute="top" id="eFt-5D-Lg7"/>
                                                     <constraint firstItem="69s-7V-Hbd" firstAttribute="leading" secondItem="K1D-uB-DBL" secondAttribute="leading" constant="17" id="p9L-oo-4Wy"/>
                                                     <constraint firstAttribute="trailing" secondItem="G9h-xx-HNP" secondAttribute="trailing" id="py4-BZ-l2Z"/>
                                                     <constraint firstAttribute="trailing" secondItem="9vF-DB-4RU" secondAttribute="trailing" constant="17" id="rUp-iW-cVU"/>
+                                                    <constraint firstItem="JNl-P8-3FZ" firstAttribute="top" secondItem="K1D-uB-DBL" secondAttribute="top" constant="48" id="sFv-4u-jBY"/>
                                                     <constraint firstItem="G9h-xx-HNP" firstAttribute="leading" secondItem="K1D-uB-DBL" secondAttribute="leading" id="sTK-9H-s74"/>
                                                     <constraint firstItem="PGw-EM-g8a" firstAttribute="top" secondItem="JbD-SQ-FrH" secondAttribute="bottom" constant="5" id="yqN-C3-B28"/>
                                                 </constraints>
@@ -3879,6 +3907,7 @@
                         <outlet property="expandablePinPrickView" destination="RaU-zO-U4v" id="CBE-bK-dtl"/>
                         <outlet property="expendableEventsView" destination="sSj-ra-KMc" id="V2B-hS-KXa"/>
                         <outlet property="expendableRegularMeditationsView" destination="rMA-I2-4qd" id="4rA-W1-NcA"/>
+                        <outlet property="fifteenMinBtn" destination="JNl-P8-3FZ" id="RVy-Br-cmJ"/>
                         <outlet property="friBtn" destination="MsL-b5-TQL" id="laB-u0-hcI"/>
                         <outlet property="infoBtn" destination="It3-Bv-B5O" id="lCg-6U-IDI"/>
                         <outlet property="infoWebView" destination="yvC-lG-HqA" id="HZd-kb-VFL"/>

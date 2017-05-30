@@ -4,7 +4,7 @@
 //
 //  Created by Kumar on 02/05/17.
 //  Copyright © 2017 IOS-01. All rights reserved.
-//
+//com.pinprickeffect.meditation
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>

@@ -21,4 +21,5 @@ static const uint8_t wallCategory = 1;
 @property ( nonatomic, strong)  NSString *serverDate;
 
 -(void)timeUpdate;
+-(void)serviceCallForGlobalTime;
 @end

@@ -107,7 +107,7 @@
 
 -(void)shareMessage:(NSString *)accessToken
 {
-    NSDictionary *contentDict = @{@"title":@"Pin Prick Effect",
+    NSDictionary *contentDict = @{@"title":@"Black Lotus Effect",
                                         @"description":_message,
                                   @"submitted-url":redirect_url
                                         };

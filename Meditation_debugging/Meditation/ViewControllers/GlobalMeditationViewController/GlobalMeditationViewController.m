@@ -989,10 +989,10 @@
 
 -(void)serviceCallForLatLong
 {
-    if (!_pastMeditatiions.count) {
+    if (!_upcomingMeditations.count) {
         return;
     }
-    GlobalMeditationModelClass *obj = [_pastMeditatiions objectAtIndex:0];
+    GlobalMeditationModelClass *obj = [_upcomingMeditations objectAtIndex:0];
     NSString *topicIdStr;
     
     if (obj == nil)
@@ -1115,7 +1115,7 @@
             {
                 NSLog(@"%s return annotation 50x50", __func__);
 
-                frame.size = CGSizeMake(50, 50);
+                frame.size = CGSizeMake(10, 10);
             }
         }
         annotationView.frame = frame;

@@ -75,22 +75,23 @@
 
    CGSize size=[self getsizeOfString:obj.topicDescription andMaxWidth:self.view.frame.size.width-50 andFont:[UIFont fontWithName:@"ProximaNova-Regular" size:15.0]];
     
-    if (size.height > 90)
-    {
-        size.height=90;
-    }
+//    if (size.height > 90)
+//    {
+//        size.height=90;
+//    }
     cell.cellImage.image = [UIImage new];
     if (obj.backgroudImage.length > 0) {
         [cell.cellImage sd_setImageWithURL:[NSURL URLWithString:obj.backgroudImage] placeholderImage:[UIImage imageNamed:@""]];
+        
     }
 
     cell.infoTextViewHeight.constant=size.height;
    
     cell.infoTextView.text=obj.topicDescription;
-    [cell.infoTextView setFont:[UIFont boldSystemFontOfSize:15.0]];
+//    [cell.infoTextView setFont:[UIFont boldSystemFontOfSize:15.0]];
     [cell.infoTextView setTextContainerInset:UIEdgeInsetsMake(0, 0, 0, 0)];
 //    [cell.infoTextView setTextColor:[UIColor colorWithRed:66.0/255 green:60.0/255 blue:79.0/255 alpha:1.0]];
-    [cell.infoTextView setTextColor:[UIColor whiteColor]];
+//    [cell.infoTextView setTextColor:[UIColor whiteColor]];
     
 
 //    cell.infoTextView.layer.shadowColor = [[UIColor whiteColor] CGColor];
@@ -113,7 +114,7 @@
     
     
     cell.infoTextView.backgroundColor = [UIColor clearColor];
-    [self addShadows:cell.infoTextView.layer];
+//    [self addShadows:cell.infoTextView.layer];
 //    bottomLabel.numberOfLines = 1
 //    cell.infoTextView.layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
 //    cell.infoTextView.layer.shadowOpacity = 20.0f;
@@ -163,10 +164,10 @@
 
     }
 
-    cell.startBtn.titleLabel.textColor = [UIColor whiteColor];
-    cell.previewBtn.titleLabel.textColor = [UIColor whiteColor];
-    cell.guidedBtn.titleLabel.textColor = [UIColor whiteColor];
-    cell.musicBtn.titleLabel.textColor = [UIColor whiteColor];
+//    cell.startBtn.titleLabel.textColor = [UIColor whiteColor];
+//    cell.previewBtn.titleLabel.textColor = [UIColor whiteColor];
+//    cell.guidedBtn.titleLabel.textColor = [UIColor whiteColor];
+//    cell.musicBtn.titleLabel.textColor = [UIColor whiteColor];
 
     
 //    cell.startBtn.backgroundColor = [UIColor clearColor];
@@ -458,7 +459,7 @@
     BOOL guided;
     if ([cell.musicBtn.imageView.image isEqual:[UIImage imageNamed:@"pin_select"]])
     {
-        cont.imageName=obj.musicImageName;
+        cont.imageName=obj.backgroudImage;
         guided = NO;
         if ([obj.musicFileName isEqualToString:@""])
         {
@@ -478,7 +479,7 @@
     
     if ([cell.guidedBtn.imageView.image isEqual:[UIImage imageNamed:@"pin_select"]])
     {
-        cont.imageName=obj.guidedImageName;
+        cont.imageName=obj.backgroudImage;
         guided = YES;
         if ([obj.guidedFileName isEqualToString:@""])
         {

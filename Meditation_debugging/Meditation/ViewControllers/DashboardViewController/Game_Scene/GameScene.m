@@ -256,13 +256,13 @@ NSMutableArray *spriteNodeNameArray;
                           for (UILocalNotification *localNotification in arrayOfLocalNotifications)
                           {
                               
-                              if ([localNotification.alertBody isEqualToString:@"The Pin Prick global meditation will begin in exact 24 hours from now."])
+                              if ([localNotification.alertBody isEqualToString:@"The Black Lotus global meditation will begin in exact 24 hours from now."])
                               {
                                   NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                                   
                                   [[UIApplication sharedApplication] cancelLocalNotification:localNotification] ; // delete the notification from the system
                               }
-                              if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Pin Prick global meditation will start in exact 60 minutes from now."])
+                              if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Black Lotus global meditation will start in exact 60 minutes from now."])
                               {
                                   NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                                   
@@ -289,13 +289,13 @@ NSMutableArray *spriteNodeNameArray;
                         for (UILocalNotification *localNotification in arrayOfLocalNotifications)
                         {
                             
-                            if ([localNotification.alertBody isEqualToString:@"The Pin Prick global meditation will begin in exact 24 hours from now."])
+                            if ([localNotification.alertBody isEqualToString:@"The Black Lotus global meditation will begin in exact 24 hours from now."])
                             {
                                 NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                                 
                                 [[UIApplication sharedApplication] cancelLocalNotification:localNotification] ; // delete the notification from the system
                             }
-                            if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Pin Prick global meditation will start in exact 60 minutes from now."])
+                            if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Black Lotus global meditation will start in exact 60 minutes from now."])
                             {
                                 NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                                 

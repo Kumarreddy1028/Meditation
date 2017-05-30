@@ -78,10 +78,10 @@
 //    }
 //
     
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"start_Date"])
+//    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"start_Date"])
     {
         NSString *value=[[NSUserDefaults standardUserDefaults] objectForKey:@"start_Date"];
-        if (![value isEqualToString:@"0"])
+  //      if (![value isEqualToString:@"0"])
         {
             self.pinPrickSaveBtn.enabled = YES;
             self.pinPrickSaveBtn.alpha = 1.0;
@@ -101,51 +101,54 @@
             NSString *hourDiff = [arr objectAtIndex:1];
             
             
-            if (![dayDiff isEqualToString:@"00"])
+//            if (![dayDiff isEqualToString:@"00"])
             {
                 self.oneDayBtn.enabled = YES;
                 self.oneDayBtn.alpha = 1.0;
             }
-            else
-            {
-                self.oneDayBtn.enabled = NO;
-                self.oneDayBtn.alpha = 0.25;
-            }
-            if (![hourDiff isEqualToString:@"00"] || ![dayDiff isEqualToString:@"00"])
+            self.fifteenMinBtn.enabled = YES;
+            self.fifteenMinBtn.alpha=1.0;
+
+//            else
+//            {
+//                self.oneDayBtn.enabled = NO;
+//                self.oneDayBtn.alpha = 0.25;
+//            }
+            //if (![hourDiff isEqualToString:@"00"] || ![dayDiff isEqualToString:@"00"])
             {
                 self.oneHourBtn.enabled = YES;
                 self.oneHourBtn.alpha = 1.0;
                 self.pinPrickSaveBtn.enabled = YES;
                 self.pinPrickSaveBtn.alpha = 1.0;
             }
-            else
-            {
-                self.oneHourBtn.enabled = NO;
-                self.oneHourBtn.alpha = 0.25;
-                self.pinPrickSaveBtn.enabled = NO;
-                self.pinPrickSaveBtn.alpha = 0.25;
-            }
+//            else
+//            {
+//                self.oneHourBtn.enabled = NO;
+//                self.oneHourBtn.alpha = 0.25;
+//                self.pinPrickSaveBtn.enabled = NO;
+//                self.pinPrickSaveBtn.alpha = 0.25;
+//            }
             
         }
-        else
-        {
-            self.oneDayBtn.enabled = NO;
-            self.oneDayBtn.alpha = 0.25;
-            self.oneHourBtn.enabled = NO;
-            self.oneHourBtn.alpha = 0.25;
-            self.pinPrickSaveBtn.enabled = NO;
-            self.pinPrickSaveBtn.alpha = 0.25;
-        }
+//        else
+//        {
+//            self.oneDayBtn.enabled = NO;
+//            self.oneDayBtn.alpha = 0.25;
+//            self.oneHourBtn.enabled = NO;
+//            self.oneHourBtn.alpha = 0.25;
+//            self.pinPrickSaveBtn.enabled = NO;
+//            self.pinPrickSaveBtn.alpha = 0.25;
+//        }
     }
-    else
-    {
-        self.oneDayBtn.enabled = NO;
-        self.oneDayBtn.alpha = 0.25;
-        self.oneHourBtn.enabled = NO;
-        self.oneHourBtn.alpha = 0.25;
-        self.pinPrickSaveBtn.enabled = NO;
-        self.pinPrickSaveBtn.alpha = 0.25;
-    }
+//    else
+//    {
+//        self.oneDayBtn.enabled = NO;
+//        self.oneDayBtn.alpha = 0.25;
+//        self.oneHourBtn.enabled = NO;
+//        self.oneHourBtn.alpha = 0.25;
+//        self.pinPrickSaveBtn.enabled = NO;
+//        self.pinPrickSaveBtn.alpha = 0.25;
+//    }
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"selDateArray"])
     {
@@ -220,7 +223,7 @@
 
     
     NSString *str = @"";
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_1day"] || [[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_1hour"])
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_1day"] || [[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_1hour"] || [[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_15min"])
     {
         if ([[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_1day"])
         {
@@ -265,12 +268,38 @@
                 
             }
         }
+        if ([[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_15min"])
+        {
+            NSString * value = [[NSUserDefaults standardUserDefaults] objectForKey:@"global_meditation_15min"];
+            if ([value isEqualToString:@"1"])
+            {
+                if ([str isEqualToString:@"1 day and 1 hour before the event."])
+                {
+                    
+                    str =@"1 day, 1 hour & 15min before the event.";
+                }
+                else
+                {
+                    str =@"1 day and 1 hour before the event.";
+                }
+                //                [self.oneHourBtn setImage:[UIImage imageNamed:@"select"] forState:UIControlStateNormal];
+                self.fifteenMinBtn.selected = YES;
+                
+            }
+            else
+            {
+                //                [self.oneHourBtn setImage:[UIImage imageNamed:@"unselect"] forState:UIControlStateNormal];
+                self.fifteenMinBtn.selected = NO;
+                
+            }
+        }
         
     }
     else
     {
         self.oneDayBtn.selected = YES;
         self.oneHourBtn.selected = YES;
+        self.fifteenMinBtn.selected = YES;
     }
     self.pinPrickAlarmStatusLabel.text = str;
 
@@ -766,13 +795,13 @@
             for (UILocalNotification *localNotification in arrayOfLocalNotifications)
             {
                 
-                if ([localNotification.alertBody isEqualToString:@"The Pin Prick global meditation will begin in exact 24 hours from now."])
+                if ([localNotification.alertBody isEqualToString:@"The Black Lotus global meditation will begin in exact 24 hours from now."])
                 {
                     NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                     
                     [[UIApplication sharedApplication] cancelLocalNotification:localNotification] ; // delete the notification from the system
                 }
-                if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Pin Prick global meditation will start in exact 60 minutes from now."])
+                if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Black Lotus global meditation will start in exact 60 minutes from now."])
                 {
                     NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                     
@@ -802,7 +831,7 @@
                     for (UILocalNotification *localNotification in arrayOfLocalNotifications)
                     {
                         
-                        if ([localNotification.alertBody isEqualToString:@"The Pin Prick global meditation will begin in exact 24 hours from now."])
+                        if ([localNotification.alertBody isEqualToString:@"The Black Lotus global meditation will begin in exact 24 hours from now."])
                         {
                             NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                             
@@ -819,7 +848,7 @@
                         [self.view makeToast:@"Notification preference set."];
                         UILocalNotification *notification = [[UILocalNotification alloc] init];
                         notification.fireDate = newDate1;
-                        notification.alertBody = @"The Pin Prick global meditation will begin in exact 24 hours from now.";
+                        notification.alertBody = @"The Black Lotus global meditation will begin in exact 24 hours from now.";
                         notification.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
                         notification.soundName=UILocalNotificationDefaultSoundName;
                         notification.applicationIconBadgeNumber = 1;
@@ -841,7 +870,7 @@
                     for (UILocalNotification *localNotification in arrayOfLocalNotifications)
                     {
                         
-                        if ([localNotification.alertBody isEqualToString:@"The Pin Prick global meditation will begin in exact 24 hours from now."])
+                        if ([localNotification.alertBody isEqualToString:@"The Black Lotus global meditation will begin in exact 24 hours from now."])
                         {
                             NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                             
@@ -863,7 +892,7 @@
                     for (UILocalNotification *localNotification in arrayOfLocalNotifications)
                     {
                         
-                        if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Pin Prick global meditation will start in exact 60 minutes from now."])
+                        if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Black Lotus global meditation will start in exact 60 minutes from now."])
                         {
                             NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                             
@@ -880,7 +909,7 @@
                         [self.view makeToast:@"Notification preference set."];
                         UILocalNotification *notification = [[UILocalNotification alloc] init];
                         notification.fireDate = newDate1;
-                        notification.alertBody = @"Let’s meditate together! The Pin Prick global meditation will start in exact 60 minutes from now.";
+                        notification.alertBody = @"Let’s meditate together! The Black Lotus global meditation will start in exact 60 minutes from now.";
                         notification.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
                         notification.soundName=UILocalNotificationDefaultSoundName;
                         notification.applicationIconBadgeNumber = 1;
@@ -910,7 +939,7 @@
                     for (UILocalNotification *localNotification in arrayOfLocalNotifications)
                     {
                         
-                        if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Pin Prick global meditation will start in exact 60 minutes from now."])
+                        if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Black Lotus global meditation will start in exact 60 minutes from now."])
                         {
                             NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
                             
@@ -924,29 +953,102 @@
                     
                     [defaults synchronize];
                 }
+                    
+                    
+                    
+                    if ([self.fifteenMinBtn.currentImage isEqual:[UIImage imageNamed:@"select"]])
+                    {
+                        NSArray *arrayOfLocalNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications] ;
+                        
+                        for (UILocalNotification *localNotification in arrayOfLocalNotifications)
+                        {
+                            
+                            if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Black Lotus global meditation will start in exact 60 minutes from now."])
+                            {
+                                NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
+                                
+                                [[UIApplication sharedApplication] cancelLocalNotification:localNotification] ; // delete the notification from the system
+                            }
+                        }
+                        NSDate *newDate1 = [startDate dateByAddingTimeInterval:-15*60*1];
+                        NSString *timeDiffStr = [Utility timeDifference:[NSDate date] ToDate:value];
+                        NSArray *arr = [timeDiffStr componentsSeparatedByString:@":"];
+                        NSString *diff = [arr objectAtIndex:1];
+                        NSString *dayDiff = [arr objectAtIndex:0];
+                        if (![diff isEqualToString:@"00"] || ![dayDiff isEqualToString:@"00"])
+                        {
+                            [self.view makeToast:@"Notification preference set."];
+                            UILocalNotification *notification = [[UILocalNotification alloc] init];
+                            notification.fireDate = newDate1;
+                            notification.alertBody = @"Let’s meditate together! The Black Lotus global meditation will start in exact 15 minutes from now.";
+                            notification.timeZone = [NSTimeZone timeZoneWithName:@"GMT"];
+                            notification.soundName=UILocalNotificationDefaultSoundName;
+                            notification.applicationIconBadgeNumber = 1;
+                            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+                            if ([globalMeditationStatusStr isEqualToString:@"1 day and 1 hour before the event."])
+                            {
+                                globalMeditationStatusStr = @"1 day, 1 hour & 15min before the event.";
+                                
+                            }
+                            else
+                            {
+                                globalMeditationStatusStr = @"1 day and 1 hour before the event.";
+                            }
+                            
+                            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                            
+                            //[defaults setObject:@"1" forKey:@"global_meditation_1hour"];
+                            [defaults setObject:@"1" forKey:@"global_meditation_15min"];
+                            
+                            [defaults synchronize];
+                        }
+                    }
+                    else
+                    {
+                        NSArray *arrayOfLocalNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications] ;
+                        
+                        for (UILocalNotification *localNotification in arrayOfLocalNotifications)
+                        {
+                            
+                            if ([localNotification.alertBody isEqualToString:@"Let’s meditate together! The Black Lotus global meditation will start in exact 15min minutes from now."])
+                            {
+                                NSLog(@"the notification this is canceld is %@", localNotification.alertBody);
+                                
+                                [[UIApplication sharedApplication] cancelLocalNotification:localNotification] ; // delete the notification from the system
+                            }
+                            
+                        }
+                        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                        
+                        [defaults setObject:@"0" forKey:@"global_meditation_15min"];
+                        
+                        [defaults synchronize];
+                    }
+                    
+                    
                 self.pinPrickAlarmStatusLabel.text = globalMeditationStatusStr;
             
             }
-            else
-            {
-                NSLog(@"%@",value);
-                self.oneDayBtn.enabled = NO;
-                self.oneDayBtn.alpha = 0.25;
-                self.oneHourBtn.enabled = NO;
-                self.oneHourBtn.alpha = 0.25;
-                self.pinPrickSaveBtn.enabled = NO;
-                self.pinPrickSaveBtn.alpha = 0.25;
-            }
+//            else
+//            {
+//                NSLog(@"%@",value);
+//                self.oneDayBtn.enabled = NO;
+//                self.oneDayBtn.alpha = 0.25;
+//                self.oneHourBtn.enabled = NO;
+//                self.oneHourBtn.alpha = 0.25;
+//                self.pinPrickSaveBtn.enabled = NO;
+//                self.pinPrickSaveBtn.alpha = 0.25;
+//            }
         }
-            else
-            {
-                self.oneDayBtn.enabled = NO;
-                self.oneDayBtn.alpha = 0.25;
-                self.oneHourBtn.enabled = NO;
-                self.oneHourBtn.alpha = 0.25;
-                self.pinPrickSaveBtn.enabled = NO;
-                self.pinPrickSaveBtn.alpha = 0.25;
-            }
+//            else
+//            {
+//                self.oneDayBtn.enabled = NO;
+//                self.oneDayBtn.alpha = 0.25;
+//                self.oneHourBtn.enabled = NO;
+//                self.oneHourBtn.alpha = 0.25;
+//                self.pinPrickSaveBtn.enabled = NO;
+//                self.pinPrickSaveBtn.alpha = 0.25;
+//            }
 
         }
             break;
@@ -1900,6 +2002,13 @@
     UIButton *btn = (UIButton *)sender;
     btn.selected = !btn.selected;
 }
+
+- (IBAction)fifteenMinBtnActn:(id)sender
+{
+    UIButton *btn = (UIButton *)sender;
+    btn.selected = !btn.selected;
+}
+
 
 - (IBAction)dailyBtnActn:(UIButton *)sender
 {

@@ -82,13 +82,14 @@
     labelSecond.textColor =  [self colorWithHexString:self.color];
     self.titleLabel.textColor = [self colorWithHexString:self.color];
 
-    labelFirst.text = @"loading..";
+    labelFirst.text = @"loading...";
     labelFirst.textAlignment = NSTextAlignmentLeft;
     labelSecond.text = [self changeTimeformat:slt];
     labelSecond.textAlignment = NSTextAlignmentRight;
     customProgressView=objProgress.DrawProgressView;
     [playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
     [playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateHighlighted];
+    playButton.hidden = TRUE;
 
     
     [customProgressView setFrame:CGRectMake(frameX, self.view.frame.size.height - 60, width, 15)];
@@ -131,6 +132,10 @@
                                                  selector:@selector(playerStalled:)
                                                      name:AVPlayerItemPlaybackStalledNotification
                                                    object:[_songPlayer currentItem]];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(newAccessLogEntry:)
+                                                     name:AVPlayerItemNewAccessLogEntryNotification
+                                                   object:[_songPlayer currentItem]];
         [playerItem addObserver:self forKeyPath:@"playbackBufferEmpty" options:NSKeyValueObservingOptionNew context:nil];
         [playerItem addObserver:self forKeyPath:@"playbackLikelyToKeepUp" options:NSKeyValueObservingOptionNew context:nil];
         [playerItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
@@ -140,11 +145,27 @@
     }
     else
     {
+        
+        
+        
         AVAsset *eightBarAsset = [AVAsset assetWithURL:[NSURL fileURLWithPath:filePath]];
         playerItem = [[AVPlayerItem alloc] initWithAsset:eightBarAsset];
         self.songPlayer = [AVPlayer playerWithPlayerItem:playerItem];
         
         [self.songPlayer play];
+        [playButton setSelected:YES];
+        [playButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+        [playButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateSelected | UIControlStateHighlighted];
+        [self audioProgressUpdate];
+        audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
+        playButton.alpha = 0.0;
+        [playButton setHidden:FALSE];
+
+        [UIView animateWithDuration:1.0 animations:^{
+            playButton.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            
+        }];
     }
     [UIApplication sharedApplication].idleTimerDisabled = YES;
 //    audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
@@ -213,7 +234,7 @@
 - (void)playBtnAction:(UIButton*)sender
 {
 
-    if ([labelFirst.text isEqualToString:@"loading.."]) {
+    if ([labelFirst.text isEqualToString:@"loading..."]) {
         return;
     }
 
@@ -258,9 +279,40 @@
     }
 }
 
+- (void)newAccessLogEntry:(NSNotification *)notification {
+    NSLog(@"Notification %@", notification.debugDescription);
+    
+    AVPlayerItemAccessLog *accessLog = [((AVPlayerItem *)notification.object) accessLog];
+    AVPlayerItemAccessLogEvent *lastEvent = accessLog.events.lastObject;
+    float lastEventNumber = lastEvent.indicatedBitrate;
+//    if (lastEventNumber != self.lastBitRate) {
+        //Here is where you can increment a variable to keep track of the number of times you switch your bit rate.
+        NSLog(@"Switch indicatedBitrate from: %f", lastEventNumber);
+//        self.lastBitRate = lastEventNumber;
+//    }
+    
+    if (!audioTimer) {
+        labelFirst.text = @"started...";
+        [self audioProgressUpdate];
+        audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
+        network = NO;
+        playButton.alpha = 0.0;
+        playButton.hidden = FALSE;
+        [UIView animateWithDuration:1.0 animations:^{
+            playButton.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            
+        }];
+
+    }
+    NSLog(@"newAccessLogEntry");
+}
+
+
 - (void)playerStalled:(NSNotification *)notification {
     NSLog(@"playerStalled");
 }
+
 
 
 - (void)playerItemDidReachEnd:(NSNotification *)notification
@@ -281,6 +333,7 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
                         change:(NSDictionary *)change context:(void *)context {
+    NSLog(@"%s--1", __func__);
     if (!self.songPlayer)
     {
         return;
@@ -291,10 +344,15 @@
     }
     else if (object == playerItem && [keyPath isEqualToString:@"playbackBufferEmpty"])
     {
+        NSLog(@"%s--playbackBufferEmpty 1", __func__);
         if (playerItem.playbackBufferEmpty)
         {
+            NSLog(@"%s--playbackBufferEmpty 2", __func__);
+
             if (![Utility isNetworkAvailable])
             {
+                NSLog(@"%s--playbackBufferEmpty 3", __func__);
+
                 currentPlayTime = self.songPlayer.currentTime;
                 [playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
                 [playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateHighlighted];
@@ -309,8 +367,12 @@
     
     else if (object == playerItem && [keyPath isEqualToString:@"playbackLikelyToKeepUp"])
     {
+        NSLog(@"%s--playbackLikelyToKeepUp 1", __func__);
+
         if (playerItem.playbackLikelyToKeepUp)
         {
+            NSLog(@"%s--playbackLikelyToKeepUp 2", __func__);
+
             [playButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
             [playButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateSelected | UIControlStateHighlighted];
             [playButton setSelected:YES];
@@ -318,9 +380,20 @@
             [self.songPlayer play];
             if (!audioTimer)
             {
-                labelFirst.text = @"started..";
+                NSLog(@"%s--playbackLikelyToKeepUp 3", __func__);
+
+                labelFirst.text = @"started...";
+                [self audioProgressUpdate];
                 audioTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(audioProgressUpdate) userInfo:nil repeats:YES];
                 network = NO;
+                playButton.alpha = 0.0;
+                playButton.hidden = FALSE;
+
+                [UIView animateWithDuration:1.0 animations:^{
+                    playButton.alpha = 1.0;
+                } completion:^(BOOL finished) {
+                    
+                }];
             }
             
             //Your code here
@@ -328,14 +401,19 @@
     }
     else if (object == self.songPlayer && [keyPath isEqualToString:@"status"])
     {
+        NSLog(@"%s--status 1", __func__);
+
         if (self.songPlayer.status == AVPlayerStatusFailed)
         {
+            NSLog(@"%s--status 2", __func__);
+
             NSLog(@"AVPlayer Failed");
         }
     }
 }
 -(void)audioProgressUpdate  // ..AUDIO TIMER FUCNTION..
 {
+
     AVPlayerItem *thePlayerItem = [self.songPlayer currentItem];
     float widtPer = ((CMTimeGetSeconds(thePlayerItem.currentTime)*100)/CMTimeGetSeconds(thePlayerItem.duration));
 

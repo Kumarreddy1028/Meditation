@@ -101,8 +101,13 @@
 - (IBAction)dashboardbtnActn:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *oneDayBtn;
 @property (weak, nonatomic) IBOutlet UIButton *oneHourBtn;
+@property (weak, nonatomic) IBOutlet UIButton *fifteenMinBtn;
+
+
 - (IBAction)oneDayBtnActn:(id)sender;
 - (IBAction)oneHourBtnActn:(id)sender;
+- (IBAction)fifteenMinBtnActn:(id)sender;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *settingsTitle;
 @property (weak, nonatomic) IBOutlet UIButton *menuBtn;

@@ -160,7 +160,7 @@
         <scene sceneID="4zo-vK-ett">
             <objects>
                 <navigationController id="pUV-GZ-0QX" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AM6-NU-kAA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AM6-NU-kAA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -761,8 +761,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="ejr-rQ-msP"/>
                                                     <constraint firstAttribute="width" constant="127" id="pRc-ay-WHE"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="21"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
@@ -772,13 +771,13 @@
                                                     <constraint firstAttribute="width" constant="115" id="cYE-U1-u39"/>
                                                     <constraint firstAttribute="height" constant="30" id="p0h-Qp-Wmy"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="21"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="21"/>
                                                 <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <size key="titleShadowOffset" width="-1" height="1"/>
                                                 <state key="normal" title="guided" image="pin_unselect">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="guidedBtnActn:" destination="BKA-n3-m35" eventType="touchUpInside" id="3K5-ho-iF1"/>
@@ -790,13 +789,13 @@
                                                     <constraint firstAttribute="width" constant="104" id="AKV-Yh-I6T"/>
                                                     <constraint firstAttribute="height" constant="30" id="Wc0-qi-MdN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="21"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="21"/>
                                                 <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <size key="titleShadowOffset" width="-1" height="-1"/>
                                                 <state key="normal" title="music" image="pin_select">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="musicBtnActn:" destination="BKA-n3-m35" eventType="touchUpInside" id="ncF-bg-RyW"/>
@@ -804,8 +803,7 @@
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxc-Xb-r8n">
                                                 <rect key="frame" x="40" y="125" width="370" height="0.0"/>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="21"/>
                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <size key="shadowOffset" width="-1" height="-1"/>
@@ -816,11 +814,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="gD3-Xk-Ou8"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="25"/>
                                                 <size key="titleShadowOffset" width="-1" height="-1"/>
                                                 <state key="normal" title="start">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="startBtnAction:" destination="BKA-n3-m35" eventType="touchUpInside" id="ep3-le-3cg"/>
@@ -832,11 +829,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="7MU-Y7-57w"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="25"/>
                                                 <size key="titleShadowOffset" width="-1" height="-1"/>
                                                 <state key="normal" title="download">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="previewBtnActn:" destination="BKA-n3-m35" eventType="touchUpInside" id="ufx-A6-tTw"/>
@@ -844,6 +840,7 @@
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="Nf2-fu-mVv" firstAttribute="top" secondItem="OYn-2z-44c" secondAttribute="bottom" constant="20" id="5Ix-fY-SQW"/>
                                             <constraint firstItem="z2T-RL-15k" firstAttribute="width" secondItem="cn3-DG-d83" secondAttribute="width" multiplier="183/468" id="An1-vM-4Wf"/>
@@ -961,10 +958,6 @@
                                     <outlet property="delegate" destination="BKA-n3-m35" id="8yj-XC-iY9"/>
                                 </connections>
                             </tableView>
-                            <webView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnd-we-3QV">
-                                <rect key="frame" x="0.0" y="85" width="768" height="939"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meditate now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCz-UH-Czt">
                                 <rect key="frame" x="259" y="15" width="250" height="55"/>
                                 <constraints>
@@ -975,6 +968,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jnd-we-3QV">
+                                <rect key="frame" x="0.0" y="85" width="768" height="944"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -986,10 +984,7 @@
                             <constraint firstItem="mao-EA-zZy" firstAttribute="top" secondItem="yCz-UH-Czt" secondAttribute="bottom" constant="15" id="BBD-Ri-rIn"/>
                             <constraint firstItem="9yp-a7-e39" firstAttribute="leading" secondItem="hki-1U-XHf" secondAttribute="trailing" constant="20" id="GL4-WC-fWZ"/>
                             <constraint firstItem="wGU-OT-e2q" firstAttribute="bottom" secondItem="Agp-qU-V56" secondAttribute="top" constant="21" id="IOA-nB-hi1"/>
-                            <constraint firstItem="Agp-qU-V56" firstAttribute="top" secondItem="jnd-we-3QV" secondAttribute="bottom" id="Jtt-Ap-lld"/>
                             <constraint firstAttribute="trailing" secondItem="85x-Bn-fFF" secondAttribute="trailing" constant="15" id="LyV-aV-hhG"/>
-                            <constraint firstItem="jnd-we-3QV" firstAttribute="top" secondItem="9yp-a7-e39" secondAttribute="bottom" constant="15" id="OfB-ka-Phc"/>
-                            <constraint firstItem="jnd-we-3QV" firstAttribute="leading" secondItem="n0Z-A4-6bJ" secondAttribute="leading" id="Q9D-hR-7Z0"/>
                             <constraint firstItem="hki-1U-XHf" firstAttribute="top" secondItem="o6n-xa-nwM" secondAttribute="bottom" constant="15" id="RsC-ny-ZXu"/>
                             <constraint firstItem="ewx-Pg-orx" firstAttribute="leading" secondItem="n0Z-A4-6bJ" secondAttribute="leading" constant="15" id="Wl7-is-0Ay"/>
                             <constraint firstItem="XIE-4g-AMK" firstAttribute="leading" secondItem="n0Z-A4-6bJ" secondAttribute="leading" constant="300" id="XpR-B8-ArL"/>
@@ -1004,7 +999,6 @@
                             <constraint firstAttribute="trailing" secondItem="a6J-lY-Ulc" secondAttribute="trailing" id="lwd-df-3WG"/>
                             <constraint firstItem="Agp-qU-V56" firstAttribute="top" secondItem="XIE-4g-AMK" secondAttribute="bottom" id="nCS-0J-FFy"/>
                             <constraint firstItem="wGU-OT-e2q" firstAttribute="top" secondItem="o6n-xa-nwM" secondAttribute="bottom" constant="85" id="oqE-UJ-rrC"/>
-                            <constraint firstAttribute="trailing" secondItem="jnd-we-3QV" secondAttribute="trailing" id="qTS-nP-qSz"/>
                             <constraint firstItem="Agp-qU-V56" firstAttribute="top" secondItem="a6J-lY-Ulc" secondAttribute="bottom" id="sr1-Kh-93R"/>
                             <constraint firstAttribute="trailing" secondItem="mao-EA-zZy" secondAttribute="trailing" id="tGD-az-Zgm"/>
                         </constraints>
@@ -1550,7 +1544,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3na-DG-EtD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3na-DG-EtD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2370,7 +2364,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="458" height="960"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="remind me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itW-X0-N9C">
-                                        <rect key="frame" x="50" y="60" width="358" height="30"/>
+                                        <rect key="frame" x="20" y="60" width="358" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2379,7 +2373,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtJ-hH-yud">
                                         <rect key="frame" x="50" y="120" width="150" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
                                         <inset key="imageEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="1 day" image="unselect">
                                             <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2390,9 +2384,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="si4-br-XOL">
-                                        <rect key="frame" x="200" y="120" width="150" height="50"/>
+                                        <rect key="frame" x="200" y="120" width="120" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
                                         <inset key="imageEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="1 hour" image="unselect">
                                             <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2400,6 +2394,19 @@
                                         <state key="selected" image="select"/>
                                         <connections>
                                             <action selector="oneHourBtnActn:" destination="bR6-AB-1Xq" eventType="touchUpInside" id="6t4-Re-wNi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbF-eo-9ao">
+                                        <rect key="frame" x="300" y="120" width="140" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="15 min" image="unselect"/>
+                                        <state key="selected" image="select">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fifteenMinBtnActn:" destination="bR6-AB-1Xq" eventType="touchUpInside" id="3BC-Ov-FEo"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="before the event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQa-eY-rZr">
@@ -2413,7 +2420,7 @@
                                         <rect key="frame" x="50" y="260" width="358" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.37647058820000001" green="0.28235294119999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Santana-Bold" family="Santana" pointSize="26"/>
                                         <state key="normal" title="save">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -3104,11 +3111,6 @@
                                     <constraint firstItem="gzw-Nr-pn8" firstAttribute="top" secondItem="nLF-ab-52H" secondAttribute="top" id="oiQ-6l-ZnP"/>
                                 </constraints>
                             </scrollView>
-                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zX0-eh-V6e">
-                                <rect key="frame" x="0.0" y="85" width="768" height="939"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3171,6 +3173,7 @@
                         <outlet property="expandablSoundView" destination="YI3-i2-h3K" id="lpH-l2-YL5"/>
                         <outlet property="expandableNotificationView" destination="aDQ-ka-Pd1" id="U3W-lx-RV3"/>
                         <outlet property="expandableSetTimeFormatView" destination="22a-wl-oVr" id="jFs-8D-NZv"/>
+                        <outlet property="fifteenMinBtn" destination="kbF-eo-9ao" id="x5x-ef-Y4S"/>
                         <outlet property="friBtn" destination="yPg-e4-U1C" id="f1r-Rz-poe"/>
                         <outlet property="hiddenEventView" destination="Dna-L7-A8A" id="RTh-Fy-nPf"/>
                         <outlet property="hiddenPinPrickView" destination="B6z-sx-T7f" id="LSj-yP-46w"/>
@@ -3206,6 +3209,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqY-hJ-hC2" sceneMemberID="firstResponder"/>
+                <webView hidden="YES" contentMode="scaleToFill" id="zX0-eh-V6e">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="939"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
             </objects>
             <point key="canvasLocation" x="-4908" y="-6381"/>
         </scene>

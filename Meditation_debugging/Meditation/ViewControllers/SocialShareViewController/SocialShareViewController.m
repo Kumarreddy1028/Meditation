@@ -194,7 +194,7 @@
 }
 - (void)emailShareAction
 {
-    NSString *emailTitle = @"The Pin Prick Meditation";
+    NSString *emailTitle = @"The Black Lotus Meditation";
     NSString *messageBody = self.textToShare;
 
     if ([MFMailComposeViewController canSendMail])
@@ -221,7 +221,7 @@
     NSURL * whatsappURL = [NSURL URLWithString:str];
     if ([[UIApplication sharedApplication] canOpenURL: whatsappURL])
     {
-        UIAlertController *myAlert = [UIAlertController alertControllerWithTitle:@"" message:[NSString stringWithFormat:@"Pin Prick Effect would like to open Whatsapp to %@",self.titleLabelString] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *myAlert = [UIAlertController alertControllerWithTitle:@"" message:[NSString stringWithFormat:@"Black Lotus Effect would like to open Whatsapp to %@",self.titleLabelString] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *openAction = [UIAlertAction actionWithTitle:@"Open" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action)
                                  {
                                      

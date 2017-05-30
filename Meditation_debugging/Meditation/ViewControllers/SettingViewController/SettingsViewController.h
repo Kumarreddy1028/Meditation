@@ -63,6 +63,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *oneDayBtn;
 @property (weak, nonatomic) IBOutlet UIButton *oneHourBtn;
+@property (weak, nonatomic) IBOutlet UIButton *fifteenMinBtn;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *monBtn;
 @property (weak, nonatomic) IBOutlet UIButton *tueBtn;
@@ -73,6 +75,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *sunBtn;
 - (IBAction)oneDayBtnActn:(id)sender;
 - (IBAction)oneHourBtnActn:(id)sender;
+- (IBAction)fifteenMinBtnActn:(id)sender;
 
 - (IBAction)dailyBtnActn:(UIButton *)sender;
 

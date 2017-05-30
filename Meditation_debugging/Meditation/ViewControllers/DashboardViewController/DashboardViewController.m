@@ -119,6 +119,7 @@
 -(void) changeServerDate:(NSString *) date {
     scene.str = [Utility timeDifference:[NSDate date] ToDate:date];
     scene.serverDate = date;
+    [[Utility sharedInstance] setIsFinished:FALSE];
     [scene timeUpdate];
 }
 
@@ -182,7 +183,8 @@
                                   dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
                                   NSString *currentDatestring = [dateFormatter stringFromDate:[NSDate date]];
 
-                                  [self performSelector:@selector(changeServerDate:) withObject:obj.startDate afterDelay:2.0];
+                                  [self performSelector:@selector(changeServerDate:) withObject:obj.startDate afterDelay:1.0];
+
                                   [[Utility sharedInstance] setOnlineUsers:obj.meditators];
                                   break;
                               }
