@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Meditation/ViewControllers/GlobalMeditationViewController/GlobalMeditationViewController.m"
-            timestampString = "516949017.536466"
+            timestampString = "517807332.587867"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1011"
-            endingLineNumber = "1011"
+            startingLineNumber = "1012"
+            endingLineNumber = "1012"
             landmarkName = "-serviceCallForLatLong"
             landmarkType = "7">
          </BreakpointContent>
@@ -416,6 +416,22 @@
             startingLineNumber = "120"
             endingLineNumber = "120"
             landmarkName = "-changeServerDate:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Meditation/ViewControllers/MeditateNowViewController/MeditateNowIpadViewController.m"
+            timestampString = "517808360.586701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
+            landmarkName = "-startBtnAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

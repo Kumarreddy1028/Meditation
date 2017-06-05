@@ -430,6 +430,7 @@
         cont.duration=obj.duration;
         cont.topicId=obj.topicId;
         cont.guided=guided;
+        cont.imageName = obj.musicImageName;
         [self.navigationController pushViewController:cont animated:YES];
     
 }

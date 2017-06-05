@@ -351,8 +351,9 @@
         
         
         MeditationMusicViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"Musicstoryboard"];
-        
-        cont.imageName=selectedObj.musicImageName;
+        cont.imageName=selectedObj.backgroudImage;
+
+//        cont.imageName=selectedObj.musicImageName;
         cont.duration=selectedObj.duration;
         cont.topicName=selectedObj.topicName;
         cont.color=selectedObj.musicColorCode;
@@ -372,8 +373,9 @@
     else if ([self.guidedbtn.imageView.image isEqual:[UIImage imageNamed:@"pin_select"]])
     {
         MeditationMusicViewController *cont=[self.storyboard instantiateViewControllerWithIdentifier:@"Musicstoryboard"];
+        cont.imageName=selectedObj.backgroudImage;
 
-        cont.imageName=selectedObj.guidedImageName;
+//        cont.imageName=selectedObj.guidedImageName;
         cont.duration=selectedObj.duration;
         cont.topicName=selectedObj.topicName;
         cont.color=selectedObj.guidedColorCode;

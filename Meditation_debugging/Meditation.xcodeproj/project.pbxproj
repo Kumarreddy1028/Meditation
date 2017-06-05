@@ -1883,8 +1883,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meditation.adhoc;
 				PRODUCT_NAME = "Black Lotus";
-				PROVISIONING_PROFILE = "533117fb-572a-43af-84ec-64feee2f7a87";
-				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.meditation.adhoc";
+				PROVISIONING_PROFILE = "0c25204c-0d75-4734-86d5-71928ec1ded3";
+				PROVISIONING_PROFILE_SPECIFIER = MeditationAdhoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -1914,8 +1914,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meditation.adhoc;
 				PRODUCT_NAME = "Black Lotus";
-				PROVISIONING_PROFILE = "533117fb-572a-43af-84ec-64feee2f7a87";
-				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: com.meditation.adhoc";
+				PROVISIONING_PROFILE = "0c25204c-0d75-4734-86d5-71928ec1ded3";
+				PROVISIONING_PROFILE_SPECIFIER = MeditationAdhoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};
