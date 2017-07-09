@@ -14,10 +14,15 @@
 //#define Server_Url                                  @"http://dev2.rapidsoft.in/Meditation/Services"
 //#define Server_Url_For_Upload                       @"http://dev2.rapidsoft.in/Meditation/UploadServices"
 
+//#define Server_Url                                  @"http://ppelb-472927177.us-east-1.elb.amazonaws.com/Meditation/Services"
 
+//// production
+//#define Server_Url                                  @"http://ec2-34-199-144-145.compute-1.amazonaws.com/Meditation/Services"
+//#define Server_Url_For_Upload                       @"http://ec2-34-199-144-145.compute-1.amazonaws.com/Meditation/UploadServices"
+
+// Staging
 #define Server_Url                                  @"http://ppelb-472927177.us-east-1.elb.amazonaws.com/Meditation/Services"
 #define Server_Url_For_Upload                       @"http://ppelb-472927177.us-east-1.elb.amazonaws.com/Meditation/UploadServices"
-
 
 
 #define User_Id                                     @"user_id"

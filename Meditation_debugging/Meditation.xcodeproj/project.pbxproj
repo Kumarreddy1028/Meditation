@@ -14,6 +14,201 @@
 		0D81B50C1EA4555600BC96D8 /* SettingsIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA21CC89ED8009F4B50 /* SettingsIpadViewController.m */; };
 		0DCD925F1EA3F53700B6E5D1 /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD925D1EA3F53700B6E5D1 /* Proxima Nova Bold.otf */; };
 		0DCD92601EA3F53700B6E5D1 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD925E1EA3F53700B6E5D1 /* ProximaNova-Regular.otf */; };
+		0DEE8B571EF25EB800617464 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF7D731C69F884000A15D3 /* MFSideMenuContainerViewController.m */; };
+		0DEE8B581EF25EB800617464 /* DailyHumourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32901C71E80300813E99 /* DailyHumourViewController.m */; };
+		0DEE8B591EF25EB800617464 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B9A1C8D53E900501016 /* SDWebImageManager.m */; };
+		0DEE8B5A1EF25EB800617464 /* MeditationMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF212D191C64869900F3B6A1 /* MeditationMusicViewController.m */; };
+		0DEE8B5B1EF25EB800617464 /* News&EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE628D21D00728E00E320C0 /* News&EventsViewController.m */; };
+		0DEE8B5C1EF25EB800617464 /* VideoInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B751C8D50FA00501016 /* VideoInfoModel.m */; };
+		0DEE8B5D1EF25EB800617464 /* GlobalMeditationPostHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D31D55E1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.m */; };
+		0DEE8B5E1EF25EB800617464 /* AboutPPEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF7D811C69FCC5000A15D3 /* AboutPPEViewController.m */; };
+		0DEE8B5F1EF25EB800617464 /* SideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF7D7D1C69FC9E000A15D3 /* SideMenuTableViewController.m */; };
+		0DEE8B601EF25EB800617464 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A08D1D2D3A6B009FB069 /* TOCropToolbar.m */; };
+		0DEE8B611EF25EB800617464 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B881C8D534000501016 /* YTPlayerView.m */; };
+		0DEE8B621EF25EB800617464 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BA31C8D53E900501016 /* UIImage+MultiFormat.m */; };
+		0DEE8B631EF25EB800617464 /* JTCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451B51C6B2F7C00E1BC90 /* JTCalendarAppearance.m */; };
+		0DEE8B641EF25EB800617464 /* JTCalendarMonthWeekDaysView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451C11C6B2F7C00E1BC90 /* JTCalendarMonthWeekDaysView.m */; };
+		0DEE8B651EF25EB800617464 /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4B91C998A9600DB4AFC /* BAVPlistNode.m */; };
+		0DEE8B661EF25EB800617464 /* CustomProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B7D1C8D51EA00501016 /* CustomProgressViewController.m */; };
+		0DEE8B671EF25EB800617464 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A0781D2D3A6B009FB069 /* TOActivityCroppedImageProvider.m */; };
+		0DEE8B681EF25EB800617464 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3C7551CFD9C5200F6E381 /* BooksViewController.m */; };
+		0DEE8B691EF25EB800617464 /* CommunityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9934B7AA1C71EF8D00326DBB /* CommunityTableViewCell.m */; };
+		0DEE8B6A1EF25EB800617464 /* STTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4A81C998A9600DB4AFC /* STTwitterAPI.m */; };
+		0DEE8B6B1EF25EB800617464 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF212D131C64869900F3B6A1 /* DashboardViewController.m */; };
+		0DEE8B6C1EF25EB800617464 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32A91C71ECD600813E99 /* SignUpViewController.m */; };
+		0DEE8B6D1EF25EB800617464 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A08F1D2D3A6B009FB069 /* TOCropView.m */; };
+		0DEE8B6E1EF25EB800617464 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BA11C8D53E900501016 /* UIImage+GIF.m */; };
+		0DEE8B6F1EF25EB800617464 /* GlobalMeditationHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B84AD61E691B9F00B81286 /* GlobalMeditationHeaderView.m */; };
+		0DEE8B701EF25EB800617464 /* MeditatorsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9934B7AC1C71EF8D00326DBB /* MeditatorsTableViewCell.m */; };
+		0DEE8B711EF25EB800617464 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32B01C71EE9C00813E99 /* TPKeyboardAvoidingScrollView.m */; };
+		0DEE8B721EF25EB800617464 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B9D1C8D53E900501016 /* SDWebImagePrefetcher.m */; };
+		0DEE8B731EF25EB800617464 /* Buy_BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE628DE1D0074D800E320C0 /* Buy_BooksViewController.m */; };
+		0DEE8B741EF25EB800617464 /* Chats.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE6EB71CAAB8340000AD10 /* Chats.m */; };
+		0DEE8B751EF25EB800617464 /* BooksCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC3C7581CFD9D9F00F6E381 /* BooksCollectionViewCell.m */; };
+		0DEE8B761EF25EB800617464 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B4B1C8D4F9300501016 /* AFNetworkReachabilityManager.m */; };
+		0DEE8B771EF25EB800617464 /* GlobalMeditationMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BF5A71EBDC5A300E0FB4F /* GlobalMeditationMapCell.m */; };
+		0DEE8B781EF25EB800617464 /* ImmersionCampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9929002A1C71F59600B8C887 /* ImmersionCampViewController.m */; };
+		0DEE8B791EF25EB800617464 /* MeditatorsModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70F951CC89D35009F4B50 /* MeditatorsModelClass.m */; };
+		0DEE8B7A1EF25EB800617464 /* OwnMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9934B7AE1C71EF8D00326DBB /* OwnMessageTableViewCell.m */; };
+		0DEE8B7B1EF25EB800617464 /* VideoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9934B7B21C71EF8D00326DBB /* VideoListTableViewCell.m */; };
+		0DEE8B7C1EF25EB800617464 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184905FB1CD7363B00147E1E /* WebViewController.m */; };
+		0DEE8B7D1EF25EB800617464 /* STTwitterOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4AE1C998A9600DB4AFC /* STTwitterOAuth.m */; };
+		0DEE8B7E1EF25EB800617464 /* MeditateNowIpadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA81CC89F33009F4B50 /* MeditateNowIpadCell.m */; };
+		0DEE8B7F1EF25EB800617464 /* JTCalendarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451B71C6B2F7C00E1BC90 /* JTCalendarContentView.m */; };
+		0DEE8B801EF25EB800617464 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF7D751C69F884000A15D3 /* MFSideMenuShadow.m */; };
+		0DEE8B811EF25EB800617464 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32A61C71ECD600813E99 /* SignInViewController.m */; };
+		0DEE8B821EF25EB800617464 /* JTCalendarMenuMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451BB1C6B2F7C00E1BC90 /* JTCalendarMenuMonthView.m */; };
+		0DEE8B831EF25EB800617464 /* STTwitterStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4B61C998A9600DB4AFC /* STTwitterStreamParser.m */; };
+		0DEE8B841EF25EB800617464 /* NewsModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE07371D05AE1A003E9359 /* NewsModelClass.m */; };
+		0DEE8B851EF25EB800617464 /* SVPulsingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70F991CC89DF5009F4B50 /* SVPulsingAnnotationView.m */; };
+		0DEE8B861EF25EB800617464 /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4A11C998A9600DB4AFC /* NSError+STTwitter.m */; };
+		0DEE8B871EF25EB800617464 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B9F1C8D53E900501016 /* UIButton+WebCache.m */; };
+		0DEE8B881EF25EB800617464 /* GlobalMeditationPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B471AC1E68A76400690121 /* GlobalMeditationPostTableViewCell.m */; };
+		0DEE8B891EF25EB800617464 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B4D1C8D4F9300501016 /* AFSecurityPolicy.m */; };
+		0DEE8B8A1EF25EB800617464 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A07C1D2D3A6B009FB069 /* TOCropViewControllerTransitioning.m */; };
+		0DEE8B8B1EF25EB800617464 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BA91C8D53E900501016 /* UIImageView+WebCache.m */; };
+		0DEE8B8C1EF25EB800617464 /* DiscussionAboutSwamijiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B731C8D50FA00501016 /* DiscussionAboutSwamijiModel.m */; };
+		0DEE8B8D1EF25EB800617464 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70F8E1CC89C56009F4B50 /* GameScene.m */; };
+		0DEE8B8E1EF25EB800617464 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE628D51D0072FB00E320C0 /* NewsViewController.m */; };
+		0DEE8B8F1EF25EB800617464 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BAE1C8D53E900501016 /* SVIndefiniteAnimatedView.m */; };
+		0DEE8B901EF25EB800617464 /* MeditatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BDD1C8D54A400501016 /* MeditatorsViewController.m */; };
+		0DEE8B911EF25EB800617464 /* Chats+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE6EB91CAAB8340000AD10 /* Chats+CoreDataProperties.m */; };
+		0DEE8B921EF25EB800617464 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 998D6DA41C608BAE00D9E543 /* AppDelegate.m */; };
+		0DEE8B931EF25EB800617464 /* MeditateNowModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C67EDA1C92CBC00071AEEC /* MeditateNowModelClass.m */; };
+		0DEE8B941EF25EB800617464 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B961C8D53E900501016 /* SDWebImageDownloader.m */; };
+		0DEE8B951EF25EB800617464 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BB41C8D53E900501016 /* SVRadialGradientLayer.m */; };
+		0DEE8B961EF25EB800617464 /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4BD1C998A9600DB4AFC /* STHTTPRequest.m */; };
+		0DEE8B971EF25EB800617464 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B511C8D4F9300501016 /* AFURLResponseSerialization.m */; };
+		0DEE8B981EF25EB800617464 /* JTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451C61C6B2F7C00E1BC90 /* JTCircleView.m */; };
+		0DEE8B991EF25EB800617464 /* STTwitterHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4AC1C998A9600DB4AFC /* STTwitterHTML.m */; };
+		0DEE8B9A1EF25EB800617464 /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4BB1C998A9600DB4AFC /* JSONSyntaxHighlight.m */; };
+		0DEE8B9B1EF25EB800617464 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BA51C8D53E900501016 /* UIImage+WebP.m */; };
+		0DEE8B9C1EF25EB800617464 /* MDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0D6481E5FE6DD00B17604 /* MDLabel.m */; };
+		0DEE8B9D1EF25EB800617464 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32B21C71EE9C00813E99 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		0DEE8B9E1EF25EB800617464 /* SevenSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8412F1CF47CEF00723693 /* SevenSwitch.swift */; };
+		0DEE8B9F1EF25EB800617464 /* MLKMenuPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B661C8D508100501016 /* MLKMenuPopover.m */; };
+		0DEE8BA01EF25EB800617464 /* MeditationNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF212D161C64869900F3B6A1 /* MeditationNowViewController.m */; };
+		0DEE8BA11EF25EB800617464 /* AlreadySignedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32A31C71ECD600813E99 /* AlreadySignedInViewController.m */; };
+		0DEE8BA21EF25EB800617464 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0715D61D06DD6000818EDA /* UIImage+animatedGIF.m */; };
+		0DEE8BA31EF25EB800617464 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC329C1C71E95900813E99 /* WeeklyWisdomViewController.m */; };
+		0DEE8BA41EF25EB800617464 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B4F1C8D4F9300501016 /* AFURLRequestSerialization.m */; };
+		0DEE8BA51EF25EB800617464 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A0841D2D3A6B009FB069 /* TOCropViewController.m */; };
+		0DEE8BA61EF25EB800617464 /* JTCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451B31C6B2F7C00E1BC90 /* JTCalendar.m */; };
+		0DEE8BA71EF25EB800617464 /* MeditationProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B841C8D52D800501016 /* MeditationProgressViewController.m */; };
+		0DEE8BA81EF25EB800617464 /* GlobalMeditationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998D6ED31C60B66B00D9E543 /* GlobalMeditationViewController.m */; };
+		0DEE8BA91EF25EB800617464 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD7D5F1D07F607007FD277 /* ChangePasswordViewController.m */; };
+		0DEE8BAA1EF25EB800617464 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B921C8D53E900501016 /* SDWebImageCompat.m */; };
+		0DEE8BAB1EF25EB800617464 /* CustomMkAnnotationViewForGlobalMeditation.m in Sources */ = {isa = PBXBuildFile; fileRef = 804F41801CA18FDD00E0D528 /* CustomMkAnnotationViewForGlobalMeditation.m */; };
+		0DEE8BAC1EF25EB800617464 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451C41C6B2F7C00E1BC90 /* JTCalendarWeekView.m */; };
+		0DEE8BAD1EF25EB800617464 /* GlobalMeditationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF212D1F1C6486BD00F3B6A1 /* GlobalMeditationTableViewCell.m */; };
+		0DEE8BAE1EF25EB800617464 /* GlobalMeditationModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 804F41831CA1905900E0D528 /* GlobalMeditationModelClass.m */; };
+		0DEE8BAF1EF25EB800617464 /* STTwitterOSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4B21C998A9600DB4AFC /* STTwitterOSRequest.m */; };
+		0DEE8BB01EF25EB800617464 /* ServerMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9934B7B01C71EF8D00326DBB /* ServerMessageTableViewCell.m */; };
+		0DEE8BB11EF25EB800617464 /* DiscussionAboutSwamijiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32A01C71ECD600813E99 /* DiscussionAboutSwamijiViewController.m */; };
+		0DEE8BB21EF25EB800617464 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B941C8D53E900501016 /* SDWebImageDecoder.m */; };
+		0DEE8BB31EF25EB800617464 /* MeditateNowIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA51CC89EF8009F4B50 /* MeditateNowIpadViewController.m */; };
+		0DEE8BB41EF25EB800617464 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A07E1D2D3A6B009FB069 /* UIImage+CropRotate.m */; };
+		0DEE8BB51EF25EB800617464 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BAB1C8D53E900501016 /* UIView+WebCacheOperation.m */; };
+		0DEE8BB61EF25EB800617464 /* STTwitterOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4B01C998A9600DB4AFC /* STTwitterOS.m */; };
+		0DEE8BB71EF25EB800617464 /* SocialShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B5C1C8D505300501016 /* SocialShareViewController.m */; };
+		0DEE8BB81EF25EB800617464 /* DailyQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32981C71E82E00813E99 /* DailyQuoteViewController.m */; };
+		0DEE8BB91EF25EB800617464 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F11BAF1C71FA0700F853F1 /* CommunityViewController.m */; };
+		0DEE8BBA1EF25EB800617464 /* EvemtsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE628E81D0078E000E320C0 /* EvemtsTableViewCell.m */; };
+		0DEE8BBB1EF25EB800617464 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A07A1D2D3A6B009FB069 /* TOCroppedImageAttributes.m */; };
+		0DEE8BBC1EF25EB800617464 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B481C8D4F9300501016 /* AFHTTPSessionManager.m */; };
+		0DEE8BBD1EF25EB800617464 /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4A31C998A9600DB4AFC /* NSString+STTwitter.m */; };
+		0DEE8BBE1EF25EB800617464 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B531C8D4F9300501016 /* AFURLSessionManager.m */; };
+		0DEE8BBF1EF25EB800617464 /* EventsModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE07381D05AE1A003E9359 /* EventsModelClass.m */; };
+		0DEE8BC01EF25EB800617464 /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451B91C6B2F7C00E1BC90 /* JTCalendarDayView.m */; };
+		0DEE8BC11EF25EB800617464 /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4A51C998A9600DB4AFC /* STHTTPRequest+STTwitter.m */; };
+		0DEE8BC21EF25EB800617464 /* BooksModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0715D81D06F7D600818EDA /* BooksModelClass.m */; };
+		0DEE8BC31EF25EB800617464 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 998D6D6E1C608B4100D9E543 /* main.m */; };
+		0DEE8BC41EF25EB800617464 /* JTCalendarMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451BF1C6B2F7C00E1BC90 /* JTCalendarMonthView.m */; };
+		0DEE8BC51EF25EB800617464 /* STTwitterAppOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C4AA1C998A9600DB4AFC /* STTwitterAppOnly.m */; };
+		0DEE8BC61EF25EB800617464 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BB71C8D53E900501016 /* UIView+Toast.m */; };
+		0DEE8BC71EF25EB800617464 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BB21C8D53E900501016 /* SVProgressHUD.m */; };
+		0DEE8BC81EF25EB800617464 /* MeditationNowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF212D211C6486BD00F3B6A1 /* MeditationNowCell.m */; };
+		0DEE8BC91EF25EB800617464 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B901C8D53E900501016 /* SDImageCache.m */; };
+		0DEE8BCA1EF25EB800617464 /* SocialShareScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC1D521D1BC6ED007BC302 /* SocialShareScene.m */; };
+		0DEE8BCB1EF25EB800617464 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A08B1D2D3A6B009FB069 /* TOCropScrollView.m */; };
+		0DEE8BCC1EF25EB800617464 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A0891D2D3A6B009FB069 /* TOCropOverlayView.m */; };
+		0DEE8BCD1EF25EB800617464 /* communityModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C67ED81C92CBC00071AEEC /* communityModelClass.m */; };
+		0DEE8BCE1EF25EB800617464 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B7A1C8D515100501016 /* Reachability.m */; };
+		0DEE8BCF1EF25EB800617464 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE628D81D00733800E320C0 /* EventsViewController.m */; };
+		0DEE8BD01EF25EB800617464 /* VideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BE21C8D55BC00501016 /* VideoListViewController.m */; };
+		0DEE8BD11EF25EB800617464 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE628E51D0078B400E320C0 /* NewsTableViewCell.m */; };
+		0DEE8BD21EF25EB800617464 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B8C1C8D53E900501016 /* MKAnnotationView+WebCache.m */; };
+		0DEE8BD31EF25EB800617464 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDF7D771C69F884000A15D3 /* UIViewController+MFSideMenuAdditions.m */; };
+		0DEE8BD41EF25EB800617464 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1A0D1C8D4F3400501016 /* Utility.m */; };
+		0DEE8BD51EF25EB800617464 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC32931C71E80300813E99 /* SettingsViewController.m */; };
+		0DEE8BD61EF25EB800617464 /* Data_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80C64A061CA2749600714FD8 /* Data_Model.xcdatamodeld */; };
+		0DEE8BD71EF25EB800617464 /* RecentSearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A0661D2D0801009FB069 /* RecentSearchListViewController.m */; };
+		0DEE8BD81EF25EB800617464 /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE451BD1C6B2F7C00E1BC90 /* JTCalendarMenuView.m */; };
+		0DEE8BD91EF25EB800617464 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B981C8D53E900501016 /* SDWebImageDownloaderOperation.m */; };
+		0DEE8BDA1EF25EB800617464 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1B8E1C8D53E900501016 /* NSData+ImageContentType.m */; };
+		0DEE8BDB1EF25EB800617464 /* SettingsIpadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC70FA21CC89ED8009F4B50 /* SettingsIpadViewController.m */; };
+		0DEE8BDC1EF25EB800617464 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 800E1BA71C8D53E900501016 /* UIImageView+HighlightedWebCache.m */; };
+		0DEE8BDD1EF25EB800617464 /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C49F1C998A9600DB4AFC /* NSDateFormatter+STTwitter.m */; };
+		0DEE8BDF1EF25EB800617464 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EF05EA1CA0001600450A86 /* CoreData.framework */; };
+		0DEE8BE01EF25EB800617464 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D619DB1C9D3FBF0020FA0A /* MessageUI.framework */; };
+		0DEE8BE11EF25EB800617464 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D8C49B1C994D1B00DB4AFC /* Social.framework */; };
+		0DEE8BE21EF25EB800617464 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 803ABE541C981E93005A4DDC /* libsqlite3.0.tbd */; };
+		0DEE8BE31EF25EB800617464 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 803ABE521C981E83005A4DDC /* libz.1.1.3.tbd */; };
+		0DEE8BE41EF25EB800617464 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D8C48F1C9934A000DB4AFC /* FBSDKLoginKit.framework */; };
+		0DEE8BE51EF25EB800617464 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803ABE561C981EAE005A4DDC /* AdSupport.framework */; };
+		0DEE8BE61EF25EB800617464 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D8C4901C9934A000DB4AFC /* FBSDKShareKit.framework */; };
+		0DEE8BE71EF25EB800617464 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D8C48E1C9934A000DB4AFC /* FBSDKCoreKit.framework */; };
+		0DEE8BE81EF25EB800617464 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80509C401C96E25A0063DD3C /* SystemConfiguration.framework */; };
+		0DEE8BE91EF25EB800617464 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D8C4941C9934A000DB4AFC /* GoogleSignIn.framework */; };
+		0DEE8BEA1EF25EB800617464 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80509C3E1C96E24F0063DD3C /* StoreKit.framework */; };
+		0DEE8BEB1EF25EB800617464 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80509C3C1C96E2480063DD3C /* SafariServices.framework */; };
+		0DEE8BEC1EF25EB800617464 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80509C3A1C96E23A0063DD3C /* AddressBook.framework */; };
+		0DEE8BED1EF25EB800617464 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CC328C1C71E70700813E99 /* AVFoundation.framework */; };
+		0DEE8BEE1EF25EB800617464 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CC328A1C71E6FF00813E99 /* CoreLocation.framework */; };
+		0DEE8BEF1EF25EB800617464 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CC32881C71E6F600813E99 /* MapKit.framework */; };
+		0DEE8BF11EF25EB800617464 /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD925D1EA3F53700B6E5D1 /* Proxima Nova Bold.otf */; };
+		0DEE8BF21EF25EB800617464 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD925E1EA3F53700B6E5D1 /* ProximaNova-Regular.otf */; };
+		0DEE8BF31EF25EB800617464 /* DefaultLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 800E1B601C8D508100501016 /* DefaultLine.png */; };
+		0DEE8BF41EF25EB800617464 /* meditate_now_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1890C4101CD8AAA0009E0F6B /* meditate_now_ipad.png */; };
+		0DEE8BF51EF25EB800617464 /* GlobalMeditationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B84AD81E691BB900B81286 /* GlobalMeditationHeaderView.xib */; };
+		0DEE8BF61EF25EB800617464 /* Menu_PopOver_BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 800E1B611C8D508100501016 /* Menu_PopOver_BG.png */; };
+		0DEE8BF71EF25EB800617464 /* GlobalMeditationPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B471AD1E68A76400690121 /* GlobalMeditationPostTableViewCell.xib */; };
+		0DEE8BF81EF25EB800617464 /* daily_quotes_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1890C40E1CD8AAA0009E0F6B /* daily_quotes_ipad.png */; };
+		0DEE8BF91EF25EB800617464 /* Santana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800E1BD31C8D546F00501016 /* Santana.ttf */; };
+		0DEE8BFA1EF25EB800617464 /* options_pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 800E1B631C8D508100501016 /* options_pointer.png */; };
+		0DEE8BFB1EF25EB800617464 /* SocialShareSceneIpadSplit.sks in Resources */ = {isa = PBXBuildFile; fileRef = CFFC1D541D1BC6ED007BC302 /* SocialShareSceneIpadSplit.sks */; };
+		0DEE8BFC1EF25EB800617464 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80D8C4931C9934A000DB4AFC /* GoogleSignIn.bundle */; };
+		0DEE8BFD1EF25EB800617464 /* PopSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CFC176761CFEC23100E5FB4A /* PopSound.wav */; };
+		0DEE8BFE1EF25EB800617464 /* vedios_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1890C4111CD8AAA0009E0F6B /* vedios_ipad.png */; };
+		0DEE8BFF1EF25EB800617464 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CFC70F8F1CC89C56009F4B50 /* GameScene.sks */; };
+		0DEE8C001EF25EB800617464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998D6D7B1C608B4100D9E543 /* LaunchScreen.storyboard */; };
+		0DEE8C011EF25EB800617464 /* SocialShareScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CFFC1D531D1BC6ED007BC302 /* SocialShareScene.sks */; };
+		0DEE8C021EF25EB800617464 /* iPad_Dashboard_news.png in Resources */ = {isa = PBXBuildFile; fileRef = CFDD7D611D07FED3007FD277 /* iPad_Dashboard_news.png */; };
+		0DEE8C031EF25EB800617464 /* Santana-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800E1BD11C8D546F00501016 /* Santana-Bold.ttf */; };
+		0DEE8C041EF25EB800617464 /* TOCropViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1814A0691D2D3A6B009FB069 /* TOCropViewControllerLocalizable.strings */; };
+		0DEE8C051EF25EB800617464 /* options_pointer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800E1B641C8D508100501016 /* options_pointer@2x.png */; };
+		0DEE8C061EF25EB800617464 /* Santana-BlackCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800E1BD01C8D546F00501016 /* Santana-BlackCondensed.ttf */; };
+		0DEE8C071EF25EB800617464 /* GameScene4s.sks in Resources */ = {isa = PBXBuildFile; fileRef = CF77E4A91D083EFD00791DD9 /* GameScene4s.sks */; };
+		0DEE8C081EF25EB800617464 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80935E171C9026E000E3694C /* Assets.bundle */; };
+		0DEE8C091EF25EB800617464 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1814A0721D2D3A6B009FB069 /* Info.plist */; };
+		0DEE8C0A1EF25EB800617464 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 800E1BB01C8D53E900501016 /* SVProgressHUD.bundle */; };
+		0DEE8C0B1EF25EB800617464 /* GameScene_iPad.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1890C4071CD88218009E0F6B /* GameScene_iPad.sks */; };
+		0DEE8C0C1EF25EB800617464 /* global_meditation_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1890C40F1CD8AAA0009E0F6B /* global_meditation_ipad.png */; };
+		0DEE8C0D1EF25EB800617464 /* iPad_Dashboard_books.png in Resources */ = {isa = PBXBuildFile; fileRef = CFDD7D631D0800B1007FD277 /* iPad_Dashboard_books.png */; };
+		0DEE8C0E1EF25EB800617464 /* SocialShareSceneIpad.sks in Resources */ = {isa = PBXBuildFile; fileRef = CFFC1D551D1BC6ED007BC302 /* SocialShareSceneIpad.sks */; };
+		0DEE8C0F1EF25EB800617464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998D6D791C608B4100D9E543 /* Assets.xcassets */; };
+		0DEE8C101EF25EB800617464 /* Plop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 186F6D321E63473A00A714BA /* Plop.wav */; };
+		0DEE8C111EF25EB800617464 /* Santana-RegularCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800E1BD21C8D546F00501016 /* Santana-RegularCondensed.ttf */; };
+		0DEE8C121EF25EB800617464 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D8C4921C9934A000DB4AFC /* GoogleService-Info.plist */; };
+		0DEE8C131EF25EB800617464 /* IpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC70F921CC89C6A009F4B50 /* IpadStoryboard.storyboard */; };
+		0DEE8C141EF25EB800617464 /* GlobalMeditationPostHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D31D55F1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.xib */; };
+		0DEE8C151EF25EB800617464 /* SantanaXtraCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800E1BD41C8D546F00501016 /* SantanaXtraCondensed.ttf */; };
+		0DEE8C161EF25EB800617464 /* daily_humuor_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1890C40D1CD8AAA0009E0F6B /* daily_humuor_ipad.png */; };
+		0DEE8C171EF25EB800617464 /* Menu_PopOver_BG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800E1B621C8D508100501016 /* Menu_PopOver_BG@2x.png */; };
+		0DEE8C181EF25EB800617464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998D6D761C608B4100D9E543 /* Main.storyboard */; };
+		0DEE8C191EF25EB800617464 /* Santana-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 800E1BCF1C8D546F00501016 /* Santana-Black.ttf */; };
+		0DEE8C1A1EF25EB800617464 /* weekly_wisdom_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1890C4121CD8AAA0009E0F6B /* weekly_wisdom_ipad.png */; };
+		0DEE8C1B1EF25EB800617464 /* community_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1890C40C1CD8AAA0009E0F6B /* community_ipad.png */; };
 		1814A0671D2D0802009FB069 /* RecentSearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A0661D2D0801009FB069 /* RecentSearchListViewController.m */; };
 		1814A0921D2D3A6B009FB069 /* TOCropViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1814A0691D2D3A6B009FB069 /* TOCropViewControllerLocalizable.strings */; };
 		1814A0931D2D3A6B009FB069 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1814A0721D2D3A6B009FB069 /* Info.plist */; };
@@ -212,6 +407,8 @@
 		0D31D55F1EA1AC11004F5999 /* GlobalMeditationPostHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlobalMeditationPostHeaderView.xib; sourceTree = "<group>"; };
 		0DCD925D1EA3F53700B6E5D1 /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
 		0DCD925E1EA3F53700B6E5D1 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		0DEE8C1F1EF25EB800617464 /* Meditation Adhoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meditation Adhoc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DEE8C201EF25EB800617464 /* Meditation copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Meditation copy-Info.plist"; path = "/Users/sachintulla/Projects/Working/Release 1.0/Meditation/Meditation_debugging/Meditation copy-Info.plist"; sourceTree = "<absolute>"; };
 		0DFC65B71ECD5DC4002AE7FD /* SVPulsingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPulsingAnnotationView.h; sourceTree = "<group>"; };
 		0DFC65B81ECD5DC4002AE7FD /* SVPulsingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPulsingAnnotationView.m; sourceTree = "<group>"; };
 		1814A0651D2D0801009FB069 /* RecentSearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSearchListViewController.h; sourceTree = "<group>"; };
@@ -572,6 +769,30 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0DEE8BDE1EF25EB800617464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DEE8BDF1EF25EB800617464 /* CoreData.framework in Frameworks */,
+				0DEE8BE01EF25EB800617464 /* MessageUI.framework in Frameworks */,
+				0DEE8BE11EF25EB800617464 /* Social.framework in Frameworks */,
+				0DEE8BE21EF25EB800617464 /* libsqlite3.0.tbd in Frameworks */,
+				0DEE8BE31EF25EB800617464 /* libz.1.1.3.tbd in Frameworks */,
+				0DEE8BE41EF25EB800617464 /* FBSDKLoginKit.framework in Frameworks */,
+				0DEE8BE51EF25EB800617464 /* AdSupport.framework in Frameworks */,
+				0DEE8BE61EF25EB800617464 /* FBSDKShareKit.framework in Frameworks */,
+				0DEE8BE71EF25EB800617464 /* FBSDKCoreKit.framework in Frameworks */,
+				0DEE8BE81EF25EB800617464 /* SystemConfiguration.framework in Frameworks */,
+				0DEE8BE91EF25EB800617464 /* GoogleSignIn.framework in Frameworks */,
+				0DEE8BEA1EF25EB800617464 /* StoreKit.framework in Frameworks */,
+				0DEE8BEB1EF25EB800617464 /* SafariServices.framework in Frameworks */,
+				0DEE8BEC1EF25EB800617464 /* AddressBook.framework in Frameworks */,
+				0DEE8BED1EF25EB800617464 /* AVFoundation.framework in Frameworks */,
+				0DEE8BEE1EF25EB800617464 /* CoreLocation.framework in Frameworks */,
+				0DEE8BEF1EF25EB800617464 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998D6D671C608B4100D9E543 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1000,6 +1221,7 @@
 				998D6D861C608B4200D9E543 /* MeditationTests */,
 				998D6D911C608B4200D9E543 /* MeditationUITests */,
 				998D6D6B1C608B4100D9E543 /* Products */,
+				0DEE8C201EF25EB800617464 /* Meditation copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1007,6 +1229,7 @@
 			isa = PBXGroup;
 			children = (
 				998D6D6A1C608B4100D9E543 /* Black Lotus.app */,
+				0DEE8C1F1EF25EB800617464 /* Meditation Adhoc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1456,6 +1679,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0DEE8B551EF25EB800617464 /* Meditation Adhoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DEE8C1C1EF25EB800617464 /* Build configuration list for PBXNativeTarget "Meditation Adhoc" */;
+			buildPhases = (
+				0DEE8B561EF25EB800617464 /* Sources */,
+				0DEE8BDE1EF25EB800617464 /* Frameworks */,
+				0DEE8BF01EF25EB800617464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meditation Adhoc";
+			productName = Meditation;
+			productReference = 0DEE8C1F1EF25EB800617464 /* Meditation Adhoc.app */;
+			productType = "com.apple.product-type.application";
+		};
 		998D6D691C608B4100D9E543 /* Meditation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 998D6D971C608B4200D9E543 /* Build configuration list for PBXNativeTarget "Meditation" */;
@@ -1483,6 +1723,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "IOS-01";
 				TargetAttributes = {
+					0DEE8B551EF25EB800617464 = {
+						DevelopmentTeam = KY5YD2HZMG;
+					};
 					998D6D691C608B4100D9E543 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = KY5YD2HZMG;
@@ -1526,11 +1769,62 @@
 			projectRoot = "";
 			targets = (
 				998D6D691C608B4100D9E543 /* Meditation */,
+				0DEE8B551EF25EB800617464 /* Meditation Adhoc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0DEE8BF01EF25EB800617464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DEE8BF11EF25EB800617464 /* Proxima Nova Bold.otf in Resources */,
+				0DEE8BF21EF25EB800617464 /* ProximaNova-Regular.otf in Resources */,
+				0DEE8BF31EF25EB800617464 /* DefaultLine.png in Resources */,
+				0DEE8BF41EF25EB800617464 /* meditate_now_ipad.png in Resources */,
+				0DEE8BF51EF25EB800617464 /* GlobalMeditationHeaderView.xib in Resources */,
+				0DEE8BF61EF25EB800617464 /* Menu_PopOver_BG.png in Resources */,
+				0DEE8BF71EF25EB800617464 /* GlobalMeditationPostTableViewCell.xib in Resources */,
+				0DEE8BF81EF25EB800617464 /* daily_quotes_ipad.png in Resources */,
+				0DEE8BF91EF25EB800617464 /* Santana.ttf in Resources */,
+				0DEE8BFA1EF25EB800617464 /* options_pointer.png in Resources */,
+				0DEE8BFB1EF25EB800617464 /* SocialShareSceneIpadSplit.sks in Resources */,
+				0DEE8BFC1EF25EB800617464 /* GoogleSignIn.bundle in Resources */,
+				0DEE8BFD1EF25EB800617464 /* PopSound.wav in Resources */,
+				0DEE8BFE1EF25EB800617464 /* vedios_ipad.png in Resources */,
+				0DEE8BFF1EF25EB800617464 /* GameScene.sks in Resources */,
+				0DEE8C001EF25EB800617464 /* LaunchScreen.storyboard in Resources */,
+				0DEE8C011EF25EB800617464 /* SocialShareScene.sks in Resources */,
+				0DEE8C021EF25EB800617464 /* iPad_Dashboard_news.png in Resources */,
+				0DEE8C031EF25EB800617464 /* Santana-Bold.ttf in Resources */,
+				0DEE8C041EF25EB800617464 /* TOCropViewControllerLocalizable.strings in Resources */,
+				0DEE8C051EF25EB800617464 /* options_pointer@2x.png in Resources */,
+				0DEE8C061EF25EB800617464 /* Santana-BlackCondensed.ttf in Resources */,
+				0DEE8C071EF25EB800617464 /* GameScene4s.sks in Resources */,
+				0DEE8C081EF25EB800617464 /* Assets.bundle in Resources */,
+				0DEE8C091EF25EB800617464 /* Info.plist in Resources */,
+				0DEE8C0A1EF25EB800617464 /* SVProgressHUD.bundle in Resources */,
+				0DEE8C0B1EF25EB800617464 /* GameScene_iPad.sks in Resources */,
+				0DEE8C0C1EF25EB800617464 /* global_meditation_ipad.png in Resources */,
+				0DEE8C0D1EF25EB800617464 /* iPad_Dashboard_books.png in Resources */,
+				0DEE8C0E1EF25EB800617464 /* SocialShareSceneIpad.sks in Resources */,
+				0DEE8C0F1EF25EB800617464 /* Assets.xcassets in Resources */,
+				0DEE8C101EF25EB800617464 /* Plop.wav in Resources */,
+				0DEE8C111EF25EB800617464 /* Santana-RegularCondensed.ttf in Resources */,
+				0DEE8C121EF25EB800617464 /* GoogleService-Info.plist in Resources */,
+				0DEE8C131EF25EB800617464 /* IpadStoryboard.storyboard in Resources */,
+				0DEE8C141EF25EB800617464 /* GlobalMeditationPostHeaderView.xib in Resources */,
+				0DEE8C151EF25EB800617464 /* SantanaXtraCondensed.ttf in Resources */,
+				0DEE8C161EF25EB800617464 /* daily_humuor_ipad.png in Resources */,
+				0DEE8C171EF25EB800617464 /* Menu_PopOver_BG@2x.png in Resources */,
+				0DEE8C181EF25EB800617464 /* Main.storyboard in Resources */,
+				0DEE8C191EF25EB800617464 /* Santana-Black.ttf in Resources */,
+				0DEE8C1A1EF25EB800617464 /* weekly_wisdom_ipad.png in Resources */,
+				0DEE8C1B1EF25EB800617464 /* community_ipad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998D6D681C608B4100D9E543 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1584,6 +1878,148 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0DEE8B561EF25EB800617464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DEE8B571EF25EB800617464 /* MFSideMenuContainerViewController.m in Sources */,
+				0DEE8B581EF25EB800617464 /* DailyHumourViewController.m in Sources */,
+				0DEE8B591EF25EB800617464 /* SDWebImageManager.m in Sources */,
+				0DEE8B5A1EF25EB800617464 /* MeditationMusicViewController.m in Sources */,
+				0DEE8B5B1EF25EB800617464 /* News&EventsViewController.m in Sources */,
+				0DEE8B5C1EF25EB800617464 /* VideoInfoModel.m in Sources */,
+				0DEE8B5D1EF25EB800617464 /* GlobalMeditationPostHeaderView.m in Sources */,
+				0DEE8B5E1EF25EB800617464 /* AboutPPEViewController.m in Sources */,
+				0DEE8B5F1EF25EB800617464 /* SideMenuTableViewController.m in Sources */,
+				0DEE8B601EF25EB800617464 /* TOCropToolbar.m in Sources */,
+				0DEE8B611EF25EB800617464 /* YTPlayerView.m in Sources */,
+				0DEE8B621EF25EB800617464 /* UIImage+MultiFormat.m in Sources */,
+				0DEE8B631EF25EB800617464 /* JTCalendarAppearance.m in Sources */,
+				0DEE8B641EF25EB800617464 /* JTCalendarMonthWeekDaysView.m in Sources */,
+				0DEE8B651EF25EB800617464 /* BAVPlistNode.m in Sources */,
+				0DEE8B661EF25EB800617464 /* CustomProgressViewController.m in Sources */,
+				0DEE8B671EF25EB800617464 /* TOActivityCroppedImageProvider.m in Sources */,
+				0DEE8B681EF25EB800617464 /* BooksViewController.m in Sources */,
+				0DEE8B691EF25EB800617464 /* CommunityTableViewCell.m in Sources */,
+				0DEE8B6A1EF25EB800617464 /* STTwitterAPI.m in Sources */,
+				0DEE8B6B1EF25EB800617464 /* DashboardViewController.m in Sources */,
+				0DEE8B6C1EF25EB800617464 /* SignUpViewController.m in Sources */,
+				0DEE8B6D1EF25EB800617464 /* TOCropView.m in Sources */,
+				0DEE8B6E1EF25EB800617464 /* UIImage+GIF.m in Sources */,
+				0DEE8B6F1EF25EB800617464 /* GlobalMeditationHeaderView.m in Sources */,
+				0DEE8B701EF25EB800617464 /* MeditatorsTableViewCell.m in Sources */,
+				0DEE8B711EF25EB800617464 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				0DEE8B721EF25EB800617464 /* SDWebImagePrefetcher.m in Sources */,
+				0DEE8B731EF25EB800617464 /* Buy_BooksViewController.m in Sources */,
+				0DEE8B741EF25EB800617464 /* Chats.m in Sources */,
+				0DEE8B751EF25EB800617464 /* BooksCollectionViewCell.m in Sources */,
+				0DEE8B761EF25EB800617464 /* AFNetworkReachabilityManager.m in Sources */,
+				0DEE8B771EF25EB800617464 /* GlobalMeditationMapCell.m in Sources */,
+				0DEE8B781EF25EB800617464 /* ImmersionCampViewController.m in Sources */,
+				0DEE8B791EF25EB800617464 /* MeditatorsModelClass.m in Sources */,
+				0DEE8B7A1EF25EB800617464 /* OwnMessageTableViewCell.m in Sources */,
+				0DEE8B7B1EF25EB800617464 /* VideoListTableViewCell.m in Sources */,
+				0DEE8B7C1EF25EB800617464 /* WebViewController.m in Sources */,
+				0DEE8B7D1EF25EB800617464 /* STTwitterOAuth.m in Sources */,
+				0DEE8B7E1EF25EB800617464 /* MeditateNowIpadCell.m in Sources */,
+				0DEE8B7F1EF25EB800617464 /* JTCalendarContentView.m in Sources */,
+				0DEE8B801EF25EB800617464 /* MFSideMenuShadow.m in Sources */,
+				0DEE8B811EF25EB800617464 /* SignInViewController.m in Sources */,
+				0DEE8B821EF25EB800617464 /* JTCalendarMenuMonthView.m in Sources */,
+				0DEE8B831EF25EB800617464 /* STTwitterStreamParser.m in Sources */,
+				0DEE8B841EF25EB800617464 /* NewsModelClass.m in Sources */,
+				0DEE8B851EF25EB800617464 /* SVPulsingAnnotationView.m in Sources */,
+				0DEE8B861EF25EB800617464 /* NSError+STTwitter.m in Sources */,
+				0DEE8B871EF25EB800617464 /* UIButton+WebCache.m in Sources */,
+				0DEE8B881EF25EB800617464 /* GlobalMeditationPostTableViewCell.m in Sources */,
+				0DEE8B891EF25EB800617464 /* AFSecurityPolicy.m in Sources */,
+				0DEE8B8A1EF25EB800617464 /* TOCropViewControllerTransitioning.m in Sources */,
+				0DEE8B8B1EF25EB800617464 /* UIImageView+WebCache.m in Sources */,
+				0DEE8B8C1EF25EB800617464 /* DiscussionAboutSwamijiModel.m in Sources */,
+				0DEE8B8D1EF25EB800617464 /* GameScene.m in Sources */,
+				0DEE8B8E1EF25EB800617464 /* NewsViewController.m in Sources */,
+				0DEE8B8F1EF25EB800617464 /* SVIndefiniteAnimatedView.m in Sources */,
+				0DEE8B901EF25EB800617464 /* MeditatorsViewController.m in Sources */,
+				0DEE8B911EF25EB800617464 /* Chats+CoreDataProperties.m in Sources */,
+				0DEE8B921EF25EB800617464 /* AppDelegate.m in Sources */,
+				0DEE8B931EF25EB800617464 /* MeditateNowModelClass.m in Sources */,
+				0DEE8B941EF25EB800617464 /* SDWebImageDownloader.m in Sources */,
+				0DEE8B951EF25EB800617464 /* SVRadialGradientLayer.m in Sources */,
+				0DEE8B961EF25EB800617464 /* STHTTPRequest.m in Sources */,
+				0DEE8B971EF25EB800617464 /* AFURLResponseSerialization.m in Sources */,
+				0DEE8B981EF25EB800617464 /* JTCircleView.m in Sources */,
+				0DEE8B991EF25EB800617464 /* STTwitterHTML.m in Sources */,
+				0DEE8B9A1EF25EB800617464 /* JSONSyntaxHighlight.m in Sources */,
+				0DEE8B9B1EF25EB800617464 /* UIImage+WebP.m in Sources */,
+				0DEE8B9C1EF25EB800617464 /* MDLabel.m in Sources */,
+				0DEE8B9D1EF25EB800617464 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				0DEE8B9E1EF25EB800617464 /* SevenSwitch.swift in Sources */,
+				0DEE8B9F1EF25EB800617464 /* MLKMenuPopover.m in Sources */,
+				0DEE8BA01EF25EB800617464 /* MeditationNowViewController.m in Sources */,
+				0DEE8BA11EF25EB800617464 /* AlreadySignedInViewController.m in Sources */,
+				0DEE8BA21EF25EB800617464 /* UIImage+animatedGIF.m in Sources */,
+				0DEE8BA31EF25EB800617464 /* WeeklyWisdomViewController.m in Sources */,
+				0DEE8BA41EF25EB800617464 /* AFURLRequestSerialization.m in Sources */,
+				0DEE8BA51EF25EB800617464 /* TOCropViewController.m in Sources */,
+				0DEE8BA61EF25EB800617464 /* JTCalendar.m in Sources */,
+				0DEE8BA71EF25EB800617464 /* MeditationProgressViewController.m in Sources */,
+				0DEE8BA81EF25EB800617464 /* GlobalMeditationViewController.m in Sources */,
+				0DEE8BA91EF25EB800617464 /* ChangePasswordViewController.m in Sources */,
+				0DEE8BAA1EF25EB800617464 /* SDWebImageCompat.m in Sources */,
+				0DEE8BAB1EF25EB800617464 /* CustomMkAnnotationViewForGlobalMeditation.m in Sources */,
+				0DEE8BAC1EF25EB800617464 /* JTCalendarWeekView.m in Sources */,
+				0DEE8BAD1EF25EB800617464 /* GlobalMeditationTableViewCell.m in Sources */,
+				0DEE8BAE1EF25EB800617464 /* GlobalMeditationModelClass.m in Sources */,
+				0DEE8BAF1EF25EB800617464 /* STTwitterOSRequest.m in Sources */,
+				0DEE8BB01EF25EB800617464 /* ServerMessageTableViewCell.m in Sources */,
+				0DEE8BB11EF25EB800617464 /* DiscussionAboutSwamijiViewController.m in Sources */,
+				0DEE8BB21EF25EB800617464 /* SDWebImageDecoder.m in Sources */,
+				0DEE8BB31EF25EB800617464 /* MeditateNowIpadViewController.m in Sources */,
+				0DEE8BB41EF25EB800617464 /* UIImage+CropRotate.m in Sources */,
+				0DEE8BB51EF25EB800617464 /* UIView+WebCacheOperation.m in Sources */,
+				0DEE8BB61EF25EB800617464 /* STTwitterOS.m in Sources */,
+				0DEE8BB71EF25EB800617464 /* SocialShareViewController.m in Sources */,
+				0DEE8BB81EF25EB800617464 /* DailyQuoteViewController.m in Sources */,
+				0DEE8BB91EF25EB800617464 /* CommunityViewController.m in Sources */,
+				0DEE8BBA1EF25EB800617464 /* EvemtsTableViewCell.m in Sources */,
+				0DEE8BBB1EF25EB800617464 /* TOCroppedImageAttributes.m in Sources */,
+				0DEE8BBC1EF25EB800617464 /* AFHTTPSessionManager.m in Sources */,
+				0DEE8BBD1EF25EB800617464 /* NSString+STTwitter.m in Sources */,
+				0DEE8BBE1EF25EB800617464 /* AFURLSessionManager.m in Sources */,
+				0DEE8BBF1EF25EB800617464 /* EventsModelClass.m in Sources */,
+				0DEE8BC01EF25EB800617464 /* JTCalendarDayView.m in Sources */,
+				0DEE8BC11EF25EB800617464 /* STHTTPRequest+STTwitter.m in Sources */,
+				0DEE8BC21EF25EB800617464 /* BooksModelClass.m in Sources */,
+				0DEE8BC31EF25EB800617464 /* main.m in Sources */,
+				0DEE8BC41EF25EB800617464 /* JTCalendarMonthView.m in Sources */,
+				0DEE8BC51EF25EB800617464 /* STTwitterAppOnly.m in Sources */,
+				0DEE8BC61EF25EB800617464 /* UIView+Toast.m in Sources */,
+				0DEE8BC71EF25EB800617464 /* SVProgressHUD.m in Sources */,
+				0DEE8BC81EF25EB800617464 /* MeditationNowCell.m in Sources */,
+				0DEE8BC91EF25EB800617464 /* SDImageCache.m in Sources */,
+				0DEE8BCA1EF25EB800617464 /* SocialShareScene.m in Sources */,
+				0DEE8BCB1EF25EB800617464 /* TOCropScrollView.m in Sources */,
+				0DEE8BCC1EF25EB800617464 /* TOCropOverlayView.m in Sources */,
+				0DEE8BCD1EF25EB800617464 /* communityModelClass.m in Sources */,
+				0DEE8BCE1EF25EB800617464 /* Reachability.m in Sources */,
+				0DEE8BCF1EF25EB800617464 /* EventsViewController.m in Sources */,
+				0DEE8BD01EF25EB800617464 /* VideoListViewController.m in Sources */,
+				0DEE8BD11EF25EB800617464 /* NewsTableViewCell.m in Sources */,
+				0DEE8BD21EF25EB800617464 /* MKAnnotationView+WebCache.m in Sources */,
+				0DEE8BD31EF25EB800617464 /* UIViewController+MFSideMenuAdditions.m in Sources */,
+				0DEE8BD41EF25EB800617464 /* Utility.m in Sources */,
+				0DEE8BD51EF25EB800617464 /* SettingsViewController.m in Sources */,
+				0DEE8BD61EF25EB800617464 /* Data_Model.xcdatamodeld in Sources */,
+				0DEE8BD71EF25EB800617464 /* RecentSearchListViewController.m in Sources */,
+				0DEE8BD81EF25EB800617464 /* JTCalendarMenuView.m in Sources */,
+				0DEE8BD91EF25EB800617464 /* SDWebImageDownloaderOperation.m in Sources */,
+				0DEE8BDA1EF25EB800617464 /* NSData+ImageContentType.m in Sources */,
+				0DEE8BDB1EF25EB800617464 /* SettingsIpadViewController.m in Sources */,
+				0DEE8BDC1EF25EB800617464 /* UIImageView+HighlightedWebCache.m in Sources */,
+				0DEE8BDD1EF25EB800617464 /* NSDateFormatter+STTwitter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998D6D661C608B4100D9E543 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1774,6 +2210,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0DEE8C1D1EF25EB800617464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				DEVELOPMENT_TEAM = KY5YD2HZMG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Meditation",
+					"$(PROJECT_DIR)/Meditation/FBSDK",
+					"$(PROJECT_DIR)/Meditation/GoogleSignIn",
+				);
+				GCC_PREFIX_HEADER = Meditation/PrefixHeader.pch;
+				INFOPLIST_FILE = "Meditation copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinprickeffect.meditation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0c25204c-0d75-4734-86d5-71928ec1ded3";
+				PROVISIONING_PROFILE_SPECIFIER = MeditationAdhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		0DEE8C1E1EF25EB800617464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Karthik Sankaran (KY5YD2HZMG)";
+				DEVELOPMENT_TEAM = KY5YD2HZMG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Meditation",
+					"$(PROJECT_DIR)/Meditation/FBSDK",
+					"$(PROJECT_DIR)/Meditation/GoogleSignIn",
+				);
+				GCC_PREFIX_HEADER = Meditation/PrefixHeader.pch;
+				INFOPLIST_FILE = "Meditation copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinprickeffect.meditation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0c25204c-0d75-4734-86d5-71928ec1ded3";
+				PROVISIONING_PROFILE_SPECIFIER = MeditationAdhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "Meditation/ViewControllers/SettingViewController/Meditation-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
 		998D6D951C608B4200D9E543 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1924,6 +2421,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0DEE8C1C1EF25EB800617464 /* Build configuration list for PBXNativeTarget "Meditation Adhoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DEE8C1D1EF25EB800617464 /* Debug */,
+				0DEE8C1E1EF25EB800617464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		998D6D651C608B4100D9E543 /* Build configuration list for PBXProject "Meditation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

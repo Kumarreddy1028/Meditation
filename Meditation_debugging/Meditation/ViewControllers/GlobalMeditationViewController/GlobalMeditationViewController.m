@@ -96,7 +96,12 @@
 
 - (void)setLatestTopicDetails
 {
-    
+//    NSIndexPath *indexpath = [NSIndexPath indexPathWithIndex:0];
+
+//    [self.tableViewOutlet reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexpath,nil] withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableViewOutlet reloadData];
+
+    return;
     GlobalMeditationModelClass *obj=[_upcomingMeditations firstObject];
     if (!obj) {
         if ([_pastMeditatiions count]) {
@@ -844,9 +849,10 @@
                                   }
                               }
                           }
-//                          myTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(setLatestTopicDetails) userInfo:nil repeats:YES];
-//                          [myTimer fire];
+                          myTimer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(setLatestTopicDetails) userInfo:nil repeats:YES];
+                          [myTimer fire];
 //                          [self.tableViewOutlet reloadData];
+//                          [self.tableViewOutlet reloadRowsAtIndexPaths:<#(nonnull NSArray<NSIndexPath *> *)#> withRowAnimation:<#(UITableViewRowAnimation)#>]
                           [self serviceCallForLatLong];
 
                       }

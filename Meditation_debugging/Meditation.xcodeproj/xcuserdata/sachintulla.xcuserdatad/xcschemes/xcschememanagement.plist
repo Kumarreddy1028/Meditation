@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Meditation copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Meditation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0DEE8B551EF25EB800617464</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>998D6D691C608B4100D9E543</key>
 		<dict>
 			<key>primary</key>
